@@ -1,0 +1,13 @@
+# Illustration de présentation
+
+Visuel : `sawm-anti-brouillage-overview.png`.
+
+Généré le 27 octobre 2026 avec l’outil intégré **image_gen**, puis contrôlé visuellement. La fleur SAWM & Basira fournie par le propriétaire sert de référence de marque. Texte anglais pour les deux versions de l’article. Il s’agit d’un schéma de communication, pas d’un graphique de mesures.
+
+Les chiffres proviennent de [la campagne VM](../measured-vm-2026-10-27/README.md) (120/120 messages sur les deux modes, zéro effet doublé, six essais). Les limites de portée sont rappelées dans l’image et les articles.
+
+## Prompt de génération
+
+```text
+Use case: ads-marketing / infographic-diagram. Create a polished landscape 3:2 high-resolution promotional infographic for a GitHub README and Medium article. The provided image is the SAWM & Basira flower brand mark, a supporting logo input: incorporate its recognizable geometry at upper left beside the brand name, do not use it as the whole background. New artwork derived from this brand input. Strict black, white, silver and gray palette, white background, Swiss editorial typography, generous margins, clean premium enterprise software look. All text in ENGLISH except the French product name. Main title exactly "SAWM Anti-Brouillage". Subtitle exactly "Keep messages. Resume. Verify." Small brand "SAWM & BASIRA". Main visual is a beautifully crafted isometric software flow, left to right, with four numbered stages: "1 SEND" a small enterprise application server emitting message tiles; "2 PRESERVE" a durable storage queue holding message tiles; "3 ADAPT & RETRY" a broken network link, dark and light dashed connection, timer adjustment icon and retry loop; "4 VERIFY" a recipient ledger with checkmarked unique message IDs. Show that messages wait in the queue while the link is broken and proceed when it returns. Above the diagram, a small subtle cloud branch labeled "Cloud-prepared policy" connects into the local queue, separate from the live retry loop. Below diagram, three large proof cards with exact text: "120/120" then "messages delivered & confirmed"; "0" then "duplicate effects"; "6" then "Linux VM trials". Small but readable footer exactly "Measured packet-level tests · Fixed and adaptive modes · Not physical RF validation". Do not draw a radio antenna, aircraft, weapon, jammer, radar or shielding dome. Do not imply communication through a total outage or perfect general reliability. Avoid invented numeric charts. The infographic should explain the verified software result with attractive clear symbols, not scientific data plots. Perfect text accuracy, very readable hierarchy.
+```

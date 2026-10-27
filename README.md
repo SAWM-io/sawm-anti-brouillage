@@ -1,5 +1,9 @@
 # SAWM Anti-Brouillage
 
+![sawm-anti-brouillage — measured software demonstration](docs/images/sawm-anti-brouillage-overview.png)
+
+[Article Medium — Français](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM.md) · [Medium article — English](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM-EN.md)
+
 **Résilience applicative aux coupures — conserver les messages, reprendre leur envoi et vérifier chaque effet dans un démonstrateur HTTP.**
 
 [English](README.en.md) · [Démarrage](#démarrer-en-local) · [Guide technique](docs/GUIDE-TECHNIQUE.md) · [Preuves mesurées](docs/measured-2026-10-27/) · [Simulation VM et portée radio](docs/RADIO-VALIDATION.md)
