@@ -1,0 +1,2370 @@
+{
+  "schema": "civil-cloud-control/v1",
+  "run_id": "civil-622b8de8ca0875fe35f70c146fb096a4",
+  "memory_space_id": "mem_6d500d795a315684ee02d994",
+  "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+  "base_url": "https://basira-api.sawm.io/api/v1/basira",
+  "real_cloud": true,
+  "completed": true,
+  "calls": [
+    {
+      "operation": "basira_deposit",
+      "started_at": "2026-10-27T15:40:26.166634+00:00",
+      "completed": true,
+      "elapsed_ms": 258.465
+    },
+    {
+      "operation": "basira_job_completed",
+      "started_at": "2026-10-27T15:40:26.426990+00:00",
+      "completed": true,
+      "elapsed_ms": 1144.939
+    },
+    {
+      "operation": "tsst_recall",
+      "started_at": "2026-10-27T15:40:27.572570+00:00",
+      "completed": true,
+      "elapsed_ms": 207.922
+    },
+    {
+      "operation": "sawm_review",
+      "started_at": "2026-10-27T15:40:27.783243+00:00",
+      "completed": true,
+      "elapsed_ms": 4182.234
+    }
+  ],
+  "sdk_sha256": "49fff5f136e8da7a123f929de55542570dcc6fa8ad78ba317401ad50d519b397",
+  "results_receipt": {
+    "job_id": "job_53b1f13fce68b0a605a98434e336d17e",
+    "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+    "status": "pending",
+    "accepted_count": 1,
+    "pending_count": 1,
+    "processing_count": 0,
+    "completed_count": 0,
+    "dead_letter_count": 0
+  },
+  "results_job": {
+    "job_id": "job_53b1f13fce68b0a605a98434e336d17e",
+    "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+    "status": "completed",
+    "accepted_count": 1,
+    "pending_count": 0,
+    "processing_count": 0,
+    "completed_count": 1,
+    "dead_letter_count": 0
+  },
+  "results_tsst": {
+    "response_metadata": {
+      "schema": "basira-tsst-evidence/v1",
+      "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+      "memory_space_id": "mem_6d500d795a315684ee02d994",
+      "returned_count": 8,
+      "response_sha256": "eda05bc595a4ff9b4bf965131c3dc27c8219383af4483f95dcfe26e6cfd9aa56"
+    },
+    "literal_record_recalled": true,
+    "matching_evidence": [
+      {
+        "evidence_id": "ev_59a012952531721cb5c4a049f5b42273",
+        "integrity_verified": true,
+        "literal_record_present": true,
+        "excerpt_sha256": "cd9fad16cf511c1171d1e30b221030089e4d8c392022129d217914550a6d21bf"
+      }
+    ],
+    "matching_evidence_ids": [
+      "ev_59a012952531721cb5c4a049f5b42273"
+    ],
+    "record_sha256": "cd9fad16cf511c1171d1e30b221030089e4d8c392022129d217914550a6d21bf"
+  },
+  "review_sawm": {
+    "text": "**Bilan — mesures synthétiques de laboratoire HTTP (résultats)**\n\n**Résultats mesurés (run de résultats)**\n- 20 messages planifiés ; 20 livraisons uniques avec persistance durable (« durable_unique » : 20).\n- Redémarrage de l'émetteur pendant une coupure d'environ 2,009 s ; le volume durable est resté à 20 malgré ce redémarrage.\n- 5 livraisons uniques en mode volatil (« volatile_unique » : 5), soit un écart mesuré de 15 unités par rapport au durable.\n- Doublons/effets dupliqués mesurés : 0.\n- 20 livraisons uniques également obtenues sans calibration cloud (« no_cloud_calibration_unique » : 20).\n\n**Rôle du cloud (tel que décrit dans la mesure)**\n- Mémoire, rappel et politique bornée ; persistance et reprises assurées localement. Aucune dépendance cloud n'est nécessaire au résultat de livraison observé dans ce run.\n\n**Hypothèses et limites (non mesurées)**\n- Ces chiffres proviennent d'un environnement HTTP local et synthétique, sur un seul scénario de coupure (~2 s) et un seul redémarrage ; ils ne constituent pas une preuve de robustesse générale.\n- Le mode volatil n'a pas été testé au-delà de ce scénario ; l'écart durable/volatil observé n'est pas extrapolable.\n- Aucun résultat de contre-brouillage, de résilience radio ou de contexte télécom n'est établi ici ; aucun rapprochement avec des performances télécom n'est justifié.\n- Les runs de calibration antérieurs (outage ~2,008 s, 20 durables, 5 volatils) sont cohérents avec ces résultats, mais restent des mesures distinctes, non des garanties.\n- Aucun gain chiffré (pourcentage, facteur) n'est calculé : les données ne permettent pas de l'établir, et aucun gain n'est revendiqué.\n\n**Conclusion**\nSur ce scénario unique, la persistance durable a maintenu 20 livraisons uniques sans doublon à travers un redémarrage et une coupure d'environ 2 s ; le mode volatil n'en a livré que 5. Ces observations sont circonscrites au banc HTTP local et ne valent ni comme généralisation, ni comme démonstration anti-brouillage.",
+    "done": {
+      "replayed": false,
+      "turn_id": "public-demo-31020cce83ebaa8462b8",
+      "type": "turn.done"
+    },
+    "memory": {
+      "accepted_count": 2,
+      "engine": "basira-v2-exact",
+      "job_id": "job_a4a1058b5a934377861af6ae0905afe1",
+      "status": "pending",
+      "type": "memory.committed"
+    },
+    "usage": {
+      "billing_schema": "basira-api-billing/v1",
+      "input_tokens": 237,
+      "output_tokens": 640,
+      "provider_usage": {
+        "completion_tokens": 557,
+        "prompt_tokens": 1200,
+        "total_tokens": 1757
+      },
+      "total_tokens": 877,
+      "type": "usage.final"
+    },
+    "events": [
+      {
+        "memory": {
+          "engine": "basira-v2-exact",
+          "evidence_count": 5
+        },
+        "replayed": false,
+        "schema": "sawm-cloud/v1",
+        "session_id": "civil-622b8de8ca0875fe35f70c146fb096a4",
+        "turn_id": "public-demo-31020cce83ebaa8462b8",
+        "type": "turn.accepted"
+      },
+      {
+        "delta": "**",
+        "type": "response.delta"
+      },
+      {
+        "delta": "B",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ilan",
+        "type": "response.delta"
+      },
+      {
+        "delta": " —",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mesures",
+        "type": "response.delta"
+      },
+      {
+        "delta": " synth",
+        "type": "response.delta"
+      },
+      {
+        "delta": "étiques",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " labor",
+        "type": "response.delta"
+      },
+      {
+        "delta": "atoire",
+        "type": "response.delta"
+      },
+      {
+        "delta": " HTTP",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rés",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ultats",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")**\n\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**",
+        "type": "response.delta"
+      },
+      {
+        "delta": "R",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ultats",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mes",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ur",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "run",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " résultats",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " messages",
+        "type": "response.delta"
+      },
+      {
+        "delta": " plan",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ifi",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ra",
+        "type": "response.delta"
+      },
+      {
+        "delta": "isons",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iques",
+        "type": "response.delta"
+      },
+      {
+        "delta": " avec",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pers",
+        "type": "response.delta"
+      },
+      {
+        "delta": "istance",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": " («",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_unique",
+        "type": "response.delta"
+      },
+      {
+        "delta": " »",
+        "type": "response.delta"
+      },
+      {
+        "delta": " :",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": ").\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Red",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "mar",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rage",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " l",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "met",
+        "type": "response.delta"
+      },
+      {
+        "delta": "te",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ur",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pendant",
+        "type": "response.delta"
+      },
+      {
+        "delta": " une",
+        "type": "response.delta"
+      },
+      {
+        "delta": " coup",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ure",
+        "type": "response.delta"
+      },
+      {
+        "delta": " d",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'en",
+        "type": "response.delta"
+      },
+      {
+        "delta": "viron",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "2",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": "009",
+        "type": "response.delta"
+      },
+      {
+        "delta": " s",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " le",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volume",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": " est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rest",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " à",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mal",
+        "type": "response.delta"
+      },
+      {
+        "delta": "gré",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ce",
+        "type": "response.delta"
+      },
+      {
+        "delta": " red",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "mar",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rage",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "5",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ra",
+        "type": "response.delta"
+      },
+      {
+        "delta": "isons",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iques",
+        "type": "response.delta"
+      },
+      {
+        "delta": " en",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mode",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volat",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": " («",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volatile",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_unique",
+        "type": "response.delta"
+      },
+      {
+        "delta": " »",
+        "type": "response.delta"
+      },
+      {
+        "delta": " :",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "5",
+        "type": "response.delta"
+      },
+      {
+        "delta": "),",
+        "type": "response.delta"
+      },
+      {
+        "delta": " soit",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "cart",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mes",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ur",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "15",
+        "type": "response.delta"
+      },
+      {
+        "delta": " unit",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": " par",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rapport",
+        "type": "response.delta"
+      },
+      {
+        "delta": " au",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Dou",
+        "type": "response.delta"
+      },
+      {
+        "delta": "bl",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ons",
+        "type": "response.delta"
+      },
+      {
+        "delta": "/",
+        "type": "response.delta"
+      },
+      {
+        "delta": "eff",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ets",
+        "type": "response.delta"
+      },
+      {
+        "delta": " du",
+        "type": "response.delta"
+      },
+      {
+        "delta": "pl",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iqu",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mes",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ur",
+        "type": "response.delta"
+      },
+      {
+        "delta": "és",
+        "type": "response.delta"
+      },
+      {
+        "delta": " :",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "0",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ra",
+        "type": "response.delta"
+      },
+      {
+        "delta": "isons",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iques",
+        "type": "response.delta"
+      },
+      {
+        "delta": " également",
+        "type": "response.delta"
+      },
+      {
+        "delta": " obten",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ues",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sans",
+        "type": "response.delta"
+      },
+      {
+        "delta": " calibration",
+        "type": "response.delta"
+      },
+      {
+        "delta": " cloud",
+        "type": "response.delta"
+      },
+      {
+        "delta": " («",
+        "type": "response.delta"
+      },
+      {
+        "delta": " no",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_",
+        "type": "response.delta"
+      },
+      {
+        "delta": "cloud",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_c",
+        "type": "response.delta"
+      },
+      {
+        "delta": "al",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ibration",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_unique",
+        "type": "response.delta"
+      },
+      {
+        "delta": " »",
+        "type": "response.delta"
+      },
+      {
+        "delta": " :",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": ").\n\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**",
+        "type": "response.delta"
+      },
+      {
+        "delta": "R",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ôle",
+        "type": "response.delta"
+      },
+      {
+        "delta": " du",
+        "type": "response.delta"
+      },
+      {
+        "delta": " cloud",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "tel",
+        "type": "response.delta"
+      },
+      {
+        "delta": " que",
+        "type": "response.delta"
+      },
+      {
+        "delta": " déc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rit",
+        "type": "response.delta"
+      },
+      {
+        "delta": " dans",
+        "type": "response.delta"
+      },
+      {
+        "delta": " la",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mesure",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Mé",
+        "type": "response.delta"
+      },
+      {
+        "delta": "moire",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rapp",
+        "type": "response.delta"
+      },
+      {
+        "delta": "el",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " politique",
+        "type": "response.delta"
+      },
+      {
+        "delta": " born",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ée",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pers",
+        "type": "response.delta"
+      },
+      {
+        "delta": "istance",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " re",
+        "type": "response.delta"
+      },
+      {
+        "delta": "prises",
+        "type": "response.delta"
+      },
+      {
+        "delta": " assur",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ées",
+        "type": "response.delta"
+      },
+      {
+        "delta": " local",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ement",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".",
+        "type": "response.delta"
+      },
+      {
+        "delta": " A",
+        "type": "response.delta"
+      },
+      {
+        "delta": "uc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "une",
+        "type": "response.delta"
+      },
+      {
+        "delta": " dépend",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ance",
+        "type": "response.delta"
+      },
+      {
+        "delta": " cloud",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " nécessaire",
+        "type": "response.delta"
+      },
+      {
+        "delta": " au",
+        "type": "response.delta"
+      },
+      {
+        "delta": " résultat",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ra",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ison",
+        "type": "response.delta"
+      },
+      {
+        "delta": " observ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " dans",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ce",
+        "type": "response.delta"
+      },
+      {
+        "delta": " run",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**",
+        "type": "response.delta"
+      },
+      {
+        "delta": "Hyp",
+        "type": "response.delta"
+      },
+      {
+        "delta": "oth",
+        "type": "response.delta"
+      },
+      {
+        "delta": "è",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ses",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " limites",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "non",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mes",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ur",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ées",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Ces",
+        "type": "response.delta"
+      },
+      {
+        "delta": " chiff",
+        "type": "response.delta"
+      },
+      {
+        "delta": "res",
+        "type": "response.delta"
+      },
+      {
+        "delta": " prov",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iennent",
+        "type": "response.delta"
+      },
+      {
+        "delta": " d",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " environnement",
+        "type": "response.delta"
+      },
+      {
+        "delta": " HTTP",
+        "type": "response.delta"
+      },
+      {
+        "delta": " local",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " synth",
+        "type": "response.delta"
+      },
+      {
+        "delta": "étique",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sur",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " seul",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "én",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ario",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " coup",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ure",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (~",
+        "type": "response.delta"
+      },
+      {
+        "delta": "2",
+        "type": "response.delta"
+      },
+      {
+        "delta": " s",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " seul",
+        "type": "response.delta"
+      },
+      {
+        "delta": " red",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "mar",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rage",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ils",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ne",
+        "type": "response.delta"
+      },
+      {
+        "delta": " constituent",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pas",
+        "type": "response.delta"
+      },
+      {
+        "delta": " une",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pre",
+        "type": "response.delta"
+      },
+      {
+        "delta": "uve",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " robust",
+        "type": "response.delta"
+      },
+      {
+        "delta": "esse",
+        "type": "response.delta"
+      },
+      {
+        "delta": " générale",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Le",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mode",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volat",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'a",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pas",
+        "type": "response.delta"
+      },
+      {
+        "delta": " été",
+        "type": "response.delta"
+      },
+      {
+        "delta": " test",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " au",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-del",
+        "type": "response.delta"
+      },
+      {
+        "delta": "à",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ce",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "én",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ario",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " l",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'",
+        "type": "response.delta"
+      },
+      {
+        "delta": "éc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "art",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": "/",
+        "type": "response.delta"
+      },
+      {
+        "delta": "vol",
+        "type": "response.delta"
+      },
+      {
+        "delta": "at",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": " observ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pas",
+        "type": "response.delta"
+      },
+      {
+        "delta": " extrap",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ol",
+        "type": "response.delta"
+      },
+      {
+        "delta": "able",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " A",
+        "type": "response.delta"
+      },
+      {
+        "delta": "uc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " résultat",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " contre",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-b",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rou",
+        "type": "response.delta"
+      },
+      {
+        "delta": "illage",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rés",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ience",
+        "type": "response.delta"
+      },
+      {
+        "delta": " radio",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ou",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " contexte",
+        "type": "response.delta"
+      },
+      {
+        "delta": " télé",
+        "type": "response.delta"
+      },
+      {
+        "delta": "com",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ét",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ab",
+        "type": "response.delta"
+      },
+      {
+        "delta": "li",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ici",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " aucun",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rapp",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ro",
+        "type": "response.delta"
+      },
+      {
+        "delta": "che",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ment",
+        "type": "response.delta"
+      },
+      {
+        "delta": " avec",
+        "type": "response.delta"
+      },
+      {
+        "delta": " des",
+        "type": "response.delta"
+      },
+      {
+        "delta": " performances",
+        "type": "response.delta"
+      },
+      {
+        "delta": " télé",
+        "type": "response.delta"
+      },
+      {
+        "delta": "com",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " just",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ifié",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Les",
+        "type": "response.delta"
+      },
+      {
+        "delta": " runs",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " calibration",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ant",
+        "type": "response.delta"
+      },
+      {
+        "delta": "érie",
+        "type": "response.delta"
+      },
+      {
+        "delta": "urs",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "out",
+        "type": "response.delta"
+      },
+      {
+        "delta": "age",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ~",
+        "type": "response.delta"
+      },
+      {
+        "delta": "2",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": "008",
+        "type": "response.delta"
+      },
+      {
+        "delta": " s",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " du",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rables",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "5",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volat",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ils",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sont",
+        "type": "response.delta"
+      },
+      {
+        "delta": " co",
+        "type": "response.delta"
+      },
+      {
+        "delta": "hé",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rent",
+        "type": "response.delta"
+      },
+      {
+        "delta": "s",
+        "type": "response.delta"
+      },
+      {
+        "delta": " avec",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ces",
+        "type": "response.delta"
+      },
+      {
+        "delta": " résultats",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mais",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rest",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ent",
+        "type": "response.delta"
+      },
+      {
+        "delta": " des",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mesures",
+        "type": "response.delta"
+      },
+      {
+        "delta": " distinct",
+        "type": "response.delta"
+      },
+      {
+        "delta": "es",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " non",
+        "type": "response.delta"
+      },
+      {
+        "delta": " des",
+        "type": "response.delta"
+      },
+      {
+        "delta": " garant",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ies",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-",
+        "type": "response.delta"
+      },
+      {
+        "delta": " A",
+        "type": "response.delta"
+      },
+      {
+        "delta": "uc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " gain",
+        "type": "response.delta"
+      },
+      {
+        "delta": " chiff",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ré",
+        "type": "response.delta"
+      },
+      {
+        "delta": " (",
+        "type": "response.delta"
+      },
+      {
+        "delta": "pour",
+        "type": "response.delta"
+      },
+      {
+        "delta": "centage",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " fact",
+        "type": "response.delta"
+      },
+      {
+        "delta": "eur",
+        "type": "response.delta"
+      },
+      {
+        "delta": ")",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " calcul",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": " :",
+        "type": "response.delta"
+      },
+      {
+        "delta": " les",
+        "type": "response.delta"
+      },
+      {
+        "delta": " données",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ne",
+        "type": "response.delta"
+      },
+      {
+        "delta": " permettent",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pas",
+        "type": "response.delta"
+      },
+      {
+        "delta": " de",
+        "type": "response.delta"
+      },
+      {
+        "delta": " l",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'",
+        "type": "response.delta"
+      },
+      {
+        "delta": "établ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ir",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " aucun",
+        "type": "response.delta"
+      },
+      {
+        "delta": " gain",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'est",
+        "type": "response.delta"
+      },
+      {
+        "delta": " rev",
+        "type": "response.delta"
+      },
+      {
+        "delta": "end",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iqué",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".\n\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**",
+        "type": "response.delta"
+      },
+      {
+        "delta": "Conclusion",
+        "type": "response.delta"
+      },
+      {
+        "delta": "**\n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "Sur",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ce",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "én",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ario",
+        "type": "response.delta"
+      },
+      {
+        "delta": " unique",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " la",
+        "type": "response.delta"
+      },
+      {
+        "delta": " pers",
+        "type": "response.delta"
+      },
+      {
+        "delta": "istance",
+        "type": "response.delta"
+      },
+      {
+        "delta": " durable",
+        "type": "response.delta"
+      },
+      {
+        "delta": " a",
+        "type": "response.delta"
+      },
+      {
+        "delta": " main",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ten",
+        "type": "response.delta"
+      },
+      {
+        "delta": "u",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "20",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ra",
+        "type": "response.delta"
+      },
+      {
+        "delta": "isons",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": "iques",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sans",
+        "type": "response.delta"
+      },
+      {
+        "delta": " dou",
+        "type": "response.delta"
+      },
+      {
+        "delta": "bl",
+        "type": "response.delta"
+      },
+      {
+        "delta": "on",
+        "type": "response.delta"
+      },
+      {
+        "delta": " à",
+        "type": "response.delta"
+      },
+      {
+        "delta": " travers",
+        "type": "response.delta"
+      },
+      {
+        "delta": " un",
+        "type": "response.delta"
+      },
+      {
+        "delta": " red",
+        "type": "response.delta"
+      },
+      {
+        "delta": "é",
+        "type": "response.delta"
+      },
+      {
+        "delta": "mar",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rage",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " une",
+        "type": "response.delta"
+      },
+      {
+        "delta": " coup",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ure",
+        "type": "response.delta"
+      },
+      {
+        "delta": " d",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'en",
+        "type": "response.delta"
+      },
+      {
+        "delta": "viron",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "2",
+        "type": "response.delta"
+      },
+      {
+        "delta": " s",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ;",
+        "type": "response.delta"
+      },
+      {
+        "delta": " le",
+        "type": "response.delta"
+      },
+      {
+        "delta": " mode",
+        "type": "response.delta"
+      },
+      {
+        "delta": " volat",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": " n",
+        "type": "response.delta"
+      },
+      {
+        "delta": "'en",
+        "type": "response.delta"
+      },
+      {
+        "delta": " a",
+        "type": "response.delta"
+      },
+      {
+        "delta": " liv",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ré",
+        "type": "response.delta"
+      },
+      {
+        "delta": " que",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ",
+        "type": "response.delta"
+      },
+      {
+        "delta": "5",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".",
+        "type": "response.delta"
+      },
+      {
+        "delta": " Ces",
+        "type": "response.delta"
+      },
+      {
+        "delta": " observations",
+        "type": "response.delta"
+      },
+      {
+        "delta": " sont",
+        "type": "response.delta"
+      },
+      {
+        "delta": " cir",
+        "type": "response.delta"
+      },
+      {
+        "delta": "con",
+        "type": "response.delta"
+      },
+      {
+        "delta": "sc",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rites",
+        "type": "response.delta"
+      },
+      {
+        "delta": " au",
+        "type": "response.delta"
+      },
+      {
+        "delta": " banc",
+        "type": "response.delta"
+      },
+      {
+        "delta": " HTTP",
+        "type": "response.delta"
+      },
+      {
+        "delta": " local",
+        "type": "response.delta"
+      },
+      {
+        "delta": " et",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ne",
+        "type": "response.delta"
+      },
+      {
+        "delta": " val",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ent",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ni",
+        "type": "response.delta"
+      },
+      {
+        "delta": " comme",
+        "type": "response.delta"
+      },
+      {
+        "delta": " général",
+        "type": "response.delta"
+      },
+      {
+        "delta": "isation",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",",
+        "type": "response.delta"
+      },
+      {
+        "delta": " ni",
+        "type": "response.delta"
+      },
+      {
+        "delta": " comme",
+        "type": "response.delta"
+      },
+      {
+        "delta": " dé",
+        "type": "response.delta"
+      },
+      {
+        "delta": "mon",
+        "type": "response.delta"
+      },
+      {
+        "delta": "stration",
+        "type": "response.delta"
+      },
+      {
+        "delta": " anti",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-b",
+        "type": "response.delta"
+      },
+      {
+        "delta": "rou",
+        "type": "response.delta"
+      },
+      {
+        "delta": "illage",
+        "type": "response.delta"
+      },
+      {
+        "delta": ".",
+        "type": "response.delta"
+      },
+      {
+        "accepted_count": 2,
+        "engine": "basira-v2-exact",
+        "job_id": "job_a4a1058b5a934377861af6ae0905afe1",
+        "status": "pending",
+        "type": "memory.committed"
+      },
+      {
+        "billing_schema": "basira-api-billing/v1",
+        "input_tokens": 237,
+        "output_tokens": 640,
+        "provider_usage": {
+          "completion_tokens": 557,
+          "prompt_tokens": 1200,
+          "total_tokens": 1757
+        },
+        "total_tokens": 877,
+        "type": "usage.final"
+      },
+      {
+        "replayed": false,
+        "turn_id": "public-demo-31020cce83ebaa8462b8",
+        "type": "turn.done"
+      }
+    ]
+  }
+}

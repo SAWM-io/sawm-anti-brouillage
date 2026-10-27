@@ -1,0 +1,10 @@
+{
+  "kind": "civil_http_delivery_calibration",
+  "planned_messages": 20,
+  "outage_seconds": 2.008,
+  "durable_delivered": 20,
+  "volatile_delivered": 5,
+  "duplicates_effects": 0,
+  "sender_restarted": true,
+  "cloud_used": false
+}

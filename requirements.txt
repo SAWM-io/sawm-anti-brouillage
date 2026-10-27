@@ -1,0 +1,2 @@
+# Optional Cloud control plane only. The local delivery lab uses the Python standard library.
+httpx>=0.28,<1

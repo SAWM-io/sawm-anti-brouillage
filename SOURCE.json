@@ -1,0 +1,6 @@
+{
+  "monorepo": "private/not-distributed",
+  "source_commit": "9b5ef79e08a34addf2ada8a9d8a0010177b7ef1e",
+  "source_path": "experiments/resilience-applicative/",
+  "export": "tracked files only"
+}

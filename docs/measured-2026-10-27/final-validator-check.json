@@ -1,0 +1,35 @@
+{
+  "validated": true,
+  "phase": "calibration",
+  "real_api_rerun": false,
+  "original_report_sha256": "aa30b35572c9e091786957b95fe32df77cb63003633180e018dc22301e993621",
+  "literal_recall_proof": {
+    "response_metadata": {
+      "schema": "basira-tsst-evidence/v1",
+      "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+      "memory_space_id": "mem_6d500d795a315684ee02d994",
+      "returned_count": 3,
+      "response_sha256": "62410a8c19e395cc794ea69dffbaf776d25a2e3947d3ab775df2107de8efaadf"
+    },
+    "literal_record_recalled": true,
+    "matching_evidence": [
+      {
+        "evidence_id": "ev_241285abacc33763117a03e72d4f583d",
+        "integrity_verified": true,
+        "literal_record_present": true,
+        "excerpt_sha256": "8ddb67526f3a955e0fd2af190edf8fcb9467eef8083be05b785dd914b1cf3c75"
+      },
+      {
+        "evidence_id": "ev_561cf044a0463613e59f818344a84f96",
+        "integrity_verified": true,
+        "literal_record_present": true,
+        "excerpt_sha256": "9dffcc593078c2ae056ba58675b0dccec6124d523104484c117dc28a24f6051e"
+      }
+    ],
+    "matching_evidence_ids": [
+      "ev_241285abacc33763117a03e72d4f583d",
+      "ev_561cf044a0463613e59f818344a84f96"
+    ],
+    "record_sha256": "8ddb67526f3a955e0fd2af190edf8fcb9467eef8083be05b785dd914b1cf3c75"
+  }
+}

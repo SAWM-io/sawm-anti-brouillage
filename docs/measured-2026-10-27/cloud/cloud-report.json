@@ -1,0 +1,443 @@
+{
+  "schema": "civil-cloud-control/v1",
+  "run_id": "civil-1acf210bc704bce99ca5e3efcc6e52c5",
+  "memory_space_id": "mem_6d500d795a315684ee02d994",
+  "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38",
+  "base_url": "https://basira-api.sawm.io/api/v1/basira",
+  "real_cloud": true,
+  "calls": [
+    {
+      "operation": "basira_deposit",
+      "started_at": "2026-10-27T15:36:29.383099+00:00",
+      "completed": true,
+      "elapsed_ms": 227.428
+    },
+    {
+      "operation": "basira_job_completed",
+      "started_at": "2026-10-27T15:36:29.612373+00:00",
+      "completed": true,
+      "elapsed_ms": 1296.817
+    },
+    {
+      "operation": "tsst_recall",
+      "started_at": "2026-10-27T15:36:30.911026+00:00",
+      "completed": true,
+      "elapsed_ms": 133.389
+    },
+    {
+      "operation": "odvl_delivery_options",
+      "started_at": "2026-10-27T15:36:31.047953+00:00",
+      "completed": true,
+      "elapsed_ms": 87.103
+    },
+    {
+      "operation": "sawm_policy",
+      "started_at": "2026-10-27T15:36:31.137257+00:00",
+      "completed": true,
+      "elapsed_ms": 1292.289
+    }
+  ],
+  "sdk_sha256": "49fff5f136e8da7a123f929de55542570dcc6fa8ad78ba317401ad50d519b397",
+  "calibration_receipt": {
+    "job_id": "job_ecd40750bd79ab3dd675c3c1b8364e4e",
+    "status": "pending",
+    "accepted_count": 1,
+    "pending_count": 1,
+    "processing_count": 0,
+    "completed_count": 0,
+    "dead_letter_count": 0,
+    "semantic_index": "pending",
+    "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38"
+  },
+  "calibration_job": {
+    "job_id": "job_ecd40750bd79ab3dd675c3c1b8364e4e",
+    "status": "completed",
+    "accepted_count": 1,
+    "pending_count": 0,
+    "processing_count": 0,
+    "completed_count": 1,
+    "dead_letter_count": 0,
+    "semantic_index": "ok",
+    "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38"
+  },
+  "calibration_tsst": {
+    "response": {
+      "schema": "basira-tsst-evidence/v1",
+      "memory_space_id": "mem_6d500d795a315684ee02d994",
+      "evidence": [
+        {
+          "evidence_id": "ev_241285abacc33763117a03e72d4f583d",
+          "title": "civil-1acf210bc704bce99ca5e3efcc6e52c5 calibration",
+          "excerpt": "{\"phase\":\"calibration\",\"run_id\":\"civil-1acf210bc704bce99ca5e3efcc6e52c5\",\"schema\":\"civil-lab-summary/v1\",\"source\":\"local_lab_measurements\",\"summary\":{\"cloud_used\":false,\"duplicates_effects\":0,\"durable_delivered\":20,\"kind\":\"civil_http_delivery_calibration\",\"outage_seconds\":2.008,\"planned_messages\":20,\"sender_restarted\":true,\"volatile_delivered\":5}}",
+          "score": 0.75,
+          "status": "observed",
+          "integrity_verified": true,
+          "corroborated": false,
+          "independent_provenances": 0,
+          "event_time": "2026-10-27 15:36:29.383000",
+          "knowledge_time": "2026-10-27 15:36:29.849000",
+          "source": {
+            "reference": "src_45c710cea45c2d88aab38469",
+            "page": null,
+            "section": ""
+          }
+        },
+        {
+          "confidence": 1.0,
+          "revision": 1,
+          "belief_time": "2026-10-27T15:36:29.383000+00:00",
+          "evidence_id": "ev_561cf044a0463613e59f818344a84f96",
+          "title": "civil-1acf210bc704bce99ca5e3efcc6e52c5 calibration",
+          "excerpt": "civil-1acf210bc704bce99ca5e3efcc6e52c5 calibration content {\"phase\":\"calibration\",\"run_id\":\"civil-1acf210bc704bce99ca5e3efcc6e52c5\",\"schema\":\"civil-lab-summary/v1\",\"source\":\"local_lab_measurements\",\"summary\":{\"cloud_used\":false,\"duplicates_effects\":0,\"durable_delivered\":20,\"kind\":\"civil_http_delivery_calibration\",\"outage_seconds\":2.008,\"planned_messages\":20,\"sender_restarted\":true,\"volatile_delivered\":5}}",
+          "score": 0.250749,
+          "status": "observed",
+          "integrity_verified": true,
+          "corroborated": false,
+          "independent_provenances": 1,
+          "event_time": "2026-10-27T15:36:29.383000+00:00",
+          "knowledge_time": "2026-10-27T15:36:30.046000+00:00",
+          "source": {
+            "reference": "src_45c710cea45c2d88aab38469",
+            "page": null,
+            "section": ""
+          }
+        },
+        {
+          "confidence": 1.0,
+          "revision": 1,
+          "belief_time": "2026-10-27T15:36:29.383000+00:00",
+          "evidence_id": "ev_0bdb0988b1e7dabc18bc8c9773cd8cd1",
+          "title": "Resilience applicative - laboratoire civil",
+          "excerpt": "Resilience applicative - laboratoire civil mentionne civil-1acf210bc704bce99ca5e3efcc6e52c5 calibration",
+          "score": 0.205004,
+          "status": "observed",
+          "integrity_verified": true,
+          "corroborated": false,
+          "independent_provenances": 1,
+          "event_time": "2026-10-27T15:36:29.383000+00:00",
+          "knowledge_time": "2026-10-27T15:36:29.939000+00:00",
+          "source": {
+            "reference": "src_45c710cea45c2d88aab38469",
+            "page": null,
+            "section": ""
+          }
+        }
+      ],
+      "count": 3,
+      "flashback": false,
+      "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38"
+    },
+    "literal_record_recalled": true,
+    "matching_evidence_ids": [
+      "ev_241285abacc33763117a03e72d4f583d",
+      "ev_561cf044a0463613e59f818344a84f96"
+    ],
+    "record_sha256": "8ddb67526f3a955e0fd2af190edf8fcb9467eef8083be05b785dd914b1cf3c75"
+  },
+  "delivery_odvl": {
+    "response": {
+      "schema": "basira-odvl-ranking/v1",
+      "memory_space_id": "mem_6d500d795a315684ee02d994",
+      "ranking": [
+        {
+          "candidate_id": "volatile_once",
+          "score": 0.3,
+          "rank": 1
+        },
+        {
+          "candidate_id": "manual_resume",
+          "score": 0.4,
+          "rank": 2
+        },
+        {
+          "candidate_id": "bounded_retry",
+          "score": 0.8,
+          "rank": 3
+        }
+      ],
+      "count": 3,
+      "reordered": true,
+      "ranking_applied": true,
+      "entity_id": "ent_f244ff0184ab7eecd9d3ae6042b80b38"
+    },
+    "order": [
+      "volatile_once",
+      "manual_resume",
+      "bounded_retry"
+    ]
+  },
+  "policy_sawm": {
+    "text": "{\"schema\":\"resilience-retry-policy/v1\",\"max_attempts\":12,\"base_delay_ms\":100,\"max_delay_ms\":1000,\"request_timeout_ms\":500,\"total_budget_ms\":25000}",
+    "done": {
+      "replayed": false,
+      "turn_id": "public-demo-3214b8a69358f3dddcfb",
+      "type": "turn.done"
+    },
+    "memory": {
+      "accepted_count": 2,
+      "engine": "basira-v2-exact",
+      "job_id": "job_4c5954a456fcc0490be0da4739863e67",
+      "status": "pending",
+      "type": "memory.committed"
+    },
+    "usage": {
+      "billing_schema": "basira-api-billing/v1",
+      "input_tokens": 362,
+      "output_tokens": 159,
+      "provider_usage": {
+        "completion_tokens": 50,
+        "prompt_tokens": 902,
+        "total_tokens": 952
+      },
+      "total_tokens": 521,
+      "type": "usage.final"
+    },
+    "events": [
+      {
+        "memory": {
+          "engine": "basira-v2-exact",
+          "evidence_count": 3
+        },
+        "replayed": false,
+        "schema": "sawm-cloud/v1",
+        "session_id": "civil-1acf210bc704bce99ca5e3efcc6e52c5",
+        "turn_id": "public-demo-3214b8a69358f3dddcfb",
+        "type": "turn.accepted"
+      },
+      {
+        "delta": "{\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "schema",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "res",
+        "type": "response.delta"
+      },
+      {
+        "delta": "il",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ience",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-ret",
+        "type": "response.delta"
+      },
+      {
+        "delta": "ry",
+        "type": "response.delta"
+      },
+      {
+        "delta": "-p",
+        "type": "response.delta"
+      },
+      {
+        "delta": "olicy",
+        "type": "response.delta"
+      },
+      {
+        "delta": "/v",
+        "type": "response.delta"
+      },
+      {
+        "delta": "1",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\",\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "max",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_",
+        "type": "response.delta"
+      },
+      {
+        "delta": "attempt",
+        "type": "response.delta"
+      },
+      {
+        "delta": "s",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":",
+        "type": "response.delta"
+      },
+      {
+        "delta": "12",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "base",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_d",
+        "type": "response.delta"
+      },
+      {
+        "delta": "elay",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_ms",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":",
+        "type": "response.delta"
+      },
+      {
+        "delta": "100",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "max",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_d",
+        "type": "response.delta"
+      },
+      {
+        "delta": "elay",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_ms",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":",
+        "type": "response.delta"
+      },
+      {
+        "delta": "100",
+        "type": "response.delta"
+      },
+      {
+        "delta": "0",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "request",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_time",
+        "type": "response.delta"
+      },
+      {
+        "delta": "out",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_ms",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":",
+        "type": "response.delta"
+      },
+      {
+        "delta": "500",
+        "type": "response.delta"
+      },
+      {
+        "delta": ",\"",
+        "type": "response.delta"
+      },
+      {
+        "delta": "total",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_b",
+        "type": "response.delta"
+      },
+      {
+        "delta": "udget",
+        "type": "response.delta"
+      },
+      {
+        "delta": "_ms",
+        "type": "response.delta"
+      },
+      {
+        "delta": "\":",
+        "type": "response.delta"
+      },
+      {
+        "delta": "250",
+        "type": "response.delta"
+      },
+      {
+        "delta": "00",
+        "type": "response.delta"
+      },
+      {
+        "delta": "}",
+        "type": "response.delta"
+      },
+      {
+        "accepted_count": 2,
+        "engine": "basira-v2-exact",
+        "job_id": "job_4c5954a456fcc0490be0da4739863e67",
+        "status": "pending",
+        "type": "memory.committed"
+      },
+      {
+        "billing_schema": "basira-api-billing/v1",
+        "input_tokens": 362,
+        "output_tokens": 159,
+        "provider_usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 902,
+          "total_tokens": 952
+        },
+        "total_tokens": 521,
+        "type": "usage.final"
+      },
+      {
+        "replayed": false,
+        "turn_id": "public-demo-3214b8a69358f3dddcfb",
+        "type": "turn.done"
+      }
+    ]
+  },
+  "policy_validated": true,
+  "policy_sha256": "1965cfb0f0f4ad6b0ba334bc8ba016d9d22125a25c877469e5bc04782fdfbd29",
+  "policy": {
+    "schema": "resilience-retry-policy/v1",
+    "max_attempts": 12,
+    "base_delay_ms": 100,
+    "max_delay_ms": 1000,
+    "request_timeout_ms": 500,
+    "total_budget_ms": 25000
+  }
+}

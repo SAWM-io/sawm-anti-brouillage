@@ -1,0 +1,11 @@
+{
+  "kind": "delivery_measured_results",
+  "messages": 20,
+  "outage_seconds": 2.009,
+  "sender_restarted": true,
+  "durable_unique": 20,
+  "volatile_unique": 5,
+  "duplicates_effects": 0,
+  "cloud_role": "memory, recall, bounded policy; persistence and retries local",
+  "no_cloud_calibration_unique": 20
+}
