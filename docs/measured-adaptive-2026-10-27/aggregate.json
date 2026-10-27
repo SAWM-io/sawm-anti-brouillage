@@ -1,0 +1,983 @@
+{
+  "groups": [
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 24.149208,
+          "mean": 22.918805333333335,
+          "min": 21.330917,
+          "observed": [
+            23.276291,
+            24.149208,
+            21.330917
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 39.825458,
+          "mean": 34.895139,
+          "min": 29.260917,
+          "observed": [
+            29.260917,
+            35.599042,
+            39.825458
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 21.849375,
+          "mean": 20.875625,
+          "min": 19.757625,
+          "observed": [
+            21.019875,
+            21.849375,
+            19.757625
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 39.12275,
+          "mean": 33.994014,
+          "min": 27.715917,
+          "observed": [
+            27.715917,
+            35.143375,
+            39.12275
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "normal",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 22.64925,
+          "mean": 21.856416666666664,
+          "min": 21.221875,
+          "observed": [
+            21.698125,
+            22.64925,
+            21.221875
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 38.851459,
+          "mean": 34.122792,
+          "min": 29.897917,
+          "observed": [
+            38.851459,
+            33.619,
+            29.897917
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 20.676708,
+          "mean": 20.544347000000002,
+          "min": 20.416125,
+          "observed": [
+            20.676708,
+            20.540208,
+            20.416125
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 38.365417,
+          "mean": 33.229653000000006,
+          "min": 28.158417,
+          "observed": [
+            38.365417,
+            33.165125,
+            28.158417
+          ]
+        },
+        "policy_changes": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5,
+          "observed": [
+            5,
+            5,
+            5
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "normal",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 341.659291,
+          "mean": 339.029361,
+          "min": 336.847959,
+          "observed": [
+            341.659291,
+            336.847959,
+            338.580833
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 591.265916,
+          "mean": 588.348597,
+          "min": 584.9705,
+          "observed": [
+            591.265916,
+            588.809375,
+            584.9705
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 340.155166,
+          "mean": 337.48026366666664,
+          "min": 335.146375,
+          "observed": [
+            340.155166,
+            335.146375,
+            337.13925
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 589.799666,
+          "mean": 586.992597,
+          "min": 583.93375,
+          "observed": [
+            589.799666,
+            587.244375,
+            583.93375
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "latency_jump_recovery",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 364.539958,
+          "mean": 359.711972,
+          "min": 356.54475,
+          "observed": [
+            358.051208,
+            364.539958,
+            356.54475
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 616.858875,
+          "mean": 609.3644723333333,
+          "min": 605.4915,
+          "observed": [
+            605.4915,
+            616.858875,
+            605.743042
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 22,
+          "mean": 22.0,
+          "min": 22,
+          "observed": [
+            22,
+            22,
+            22
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 321.207333,
+          "mean": 313.2069583333333,
+          "min": 304.942417,
+          "observed": [
+            304.942417,
+            321.207333,
+            313.471125
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 581.775208,
+          "mean": 575.5581523333334,
+          "min": 571.075333,
+          "observed": [
+            571.075333,
+            581.775208,
+            573.823916
+          ]
+        },
+        "policy_changes": {
+          "max": 21,
+          "mean": 20.0,
+          "min": 19,
+          "observed": [
+            20,
+            19,
+            21
+          ]
+        },
+        "timeouts": {
+          "max": 2,
+          "mean": 2.0,
+          "min": 2,
+          "observed": [
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "latency_jump_recovery",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 28.186417,
+          "mean": 27.144111,
+          "min": 26.366458,
+          "observed": [
+            26.879458,
+            28.186417,
+            26.366458
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 151.021834,
+          "mean": 149.49270833333333,
+          "min": 146.884333,
+          "observed": [
+            150.571958,
+            146.884333,
+            151.021834
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 28,
+          "mean": 28.0,
+          "min": 28,
+          "observed": [
+            28,
+            28,
+            28
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 21.309208,
+          "mean": 20.711541666666665,
+          "min": 19.75575,
+          "observed": [
+            21.069667,
+            19.75575,
+            21.309208
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 36.287459,
+          "mean": 35.322889333333336,
+          "min": 34.184167,
+          "observed": [
+            34.184167,
+            35.497042,
+            36.287459
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "ack_loss_after_commit",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 32.907834,
+          "mean": 32.393806000000005,
+          "min": 32.056667,
+          "observed": [
+            32.907834,
+            32.056667,
+            32.216917
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 157.931083,
+          "mean": 153.88643066666666,
+          "min": 151.511542,
+          "observed": [
+            157.931083,
+            151.511542,
+            152.216667
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 28,
+          "mean": 28.0,
+          "min": 28,
+          "observed": [
+            28,
+            28,
+            28
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 24.438,
+          "mean": 23.775208333333335,
+          "min": 23.324792,
+          "observed": [
+            23.324792,
+            24.438,
+            23.562833
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 47.77575,
+          "mean": 39.697264,
+          "min": 33.99775,
+          "observed": [
+            47.77575,
+            33.99775,
+            37.318292
+          ]
+        },
+        "policy_changes": {
+          "max": 19,
+          "mean": 18.333333333333332,
+          "min": 18,
+          "observed": [
+            19,
+            18,
+            18
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "ack_loss_after_commit",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 723.833875,
+          "mean": 671.3483056666666,
+          "min": 627.293292,
+          "observed": [
+            627.293292,
+            662.91775,
+            723.833875
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 1024.482334,
+          "mean": 974.7684863333334,
+          "min": 939.650917,
+          "observed": [
+            939.650917,
+            960.172208,
+            1024.482334
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 22,
+          "mean": 22.0,
+          "min": 22,
+          "observed": [
+            22,
+            22,
+            22
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 722.424208,
+          "mean": 670.0560833333333,
+          "min": 626.48425,
+          "observed": [
+            626.48425,
+            661.259792,
+            722.424208
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 1022.9915,
+          "mean": 972.8707916666667,
+          "min": 937.422,
+          "observed": [
+            937.422,
+            958.198875,
+            1022.9915
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 1,
+          "mean": 1.0,
+          "min": 1,
+          "observed": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "blackout_return",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 767.595208,
+          "mean": 757.5065416666666,
+          "min": 751.800084,
+          "observed": [
+            767.595208,
+            753.124333,
+            751.800084
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 1117.264166,
+          "mean": 1113.0679166666666,
+          "min": 1108.195959,
+          "observed": [
+            1117.264166,
+            1108.195959,
+            1113.743625
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 25,
+          "mean": 25.0,
+          "min": 25,
+          "observed": [
+            25,
+            25,
+            25
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 766.0915,
+          "mean": 756.375736,
+          "min": 750.88075,
+          "observed": [
+            766.0915,
+            752.154958,
+            750.88075
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 1115.166666,
+          "mean": 1111.209028,
+          "min": 1106.265709,
+          "observed": [
+            1115.166666,
+            1106.265709,
+            1112.194709
+          ]
+        },
+        "policy_changes": {
+          "max": 15,
+          "mean": 14.666666666666666,
+          "min": 14,
+          "observed": [
+            15,
+            15,
+            14
+          ]
+        },
+        "timeouts": {
+          "max": 4,
+          "mean": 4.0,
+          "min": 4,
+          "observed": [
+            4,
+            4,
+            4
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "blackout_return",
+      "runs": 3,
+      "valid_runs": 3
+    }
+  ],
+  "interpretation": "Raw measured observations, including failed runs. Positive latency/attempt deltas mean adaptive used more. No adaptive gain is assumed; three repetitions do not establish general performance.",
+  "paired_deltas": [
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -1.5781659999999995,
+        "ack_p95_ms": 9.590542,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -0.34316699999999756,
+        "delivery_p95_ms": 10.6495,
+        "policy_changes": 5,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -1.499958000000003,
+        "ack_p95_ms": -1.9800419999999974,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -1.3091669999999986,
+        "delivery_p95_ms": -1.9782499999999956,
+        "policy_changes": 5,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -0.10904199999999875,
+        "ack_p95_ms": -9.927540999999998,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 0.6585000000000001,
+        "delivery_p95_ms": -10.964333000000003,
+        "policy_changes": 5,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 16.391916999999978,
+        "ack_p95_ms": 14.225584000000026,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -35.21274900000003,
+        "delivery_p95_ms": -18.724333,
+        "policy_changes": 20,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 27.69199900000001,
+        "ack_p95_ms": 28.049499999999966,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -13.939041999999972,
+        "delivery_p95_ms": -5.46916699999997,
+        "policy_changes": 19,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 17.963917000000038,
+        "ack_p95_ms": 20.77254199999993,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -23.668125000000032,
+        "delivery_p95_ms": -10.109833999999978,
+        "policy_changes": 21,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 6.0283760000000015,
+        "ack_p95_ms": 7.359125000000006,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 2.2551249999999996,
+        "delivery_p95_ms": 13.591583,
+        "policy_changes": 19,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 3.8702499999999986,
+        "ack_p95_ms": 4.6272089999999935,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 4.68225,
+        "delivery_p95_ms": -1.499291999999997,
+        "policy_changes": 18,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 5.850459000000001,
+        "ack_p95_ms": 1.1948329999999885,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 2.2536249999999995,
+        "delivery_p95_ms": 1.0308330000000012,
+        "policy_changes": 18,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 140.301916,
+        "ack_p95_ms": 177.61324899999988,
+        "acked": 0,
+        "attempts": 3,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 139.60725000000002,
+        "delivery_p95_ms": 177.74466600000005,
+        "policy_changes": 15,
+        "timeouts": 3
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 90.20658300000002,
+        "ack_p95_ms": 148.02375099999995,
+        "acked": 0,
+        "attempts": 3,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 90.89516600000002,
+        "delivery_p95_ms": 148.06683399999997,
+        "policy_changes": 15,
+        "timeouts": 3
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 27.966208999999935,
+        "ack_p95_ms": 89.26129100000003,
+        "acked": 0,
+        "attempts": 3,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 28.456542000000013,
+        "delivery_p95_ms": 89.20320900000013,
+        "policy_changes": 14,
+        "timeouts": 3
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 3
+    }
+  ]
+}

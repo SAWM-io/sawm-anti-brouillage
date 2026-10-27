@@ -1,0 +1,161 @@
+{
+  "artifact_sha256": {
+    "arrivals.json": "f8d65bd557705a6fdfbec092fd22ba0929c9643955380067e5379e38d6184ea7",
+    "calibration-postanalysis.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "fixture-events.json": "70cfe267f15b970d0b0ddffdf77428e69c273525dcd35341d12428c1b280a514",
+    "messages.json": "a7d6ffb3fe97a436adf2eb94b0fff3fc71008726f4b2aba46956cc02e4269464",
+    "policy.json": "464e53b3e19d74cab5b1a32ee0ea2cbd058541e3761c1090e9a216a4a620e5a7",
+    "queue-final.json": "0a87d1de615922d2aa829fa880770c2078c9e8324a67dd9123b5a9067a01ca9b",
+    "queue.sqlite": "d6c2aa560b770ac1d594ca53228edff29e6daf1574e39f69769a39f62e44319a",
+    "queue.worker.sqlite": "c118a97d63c34ec87b5e2d4cc56fd965c22d206f958309f52ab408aeb9ecae8c",
+    "recipient.json": "937e974ad542b3d5162a2616730cb9b4369cd2382abc7544d2233db4f4cf5ff8",
+    "restart-snapshot.json": "77bde5e6ad2238ffc0358aa7b338af2ba51e3c721df98707827617ab829c01ee",
+    "witness.sqlite": "47aa4125f42efcbdb2b4536665b436ab284a3f06e8868bcf4cb97ecce9cb443d",
+    "worker-1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "worker-2.log": "d1c6c8b5bf14b8dccad0b1622cb38325bd2e562aa31daeec79f5ee9d4b6d7e96"
+  },
+  "blackout_requests_without_commit": 2,
+  "checks": {
+    "acks_have_committed_effect": true,
+    "all_enqueued_content_matches_plan": true,
+    "all_received_content_matches_source": true,
+    "attempt_count_matches_history": true,
+    "attempt_limits_respected": true,
+    "both_restart_actions_inside_blackout": true,
+    "fixture_without_internal_errors": true,
+    "initial_policy_and_deadline_unchanged": true,
+    "no_content_conflicts": true,
+    "nonnegative_measured_latency": true,
+    "owned_resources_stopped": true,
+    "restart_kept_attempt_counts": true,
+    "restart_kept_attempt_history": true,
+    "restart_kept_metadata_and_deadline": true,
+    "unique_application_effects": true,
+    "within_trial_cap": true,
+    "worker_reached_known_outcome": true
+  },
+  "elapsed_seconds": 1.6202884999802336,
+  "endpoint": {
+    "host": "127.0.0.1",
+    "port": 58742
+  },
+  "finished_at_ms": 1793116782836,
+  "fixture_errors": [],
+  "initial_policy": {
+    "base_delay_ms": 100,
+    "max_attempts": 12,
+    "max_delay_ms": 1000,
+    "request_timeout_ms": 500,
+    "schema": "resilience-retry-policy/v1",
+    "total_budget_ms": 25000
+  },
+  "injected_ack_losses_after_commit": 0,
+  "metrics": {
+    "ack_p50_ms": 662.245375,
+    "ack_p95_ms": 953.370792,
+    "acked": 20,
+    "all_messages_delivered_and_acked": true,
+    "attempts": 22,
+    "calibration_observations": 0,
+    "completed_attempts": 21,
+    "content_conflicts": 0,
+    "delivered_digests": {
+      "demo-7411932b6f76634474add3d46bd490c8-0001": "5339a82b3729189a3b7eeaa2472a04a62492627cee408127c3b6f672f554d4f7",
+      "demo-7411932b6f76634474add3d46bd490c8-0002": "53c9dbf14f24874632909eaa7750bec0ed9c48b1fe56668a12dee66fc4e351d6",
+      "demo-7411932b6f76634474add3d46bd490c8-0003": "d55944ff17274c6e4580f5ae6edd7b6f5e609c5914ac8f9a3f1db672581748a5",
+      "demo-7411932b6f76634474add3d46bd490c8-0004": "aa37a2bb7d9b3b35506bff5f5a5a608e13726f57dc935ef05769c3a9f5d4b892",
+      "demo-7411932b6f76634474add3d46bd490c8-0005": "e10cc252ed86ed51c797c2af81ba61d104396d0df9c7ba7abf1b03f0e3a1a4fb",
+      "demo-7411932b6f76634474add3d46bd490c8-0006": "6859b4a5d9d8bf5b22f108d796a627579d530f71bb9a23bf2e3b7095c719917c",
+      "demo-7411932b6f76634474add3d46bd490c8-0007": "bbbeef1da5abdee3494a376e19dc157bf9e33f5692afca527e961a79d2d7acfc",
+      "demo-7411932b6f76634474add3d46bd490c8-0008": "640f138896847445c22d04beb3d5579e6ca39fdb22deef557a704dca1c5fed03",
+      "demo-7411932b6f76634474add3d46bd490c8-0009": "6ca0b3b6a4895904609576a62fba6d13da7595a911aea1b2d0e44f9503dfc9ec",
+      "demo-7411932b6f76634474add3d46bd490c8-0010": "e8be9dc07dc216d4dc5a9df2e069bbad81cd6fbd18f9b064fb736bc44ae36b50",
+      "demo-7411932b6f76634474add3d46bd490c8-0011": "f7f9781bab899f7c767fb63b02d3a5f53b4fb7606c12e1e0c46525e7d1c90e40",
+      "demo-7411932b6f76634474add3d46bd490c8-0012": "7f982c26a02823c7b11d5acf669d8dbe2a2183fd5db7574d3bb2d2d866faff68",
+      "demo-7411932b6f76634474add3d46bd490c8-0013": "3b4705bb39b7be5101796a5f4bfb64a46fd45c2db0577a72b2ff6e73d76b2285",
+      "demo-7411932b6f76634474add3d46bd490c8-0014": "6b603a18ce33e57336393825773b25bcbde70139582964ae3e9745972edd24fd",
+      "demo-7411932b6f76634474add3d46bd490c8-0015": "dbe4c61dc4cbd87872691f75fe10d844de05a2fc095cb1e2ec308994969a2b1a",
+      "demo-7411932b6f76634474add3d46bd490c8-0016": "f8506e5ae4c7055e87f5bf83c31cedd7230227ecdfbffdf708ee164eea51386a",
+      "demo-7411932b6f76634474add3d46bd490c8-0017": "c2d2e4325ff9f8b6522b3cb6964f0b93ac359c53cef3abb86d31125890479322",
+      "demo-7411932b6f76634474add3d46bd490c8-0018": "7cd4952c9d2379c6a1de0ff5f060d0bdbb22e375f5967cbd2bdde221f7f02413",
+      "demo-7411932b6f76634474add3d46bd490c8-0019": "8adc32a15310bf757fca30808620ee1a14fbcb92b99617ad33e805026403261e",
+      "demo-7411932b6f76634474add3d46bd490c8-0020": "4644efaff1b1bcb35f00e8799e735ac985be8b729c64b3273629a7046323a5a4"
+    },
+    "delivered_unique": 20,
+    "delivery_p50_ms": 660.823334,
+    "delivery_p95_ms": 951.0525,
+    "duplicate_effects": 0,
+    "duplicate_requests": 0,
+    "enqueued": 20,
+    "exhausted": 0,
+    "inflight": 0,
+    "not_delivered": 0,
+    "pending": 0,
+    "planned": 20,
+    "policy_changes": 0,
+    "timeouts": 1,
+    "unacknowledged": 0
+  },
+  "mode": "static",
+  "origin_monotonic_ns": 293360985298750,
+  "profile": "blackout_return",
+  "queue_metadata_initial": {
+    "created_at_ms": 1793116781222,
+    "deadline_monotonic_ns": 293385982954500,
+    "host": "127.0.0.1",
+    "origin_monotonic_ns": 293360982954500,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 58742,
+    "schema": "resilience-queue/v1"
+  },
+  "queue_summary": {
+    "attempts": 22,
+    "planned_messages": 20,
+    "states": {
+      "acked": 20
+    },
+    "worker_runs": [
+      {
+        "finished_at_ms": null,
+        "id": 1,
+        "outcome": null,
+        "started_at_ms": 1793116781284
+      },
+      {
+        "finished_at_ms": 1793116782756,
+        "id": 2,
+        "outcome": "all_acknowledged",
+        "started_at_ms": 1793116782001
+      }
+    ]
+  },
+  "repetition": 1,
+  "restart": {
+    "exit_code": -9,
+    "kill_offset_ms": 610.883,
+    "killed_owned_pid": 94938,
+    "new_owned_pid": 94940,
+    "restart_offset_ms": 709.262583
+  },
+  "schema": "resilience-adaptive-trial/v1",
+  "seed": 20261027,
+  "source_sha256": {
+    "adaptive_lab.py": "9e8e75fa8eadb6aecfbf488f458c4176fa470c9511037c40e60a097c0393775a",
+    "adaptive_policy.py": "f2ae550b15039ea6b2b6d91183056cec630e90227260a3141638c95f1924a877",
+    "delivery.py": "2fb2096bc8ce43b1e8edd2f6767c1127c0f26b2e32680abcf9404c37ee90d451",
+    "witness.py": "679b03e4f637cac120d3eec70b3208ff1015c8009a6e3f10f82593f29c14d60f"
+  },
+  "started_at_ms": 1793116781215,
+  "success": true,
+  "worker_completed": true,
+  "worker_exit_code": 0,
+  "worker_outcome": "all_acknowledged"
+}

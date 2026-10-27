@@ -1,0 +1,1193 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 12.717166,
+      "error": null,
+      "finished_monotonic_ns": 293696021619791,
+      "http_status": 200,
+      "id": 1,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0001",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696008599125
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.715625,
+      "error": null,
+      "finished_monotonic_ns": 293696037024708,
+      "http_status": 200,
+      "id": 2,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0002",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696022077375
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 13.625625,
+      "error": null,
+      "finished_monotonic_ns": 293696065199166,
+      "http_status": 200,
+      "id": 3,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0003",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696051287625
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 11.0145,
+      "error": null,
+      "finished_monotonic_ns": 293696114108250,
+      "http_status": 200,
+      "id": 4,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0004",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696102730500
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.4245,
+      "error": null,
+      "finished_monotonic_ns": 293696178943333,
+      "http_status": 200,
+      "id": 5,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0005",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696162956875
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.683959,
+      "error": null,
+      "finished_monotonic_ns": 293696219819875,
+      "http_status": 200,
+      "id": 6,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0006",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696203373250
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.657875,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696274301750,
+      "http_status": null,
+      "id": 7,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0007",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696257120250
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 16.228458,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696330813208,
+      "http_status": null,
+      "id": 8,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0008",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696313287375
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 17.236208,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696375906416,
+      "http_status": null,
+      "id": 9,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0009",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696357208875
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 17.939333,
+      "error": null,
+      "finished_monotonic_ns": 293696395866458,
+      "http_status": 200,
+      "id": 10,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0007",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696377268583
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 13.390958,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696424434208,
+      "http_status": null,
+      "id": 11,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0010",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696409831916
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 13.427083,
+      "error": null,
+      "finished_monotonic_ns": 293696453759291,
+      "http_status": 200,
+      "id": 12,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0008",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696438668125
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 13.327333,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696469658833,
+      "http_status": null,
+      "id": 13,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0011",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696455399750
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 14.1425,
+      "error": null,
+      "finished_monotonic_ns": 293696499204708,
+      "http_status": 200,
+      "id": 14,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0009",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696483757416
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.446042,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696528906000,
+      "http_status": null,
+      "id": 15,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0012",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696513376291
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 16.741041,
+      "error": null,
+      "finished_monotonic_ns": 293696548534916,
+      "http_status": 200,
+      "id": 16,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0010",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696531011625
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 13.765875,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696578720125,
+      "http_status": null,
+      "id": 17,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0013",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696563562833
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 14.189875,
+      "error": null,
+      "finished_monotonic_ns": 293696595122833,
+      "http_status": 200,
+      "id": 18,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0011",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696580145583
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 12.853875,
+      "error": "connection_closed_without_ack",
+      "finished_monotonic_ns": 293696623093541,
+      "http_status": null,
+      "id": 19,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0014",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 293696609301708
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 14.834125,
+      "error": null,
+      "finished_monotonic_ns": 293696651906083,
+      "http_status": 200,
+      "id": 20,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0012",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696635776041
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.785208,
+      "error": null,
+      "finished_monotonic_ns": 293696668726791,
+      "http_status": 200,
+      "id": 21,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0015",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696653112041
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 13.010625,
+      "error": null,
+      "finished_monotonic_ns": 293696695122250,
+      "http_status": 200,
+      "id": 22,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0013",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696680345916
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 17.610541,
+      "error": null,
+      "finished_monotonic_ns": 293696728246291,
+      "http_status": 200,
+      "id": 23,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0016",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696709656750
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 1,
+      "duration_ms": 12.392667,
+      "error": null,
+      "finished_monotonic_ns": 293696743552500,
+      "http_status": 200,
+      "id": 24,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0014",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696730305125
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.982458,
+      "error": null,
+      "finished_monotonic_ns": 293696773701958,
+      "http_status": 200,
+      "id": 25,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0017",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696757681333
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.798708,
+      "error": null,
+      "finished_monotonic_ns": 293696832032833,
+      "http_status": 200,
+      "id": 26,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0018",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696814915625
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 17.675208,
+      "error": null,
+      "finished_monotonic_ns": 293696878150666,
+      "http_status": 200,
+      "id": 27,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0019",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696858837041
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 16.370291,
+      "error": null,
+      "finished_monotonic_ns": 293696922447166,
+      "http_status": 200,
+      "id": 28,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0020",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293696904928166
+    }
+  ],
+  "messages": [
+    {
+      "acked_at_ms": 1793117116263,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000000,\"created_monotonic_ns\":0,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0001\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":1,\"value\":7}",
+      "digest": "cda09da302b0554727e5538f8661b5b1942d042cfdf4b4c82ac6f3c0211221c5",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0001",
+      "next_attempt_ns": 293695953241625,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116278,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000050,\"created_monotonic_ns\":50000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0002\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":2,\"value\":14}",
+      "digest": "eb9729ea028610f22bae1b22efd689cbc54cb94763f1df4055cd18dd27ad36d8",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0002",
+      "next_attempt_ns": 293695999549750,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116307,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000100,\"created_monotonic_ns\":100000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0003\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":3,\"value\":21}",
+      "digest": "987f0fdce87a138fb569b9d990f6c418db7eb16ac97dc2e8032c4cfcec82986c",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0003",
+      "next_attempt_ns": 293696049599666,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116355,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000150,\"created_monotonic_ns\":150000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0004\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":4,\"value\":28}",
+      "digest": "0dd05bf3214a9b3aff39e8fbd9c6a93c54883dafa884dbe8b2bb3a581c9f16b9",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0004",
+      "next_attempt_ns": 293696100407833,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116420,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000200,\"created_monotonic_ns\":200000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0005\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":5,\"value\":35}",
+      "digest": "d11b096009b9d86edf1f55023a16a275ac69e038356aedf04f466f9acfab8753",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0005",
+      "next_attempt_ns": 293696150340458,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116461,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000250,\"created_monotonic_ns\":250000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0006\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":6,\"value\":42}",
+      "digest": "3d432dd69f3c0e5e789567b097dab447b57ede90a40eb564a7560b76e0e0f42b",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0006",
+      "next_attempt_ns": 293696200739041,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116637,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000300,\"created_monotonic_ns\":300000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0007\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":7,\"value\":49}",
+      "digest": "67104785218a53c4aeb174af23c8fe4168f44a1a27f034f8ffc986dd92dba7a2",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0007",
+      "next_attempt_ns": 293696374369458,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116695,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000350,\"created_monotonic_ns\":350000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0008\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":8,\"value\":56}",
+      "digest": "9c617c756c8c6daa3c9217c2aa6fb0f5787ea59e011b822a1eb71895baab7e9b",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0008",
+      "next_attempt_ns": 293696430902083,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116741,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000400,\"created_monotonic_ns\":400000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0009\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":9,\"value\":63}",
+      "digest": "1fd7a84678a3d7e0e73143ea1c4edca7b6f57ca1de4331f3c303d6049bfea535",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0009",
+      "next_attempt_ns": 293696475969375,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116790,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000450,\"created_monotonic_ns\":450000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0010\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":10,\"value\":70}",
+      "digest": "edcbd0c8e0fdb0a6a761f96da935b9b3f0a1ef3d29f5cdb63b4f13cf280bad94",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0010",
+      "next_attempt_ns": 293696524554458,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116836,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000500,\"created_monotonic_ns\":500000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0011\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":11,\"value\":77}",
+      "digest": "4797c11f027a9dcf177d2e15c36d2b85d92812c1d3119d3591c6ca77b72db5e4",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0011",
+      "next_attempt_ns": 293696569733125,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116893,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000550,\"created_monotonic_ns\":550000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0012\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":12,\"value\":84}",
+      "digest": "ae7e93b0ea5a42a7e84b899a76238a04738a3663a3ab5216c39bd09968019180",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0012",
+      "next_attempt_ns": 293696629000708,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116936,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000600,\"created_monotonic_ns\":600000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0013\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":13,\"value\":91}",
+      "digest": "fe3cd56648fb11963050b8bf298dd2f7b5f01b62e0f8f464d664185bc94379a5",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0013",
+      "next_attempt_ns": 293696678772583,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116985,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000000650,\"created_monotonic_ns\":650000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0014\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":14,\"value\":98}",
+      "digest": "a8822a580ca33f60dcb0a175546d789e77064415885a1e1ea6a22df40c977a8d",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0014",
+      "next_attempt_ns": 293696723148916,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116910,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000700,\"created_monotonic_ns\":700000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0015\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":15,\"value\":105}",
+      "digest": "2d039247ec6ffe6fa2238c5684ff13c21fe2d1fba1553c930f72df5b7855944e",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0015",
+      "next_attempt_ns": 293696650402375,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117116970,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000750,\"created_monotonic_ns\":750000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0016\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":16,\"value\":112}",
+      "digest": "f0c4a437a322d713534035769ecafadce8ce9552a5c728be89b402df557b69e7",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0016",
+      "next_attempt_ns": 293696700176875,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117117015,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000800,\"created_monotonic_ns\":800000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0017\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":17,\"value\":119}",
+      "digest": "ccc88866e64dd47d605601e2d014570ba1a371ae6aa16fc870ea11b059d5f496",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0017",
+      "next_attempt_ns": 293696751169708,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117117073,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000850,\"created_monotonic_ns\":850000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0018\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":18,\"value\":126}",
+      "digest": "3d3bd3b0f76ed7ae6e6920046521eb99d26303446b9d154173b4515379193a60",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0018",
+      "next_attempt_ns": 293696802167041,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117117120,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000900,\"created_monotonic_ns\":900000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0019\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":19,\"value\":133}",
+      "digest": "fd57620f73656035d6dd961402d0061fbfd3717b9c789179f04d632619990e87",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0019",
+      "next_attempt_ns": 293696850632500,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117117164,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000950,\"created_monotonic_ns\":950000000,\"message_id\":\"demo-3051886cb8bdf12d9393c1d04495f87d-0020\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":20,\"value\":140}",
+      "digest": "2feb2bd9053266def08fd24220b96db35c1a0640f61cb51d7a959da9c4774ec6",
+      "last_error": null,
+      "message_id": "demo-3051886cb8bdf12d9393c1d04495f87d-0020",
+      "next_attempt_ns": 293696901402791,
+      "state": "acked"
+    }
+  ],
+  "metadata": {
+    "adaptive_algorithm": "bounded-rto/v2",
+    "created_at_ms": 1793117116188,
+    "deadline_monotonic_ns": 293720946749458,
+    "delivery_mode": "adaptive",
+    "host": "127.0.0.1",
+    "origin_monotonic_ns": 293695946749458,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 60156,
+    "schema": "resilience-queue/v1"
+  },
+  "summary": {
+    "adaptive": {
+      "calibration_trace": [
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 1,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 1,
+            "rttvar_ms": 6.358583,
+            "srtt_ms": 12.717166,
+            "timeout_observations": 0,
+            "verified_acks": 1
+          },
+          "new_request_timeout_ms": 64,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 500,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 12.717166
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 2,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 2,
+            "rttvar_ms": 5.268552,
+            "srtt_ms": 12.966973375,
+            "timeout_observations": 0,
+            "verified_acks": 2
+          },
+          "new_request_timeout_ms": 60,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 64,
+          "old_retry_delay_ms": 50,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.715625
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 3,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 3,
+            "rttvar_ms": 4.116076906249999,
+            "srtt_ms": 13.049304828125,
+            "timeout_observations": 0,
+            "verified_acks": 3
+          },
+          "new_request_timeout_ms": 55,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 60,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 13.625625
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 4,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 4,
+            "rttvar_ms": 3.5957588867187495,
+            "srtt_ms": 12.794954224609375,
+            "timeout_observations": 0,
+            "verified_acks": 4
+          },
+          "new_request_timeout_ms": 53,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 55,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 11.0145
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 5,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 5,
+            "rttvar_ms": 3.3542056088867183,
+            "srtt_ms": 13.123647446533203,
+            "timeout_observations": 0,
+            "verified_acks": 5
+          },
+          "new_request_timeout_ms": 52,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 53,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 15.4245
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 6,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 6,
+            "rttvar_ms": 3.1557320950317376,
+            "srtt_ms": 13.443686390716554,
+            "timeout_observations": 0,
+            "verified_acks": 6
+          },
+          "new_request_timeout_ms": 52,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 52,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 15.683959
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 7,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 7,
+            "rttvar_ms": 3.1557320950317376,
+            "srtt_ms": 13.443686390716554,
+            "timeout_observations": 0,
+            "verified_acks": 6
+          },
+          "new_request_timeout_ms": 52,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 52,
+          "old_retry_delay_ms": 25,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 8,
+          "metrics": {
+            "consecutive_failures": 2,
+            "observed_attempts": 8,
+            "rttvar_ms": 3.1557320950317376,
+            "srtt_ms": 13.443686390716554,
+            "timeout_observations": 0,
+            "verified_acks": 6
+          },
+          "new_request_timeout_ms": 52,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 52,
+          "old_retry_delay_ms": 100,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 9,
+          "metrics": {
+            "consecutive_failures": 3,
+            "observed_attempts": 9,
+            "rttvar_ms": 3.1557320950317376,
+            "srtt_ms": 13.443686390716554,
+            "timeout_observations": 0,
+            "verified_acks": 6
+          },
+          "new_request_timeout_ms": 52,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 52,
+          "old_retry_delay_ms": 100,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 10,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 10,
+            "rttvar_ms": 3.490710723594665,
+            "srtt_ms": 14.005642216876986,
+            "timeout_observations": 0,
+            "verified_acks": 7
+          },
+          "new_request_timeout_ms": 53,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 52,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 17.939333
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 11,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 11,
+            "rttvar_ms": 3.490710723594665,
+            "srtt_ms": 14.005642216876986,
+            "timeout_observations": 0,
+            "verified_acks": 7
+          },
+          "new_request_timeout_ms": 53,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 53,
+          "old_retry_delay_ms": 50,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 12,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 12,
+            "rttvar_ms": 2.7626728469152453,
+            "srtt_ms": 13.933322314767361,
+            "timeout_observations": 0,
+            "verified_acks": 8
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 53,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 13.427083
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 13,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 13,
+            "rttvar_ms": 2.7626728469152453,
+            "srtt_ms": 13.933322314767361,
+            "timeout_observations": 0,
+            "verified_acks": 8
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 50,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 14,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 14,
+            "rttvar_ms": 2.1242990564945936,
+            "srtt_ms": 13.95946952542144,
+            "timeout_observations": 0,
+            "verified_acks": 9
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.1425
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 15,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 15,
+            "rttvar_ms": 2.1242990564945936,
+            "srtt_ms": 13.95946952542144,
+            "timeout_observations": 0,
+            "verified_acks": 9
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 50,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 16,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 16,
+            "rttvar_ms": 2.288617161015585,
+            "srtt_ms": 14.30716595974376,
+            "timeout_observations": 0,
+            "verified_acks": 10
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 16.741041
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 17,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 17,
+            "rttvar_ms": 2.288617161015585,
+            "srtt_ms": 14.30716595974376,
+            "timeout_observations": 0,
+            "verified_acks": 10
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 50,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 18,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 18,
+            "rttvar_ms": 1.7457856106976286,
+            "srtt_ms": 14.29250458977579,
+            "timeout_observations": 0,
+            "verified_acks": 11
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.189875
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 19,
+          "metrics": {
+            "consecutive_failures": 1,
+            "observed_attempts": 19,
+            "rttvar_ms": 1.7457856106976286,
+            "srtt_ms": 14.29250458977579,
+            "timeout_observations": 0,
+            "verified_acks": 11
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 100,
+          "observed_error": "connection_closed_without_ack",
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 50,
+          "reason": "ambiguous_ack_no_rtt_sample",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": null
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 20,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 20,
+            "rttvar_ms": 1.4447443105792739,
+            "srtt_ms": 14.360207141053817,
+            "timeout_observations": 0,
+            "verified_acks": 12
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 50,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 100,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.834125
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 21,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 21,
+            "rttvar_ms": 1.1898084476710014,
+            "srtt_ms": 14.413332248422089,
+            "timeout_observations": 0,
+            "verified_acks": 13
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 50,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.785208
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 22,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 22,
+            "rttvar_ms": 1.2430331478587733,
+            "srtt_ms": 14.237993842369328,
+            "timeout_observations": 0,
+            "verified_acks": 14
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 13.010625
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 23,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 23,
+            "rttvar_ms": 1.7754116503017485,
+            "srtt_ms": 14.659562237073162,
+            "timeout_observations": 0,
+            "verified_acks": 15
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 17.610541
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 24,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 24,
+            "rttvar_ms": 1.898282546994602,
+            "srtt_ms": 14.376200332439018,
+            "timeout_observations": 0,
+            "verified_acks": 16
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 12.392667
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 25,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 25,
+            "rttvar_ms": 1.575276327136197,
+            "srtt_ms": 14.45198254088414,
+            "timeout_observations": 0,
+            "verified_acks": 17
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.982458
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 26,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 26,
+            "rttvar_ms": 1.2681386101311125,
+            "srtt_ms": 14.495323223273623,
+            "timeout_observations": 0,
+            "verified_acks": 18
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 14.798708
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 27,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 27,
+            "rttvar_ms": 1.7460751517799291,
+            "srtt_ms": 14.892808820364419,
+            "timeout_observations": 0,
+            "verified_acks": 19
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 17.675208
+        },
+        {
+          "algorithm": "bounded-rto/v2",
+          "attempt_id": 28,
+          "metrics": {
+            "consecutive_failures": 0,
+            "observed_attempts": 28,
+            "rttvar_ms": 1.6789269087438425,
+            "srtt_ms": 15.077494092818867,
+            "timeout_observations": 0,
+            "verified_acks": 20
+          },
+          "new_request_timeout_ms": 50,
+          "new_retry_delay_ms": 25,
+          "observed_error": null,
+          "old_request_timeout_ms": 50,
+          "old_retry_delay_ms": 25,
+          "reason": "verified_ack_rtt",
+          "schema": "resilience-calibration-event/v1",
+          "timeout_censored_ms": null,
+          "verified_rtt_ms": 16.370291
+        }
+      ],
+      "state": {
+        "consecutive_failures": 0,
+        "limits": {
+          "algorithm": "bounded-rto/v2",
+          "deadline_monotonic_ns": 293720946749458,
+          "origin_monotonic_ns": 293695946749458,
+          "planned_messages": 20,
+          "policy": {
+            "base_delay_ms": 100,
+            "max_attempts": 12,
+            "max_delay_ms": 1000,
+            "request_timeout_ms": 500,
+            "schema": "resilience-retry-policy/v1",
+            "total_budget_ms": 25000
+          }
+        },
+        "observed_attempts": 28,
+        "request_timeout_ms": 50,
+        "retry_delay_ms": 25,
+        "rttvar_ms": 1.6789269087438425,
+        "schema": "resilience-adaptive-state/v1",
+        "srtt_ms": 15.077494092818867,
+        "timeout_observations": 0,
+        "verified_acks": 20
+      }
+    },
+    "attempts": 28,
+    "planned_messages": 20,
+    "states": {
+      "acked": 20
+    },
+    "worker_runs": [
+      {
+        "finished_at_ms": 1793117117165,
+        "id": 1,
+        "outcome": "all_acknowledged",
+        "started_at_ms": 1793117116250
+      }
+    ]
+  }
+}

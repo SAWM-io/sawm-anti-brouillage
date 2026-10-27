@@ -13,6 +13,8 @@ import socket
 import sqlite3
 import time
 
+import adaptive_policy
+
 HOST = "127.0.0.1"
 POLICY_SCHEMA = "resilience-retry-policy/v1"
 MESSAGE_SCHEMA = "resilience-demo-message/v1"
@@ -106,8 +108,10 @@ def connect_db(path):
     return connection
 
 
-def create_queue(path, port, count, policy=None):
+def create_queue(path, port, count, policy=None, *, adaptive=False):
     policy = validate_policy(policy or DEFAULT_POLICY)
+    if type(adaptive) is not bool:
+        raise Refused("invalid_adaptive_mode")
     if type(port) is not int or not 1 <= port <= 65535 or type(count) is not int or not 3 <= count <= 20:
         raise Refused("invalid_queue_parameters")
     path = Path(path)
@@ -120,6 +124,9 @@ def create_queue(path, port, count, policy=None):
                 "policy": policy, "origin_monotonic_ns": now_ns,
                 "deadline_monotonic_ns": now_ns + policy["total_budget_ms"] * 1_000_000,
                 "created_at_ms": time.time_ns() // 1_000_000}
+    if adaptive:
+        metadata["delivery_mode"] = "adaptive"
+        metadata["adaptive_algorithm"] = adaptive_policy.ALGORITHM
     with contextlib.closing(connect_db(path)) as db, db:
         db.executescript("""
         CREATE TABLE metadata (singleton INTEGER PRIMARY KEY CHECK(singleton=1), json TEXT NOT NULL);
@@ -137,6 +144,10 @@ def create_queue(path, port, count, policy=None):
           id INTEGER PRIMARY KEY, started_at_ms INTEGER NOT NULL, finished_at_ms INTEGER, outcome TEXT);
         """)
         db.execute("INSERT INTO metadata VALUES(1,?)", (canonical(metadata),))
+        if adaptive:
+            db.execute("CREATE TABLE adaptive_state (singleton INTEGER PRIMARY KEY CHECK(singleton=1), json TEXT NOT NULL)")
+            db.execute("CREATE TABLE calibration_events (attempt_id INTEGER PRIMARY KEY, json TEXT NOT NULL)")
+            db.execute("INSERT INTO adaptive_state VALUES(1,?)", (canonical(adaptive_policy.initial_state(metadata)),))
     return metadata
 
 
@@ -147,6 +158,15 @@ def metadata_for(db):
     value = strict_json(row[0])
     if value.get("schema") != "resilience-queue/v1" or value.get("host") != HOST:
         raise Refused("queue_scope_invalid")
+    mode = value.get("delivery_mode", "static")
+    adaptive_tables = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name IN ('adaptive_state','calibration_events')")}
+    if (mode not in {"static", "adaptive"} or
+            (mode == "adaptive" and adaptive_tables != {"adaptive_state", "calibration_events"}) or
+            (mode == "static" and adaptive_tables)):
+        raise Refused("queue_delivery_mode_invalid")
+    if "adaptive_algorithm" in value and (mode != "adaptive" or value["adaptive_algorithm"] not in
+                                           (adaptive_policy.LEGACY_ALGORITHM, adaptive_policy.ALGORITHM)):
+        raise Refused("queue_adaptive_algorithm_invalid")
     validate_policy(value["policy"])
     if type(value.get("port")) is not int or not 1 <= value["port"] <= 65535:
         raise Refused("queue_port_invalid")
@@ -157,6 +177,55 @@ def metadata_for(db):
     if value["deadline_monotonic_ns"] - value["origin_monotonic_ns"] != value["policy"]["total_budget_ms"] * 1_000_000:
         raise Refused("queue_budget_invalid")
     return value
+
+
+def adaptive_snapshot(db, metadata):
+    # Multiple SELECTs must see one committed version, including while another
+    # process is completing an attempt. A savepoint also preserves any caller's
+    # surrounding transaction without committing it.
+    db.execute("SAVEPOINT adaptive_read")
+    try:
+        return _adaptive_snapshot(db, metadata)
+    finally:
+        db.execute("RELEASE SAVEPOINT adaptive_read")
+
+
+def _adaptive_snapshot(db, metadata):
+    """Replay completed attempts to reject inconsistent state and trace on restart.
+
+    The SQLite file is local trusted storage, not an authenticated remote log.
+    Replay detects state/trace/config corruption; it does not authenticate a
+    database rewritten consistently by someone controlling the entire file.
+    """
+    try:
+        row = db.execute("SELECT json FROM adaptive_state WHERE singleton=1").fetchone()
+        if row is None:
+            raise Refused("adaptive_state_missing")
+        saved = strict_json(row[0])
+        adaptive_policy.validate_state(metadata, saved)
+        state = adaptive_policy.initial_state(metadata)
+        events = {r[0]: strict_json(r[1]) for r in db.execute("SELECT attempt_id,json FROM calibration_events ORDER BY attempt_id")}
+        trace = []
+        for attempt in db.execute("SELECT * FROM attempts ORDER BY id"):
+            if attempt["result"] in {"started", "interrupted_unknown"}:
+                if attempt["finished_monotonic_ns"] is not None or attempt["id"] in events:
+                    raise Refused("adaptive_unfinished_observation")
+                continue
+            if attempt["result"] not in {"ack_verified", "unacknowledged"} or attempt["finished_monotonic_ns"] is None:
+                raise Refused("adaptive_attempt_invalid")
+            verified = attempt["result"] == "ack_verified"
+            if verified and (attempt["http_status"] != 200 or attempt["duplicate_ack"] not in (0, 1)):
+                raise Refused("adaptive_ack_record_invalid")
+            result = {"ack_verified": verified, "duration_ms": attempt["duration_ms"], "error": attempt["error"]}
+            state, event = adaptive_policy.observe(metadata, state, result, attempt["id"])
+            if canonical(events.pop(attempt["id"], None)) != canonical(event):
+                raise Refused("adaptive_trace_mismatch")
+            trace.append(event)
+        if events or canonical(saved) != canonical(state):
+            raise Refused("adaptive_state_mismatch")
+        return {"state": state, "calibration_trace": trace}
+    except adaptive_policy.InvalidAdaptiveState as exc:
+        raise Refused(str(exc)) from exc
 
 
 def enqueue(path, message):
@@ -262,9 +331,12 @@ def queue_summary(path):
     with contextlib.closing(connect_db(path)) as db:
         metadata = metadata_for(db)
         states = {row[0]: row[1] for row in db.execute("SELECT state,count(*) FROM messages GROUP BY state")}
-        return {"planned_messages": metadata["planned_messages"], "states": states,
+        result = {"planned_messages": metadata["planned_messages"], "states": states,
                 "attempts": db.execute("SELECT count(*) FROM attempts").fetchone()[0],
                 "worker_runs": [dict(r) for r in db.execute("SELECT * FROM worker_runs ORDER BY id")]}
+        if metadata.get("delivery_mode") == "adaptive":
+            result["adaptive"] = adaptive_snapshot(db, metadata)
+        return result
 
 
 def work(path):
@@ -274,6 +346,8 @@ def work(path):
     with worker_guard(path), contextlib.closing(connect_db(path)) as db:
         metadata = metadata_for(db)
         policy = metadata["policy"]
+        adaptive = metadata.get("delivery_mode") == "adaptive"
+        controller = adaptive_snapshot(db, metadata)["state"] if adaptive else None
         if time.monotonic_ns() < metadata["origin_monotonic_ns"]:
             raise Refused("host_monotonic_clock_changed")
         with db:
@@ -305,25 +379,35 @@ def work(path):
                 attempt = row["attempts"] + 1
                 started = time.monotonic_ns()
                 remaining_ms = (metadata["deadline_monotonic_ns"] - started) // 1_000_000
-                if remaining_ms < policy["request_timeout_ms"] * 3:
+                request_timeout_ms = controller["request_timeout_ms"] if adaptive else policy["request_timeout_ms"]
+                if remaining_ms < request_timeout_ms * 3:
                     break
                 with db:
                     db.execute("UPDATE messages SET state='inflight',attempts=? WHERE message_id=?", (attempt, row["message_id"]))
                     attempt_id = db.execute("INSERT INTO attempts(message_id,attempt,started_monotonic_ns,result) VALUES(?,?,?,'started')",
                                             (row["message_id"], attempt, started)).lastrowid
-                result = send_once(metadata["port"], "durable", message, policy["request_timeout_ms"])
+                result = send_once(metadata["port"], "durable", message, request_timeout_ms)
                 with db:
+                    if adaptive:
+                        try:
+                            controller, calibration = adaptive_policy.observe(metadata, controller, result, attempt_id)
+                        except adaptive_policy.InvalidAdaptiveState as exc:
+                            raise Refused(str(exc)) from exc
                     if result["ack_verified"]:
                         db.execute("UPDATE messages SET state='acked',acked_at_ms=?,last_error=NULL WHERE message_id=?",
                                    (time.time_ns() // 1_000_000, row["message_id"]))
                     else:
-                        delay_ms = min(policy["max_delay_ms"], policy["base_delay_ms"] * 2 ** (attempt - 1))
+                        delay_ms = (controller["retry_delay_ms"] if adaptive else
+                                    min(policy["max_delay_ms"], policy["base_delay_ms"] * 2 ** (attempt - 1)))
                         state = "exhausted" if attempt >= policy["max_attempts"] else "pending"
                         db.execute("UPDATE messages SET state=?,next_attempt_ns=?,last_error=? WHERE message_id=?",
                                    (state, time.monotonic_ns() + delay_ms * 1_000_000, result["error"], row["message_id"]))
                     db.execute("UPDATE attempts SET finished_monotonic_ns=?,result=?,duration_ms=?,error=?,http_status=?,duplicate_ack=? WHERE id=?",
                                (result["finished_monotonic_ns"], "ack_verified" if result["ack_verified"] else "unacknowledged",
                                 result["duration_ms"], result["error"], result["http_status"], int(result["duplicate_ack"]), attempt_id))
+                    if adaptive:
+                        db.execute("UPDATE adaptive_state SET json=? WHERE singleton=1", (canonical(controller),))
+                        db.execute("INSERT INTO calibration_events VALUES(?,?)", (attempt_id, canonical(calibration)))
         except BaseException:
             outcome = "worker_error"
             raise

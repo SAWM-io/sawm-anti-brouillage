@@ -1,0 +1,8 @@
+{
+  "base_delay_ms": 100,
+  "max_attempts": 12,
+  "max_delay_ms": 1000,
+  "request_timeout_ms": 500,
+  "schema": "resilience-retry-policy/v1",
+  "total_budget_ms": 25000
+}

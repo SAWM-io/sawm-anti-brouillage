@@ -1,0 +1,142 @@
+{
+  "artifact_sha256": {
+    "arrivals.json": "3b950b533514fd9080e684fcd9d5f6b3d493d43ce712805b2d5e39bfb23c7132",
+    "calibration-postanalysis.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "fixture-events.json": "c7249c348a90d39b84a52f479c1707117bd595aac48f82a9ae8419011635017a",
+    "messages.json": "dd8eda30267c5f02bcf1001027d458f72569bb5a6f0f0f774741a0085a419ec6",
+    "policy.json": "464e53b3e19d74cab5b1a32ee0ea2cbd058541e3761c1090e9a216a4a620e5a7",
+    "queue-final.json": "00998de83b7bd7747544251c4563684af4c01721eb45af2f257d6551c43d9f3d",
+    "queue.sqlite": "81ec2fef239ee6f10f22000fa8ce6b3c7db6cf148cf114175d4c3c4e8a46049c",
+    "queue.worker.sqlite": "c118a97d63c34ec87b5e2d4cc56fd965c22d206f958309f52ab408aeb9ecae8c",
+    "recipient.json": "9bafbf4c1e40067cace204767a38faab4a8ccf18ba820da84474f8b52ca83dbe",
+    "witness.sqlite": "cdbde39560d0e907b4f9941a09f2d88612e7f8ddfaef82a37db49b2269f80d99",
+    "worker-1.log": "23c07209aa74436b6de769901ecad4dec162bad5d1c6629363b21d84ad7c964a"
+  },
+  "blackout_requests_without_commit": 0,
+  "checks": {
+    "acks_have_committed_effect": true,
+    "all_enqueued_content_matches_plan": true,
+    "all_received_content_matches_source": true,
+    "attempt_count_matches_history": true,
+    "attempt_limits_respected": true,
+    "fixture_without_internal_errors": true,
+    "initial_policy_and_deadline_unchanged": true,
+    "no_content_conflicts": true,
+    "nonnegative_measured_latency": true,
+    "owned_resources_stopped": true,
+    "unique_application_effects": true,
+    "within_trial_cap": true,
+    "worker_reached_known_outcome": true
+  },
+  "elapsed_seconds": 1.091065167041961,
+  "endpoint": {
+    "host": "127.0.0.1",
+    "port": 59059
+  },
+  "finished_at_ms": 1793116799361,
+  "fixture_errors": [],
+  "initial_policy": {
+    "base_delay_ms": 100,
+    "max_attempts": 12,
+    "max_delay_ms": 1000,
+    "request_timeout_ms": 500,
+    "schema": "resilience-retry-policy/v1",
+    "total_budget_ms": 25000
+  },
+  "injected_ack_losses_after_commit": 8,
+  "metrics": {
+    "ack_p50_ms": 30.042459,
+    "ack_p95_ms": 155.761042,
+    "acked": 20,
+    "all_messages_delivered_and_acked": true,
+    "attempts": 28,
+    "calibration_observations": 0,
+    "completed_attempts": 28,
+    "content_conflicts": 0,
+    "delivered_digests": {
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0001": "cda09da302b0554727e5538f8661b5b1942d042cfdf4b4c82ac6f3c0211221c5",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0002": "eb9729ea028610f22bae1b22efd689cbc54cb94763f1df4055cd18dd27ad36d8",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0003": "987f0fdce87a138fb569b9d990f6c418db7eb16ac97dc2e8032c4cfcec82986c",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0004": "0dd05bf3214a9b3aff39e8fbd9c6a93c54883dafa884dbe8b2bb3a581c9f16b9",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0005": "d11b096009b9d86edf1f55023a16a275ac69e038356aedf04f466f9acfab8753",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0006": "3d432dd69f3c0e5e789567b097dab447b57ede90a40eb564a7560b76e0e0f42b",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0007": "67104785218a53c4aeb174af23c8fe4168f44a1a27f034f8ffc986dd92dba7a2",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0008": "9c617c756c8c6daa3c9217c2aa6fb0f5787ea59e011b822a1eb71895baab7e9b",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0009": "1fd7a84678a3d7e0e73143ea1c4edca7b6f57ca1de4331f3c303d6049bfea535",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0010": "edcbd0c8e0fdb0a6a761f96da935b9b3f0a1ef3d29f5cdb63b4f13cf280bad94",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0011": "4797c11f027a9dcf177d2e15c36d2b85d92812c1d3119d3591c6ca77b72db5e4",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0012": "ae7e93b0ea5a42a7e84b899a76238a04738a3663a3ab5216c39bd09968019180",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0013": "fe3cd56648fb11963050b8bf298dd2f7b5f01b62e0f8f464d664185bc94379a5",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0014": "a8822a580ca33f60dcb0a175546d789e77064415885a1e1ea6a22df40c977a8d",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0015": "2d039247ec6ffe6fa2238c5684ff13c21fe2d1fba1553c930f72df5b7855944e",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0016": "f0c4a437a322d713534035769ecafadce8ce9552a5c728be89b402df557b69e7",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0017": "ccc88866e64dd47d605601e2d014570ba1a371ae6aa16fc870ea11b059d5f496",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0018": "3d3bd3b0f76ed7ae6e6920046521eb99d26303446b9d154173b4515379193a60",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0019": "fd57620f73656035d6dd961402d0061fbfd3717b9c789179f04d632619990e87",
+      "demo-3051886cb8bdf12d9393c1d04495f87d-0020": "2feb2bd9053266def08fd24220b96db35c1a0640f61cb51d7a959da9c4774ec6"
+    },
+    "delivered_unique": 20,
+    "delivery_p50_ms": 25.297667,
+    "delivery_p95_ms": 38.415459,
+    "duplicate_effects": 0,
+    "duplicate_requests": 8,
+    "enqueued": 20,
+    "exhausted": 0,
+    "inflight": 0,
+    "not_delivered": 0,
+    "pending": 0,
+    "planned": 20,
+    "policy_changes": 0,
+    "timeouts": 0,
+    "unacknowledged": 0
+  },
+  "mode": "static",
+  "origin_monotonic_ns": 293378037487708,
+  "profile": "ack_loss_after_commit",
+  "queue_metadata_initial": {
+    "created_at_ms": 1793116798274,
+    "deadline_monotonic_ns": 293403035366125,
+    "host": "127.0.0.1",
+    "origin_monotonic_ns": 293378035366125,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 59059,
+    "schema": "resilience-queue/v1"
+  },
+  "queue_summary": {
+    "attempts": 28,
+    "planned_messages": 20,
+    "states": {
+      "acked": 20
+    },
+    "worker_runs": [
+      {
+        "finished_at_ms": 1793116799259,
+        "id": 1,
+        "outcome": "all_acknowledged",
+        "started_at_ms": 1793116798332
+      }
+    ]
+  },
+  "repetition": 3,
+  "schema": "resilience-adaptive-trial/v1",
+  "seed": 20261027,
+  "source_sha256": {
+    "adaptive_lab.py": "9e8e75fa8eadb6aecfbf488f458c4176fa470c9511037c40e60a097c0393775a",
+    "adaptive_policy.py": "f2ae550b15039ea6b2b6d91183056cec630e90227260a3141638c95f1924a877",
+    "delivery.py": "2fb2096bc8ce43b1e8edd2f6767c1127c0f26b2e32680abcf9404c37ee90d451",
+    "witness.py": "679b03e4f637cac120d3eec70b3208ff1015c8009a6e3f10f82593f29c14d60f"
+  },
+  "started_at_ms": 1793116798270,
+  "success": true,
+  "worker_completed": true,
+  "worker_exit_code": 0,
+  "worker_outcome": "all_acknowledged"
+}

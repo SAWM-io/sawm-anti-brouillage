@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Measured adaptive HTTP controller settings over time">
+<rect width="1280" height="800" fill="#fafafa"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="44.00" y="42.00" font-size="25" text-anchor="start" fill="#222" font-weight="bold">Continuous calibration from completed HTTP attempts</text>
+<text x="44.00" y="70.00" font-size="15" text-anchor="start" fill="#555" font-weight="normal">Repetition 1 examples, not an aggregate · Owned localhost processes · No radio validation</text>
+<text x="115.00" y="115.00" font-size="19" text-anchor="start" fill="#222" font-weight="bold">Latency jump and recovery</text>
+<text x="115.00" y="140.00" font-size="14" text-anchor="start" fill="#555" font-weight="normal">20/20 committed · 20/20 verified ACKs · 22 attempts</text>
+<text x="115.00" y="172.00" font-size="15" text-anchor="start" fill="#222" font-weight="bold">Request timeout / RTO (ms)</text>
+<rect x="177.00" y="190" width="144.67" height="180" fill="#e5e5e5"/>
+<line x1="115.00" y1="370.00" x2="580.00" y2="370.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="375.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">0</text>
+<line x1="115.00" y1="280.00" x2="580.00" y2="280.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="285.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">250</text>
+<line x1="115.00" y1="190.00" x2="580.00" y2="190.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="195.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">500</text>
+<line x1="115.00" y1="370.00" x2="115.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="115.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0</text>
+<line x1="177.00" y1="370.00" x2="177.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="177.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.3</text>
+<line x1="239.00" y1="370.00" x2="239.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="239.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.6</text>
+<line x1="321.67" y1="370.00" x2="321.67" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="321.67" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">1</text>
+<line x1="580.00" y1="370.00" x2="580.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="580.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">2.25</text>
+<line x1="115.00" y1="190.00" x2="115.00" y2="370.00" stroke="#444" stroke-width="1"/>
+<line x1="115.00" y1="370.00" x2="580.00" y2="370.00" stroke="#444" stroke-width="1"/>
+<line x1="115.00" y1="190.00" x2="580.00" y2="190.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M 115.00 190.00 H 128.37 V 347.68 H 130.79 V 349.84 H 138.69 V 351.28 H 149.40 V 352.00 H 160.31 V 352.00 H 171.44 V 352.00 H 190.17 V 334.00 H 211.57 V 298.00 H 251.08 V 281.80 H 290.24 V 236.44 H 329.88 V 208.00 H 333.22 V 222.04 H 336.73 V 235.72 H 340.32 V 248.68 H 343.77 V 259.84 H 347.35 V 271.00 H 351.36 V 281.08 H 354.99 V 289.72 H 358.18 V 296.56 H 361.11 V 302.68 H 364.54 V 309.16 H 367.65 V 314.20" stroke="#111" stroke-width="2.3" fill="none"/>
+<circle cx="128.37" cy="347.68" r="2.5" fill="#111"/>
+<circle cx="130.79" cy="349.84" r="2.5" fill="#111"/>
+<circle cx="138.69" cy="351.28" r="2.5" fill="#111"/>
+<circle cx="149.40" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="160.31" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="171.44" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="190.17" cy="334.00" r="2.5" fill="#111"/>
+<circle cx="211.57" cy="298.00" r="2.5" fill="#111"/>
+<circle cx="251.08" cy="281.80" r="2.5" fill="#111"/>
+<circle cx="290.24" cy="236.44" r="2.5" fill="#111"/>
+<circle cx="329.88" cy="208.00" r="2.5" fill="#111"/>
+<circle cx="333.22" cy="222.04" r="2.5" fill="#111"/>
+<circle cx="336.73" cy="235.72" r="2.5" fill="#111"/>
+<circle cx="340.32" cy="248.68" r="2.5" fill="#111"/>
+<circle cx="343.77" cy="259.84" r="2.5" fill="#111"/>
+<circle cx="347.35" cy="271.00" r="2.5" fill="#111"/>
+<circle cx="351.36" cy="281.08" r="2.5" fill="#111"/>
+<circle cx="354.99" cy="289.72" r="2.5" fill="#111"/>
+<circle cx="358.18" cy="296.56" r="2.5" fill="#111"/>
+<circle cx="361.11" cy="302.68" r="2.5" fill="#111"/>
+<circle cx="364.54" cy="309.16" r="2.5" fill="#111"/>
+<circle cx="367.65" cy="314.20" r="2.5" fill="#111"/>
+<text x="115.00" y="427.00" font-size="15" text-anchor="start" fill="#222" font-weight="bold">Next retry delay (ms)</text>
+<rect x="177.00" y="445" width="144.67" height="180" fill="#e5e5e5"/>
+<line x1="115.00" y1="625.00" x2="580.00" y2="625.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="630.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">0</text>
+<line x1="115.00" y1="535.00" x2="580.00" y2="535.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="540.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">500</text>
+<line x1="115.00" y1="445.00" x2="580.00" y2="445.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="103.00" y="450.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">1000</text>
+<line x1="115.00" y1="625.00" x2="115.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="115.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0</text>
+<line x1="177.00" y1="625.00" x2="177.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="177.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.3</text>
+<line x1="239.00" y1="625.00" x2="239.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="239.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.6</text>
+<line x1="321.67" y1="625.00" x2="321.67" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="321.67" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">1</text>
+<line x1="580.00" y1="625.00" x2="580.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="580.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">2.25</text>
+<line x1="115.00" y1="445.00" x2="115.00" y2="625.00" stroke="#444" stroke-width="1"/>
+<line x1="115.00" y1="625.00" x2="580.00" y2="625.00" stroke="#444" stroke-width="1"/>
+<line x1="115.00" y1="607.00" x2="580.00" y2="607.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M 115.00 607.00 H 128.37 V 616.00 H 130.79 V 620.50 H 138.69 V 620.50 H 149.40 V 620.50 H 160.31 V 620.50 H 171.44 V 620.50 H 190.17 V 607.00 H 211.57 V 589.00 H 251.08 V 607.00 H 290.24 V 616.00 H 329.88 V 620.50 H 333.22 V 620.50 H 336.73 V 620.50 H 340.32 V 620.50 H 343.77 V 620.50 H 347.35 V 620.50 H 351.36 V 620.50 H 354.99 V 620.50 H 358.18 V 620.50 H 361.11 V 620.50 H 364.54 V 620.50 H 367.65 V 620.50" stroke="#111" stroke-width="2.3" fill="none"/>
+<circle cx="128.37" cy="616.00" r="2.5" fill="#111"/>
+<circle cx="130.79" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="138.69" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="149.40" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="160.31" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="171.44" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="190.17" cy="607.00" r="2.5" fill="#111"/>
+<circle cx="211.57" cy="589.00" r="2.5" fill="#111"/>
+<circle cx="251.08" cy="607.00" r="2.5" fill="#111"/>
+<circle cx="290.24" cy="616.00" r="2.5" fill="#111"/>
+<circle cx="329.88" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="333.22" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="336.73" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="340.32" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="343.77" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="347.35" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="351.36" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="354.99" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="358.18" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="361.11" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="364.54" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="367.65" cy="620.50" r="2.5" fill="#111"/>
+<text x="347.50" y="674.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Elapsed since trial origin (seconds)</text>
+<text x="715.00" y="115.00" font-size="19" text-anchor="start" fill="#222" font-weight="bold">Blackout and worker restart</text>
+<text x="715.00" y="140.00" font-size="14" text-anchor="start" fill="#555" font-weight="normal">20/20 committed · 20/20 verified ACKs · 25 attempts</text>
+<text x="715.00" y="172.00" font-size="15" text-anchor="start" fill="#222" font-weight="bold">Request timeout / RTO (ms)</text>
+<rect x="777.00" y="190" width="144.67" height="180" fill="#e5e5e5"/>
+<line x1="715.00" y1="370.00" x2="1180.00" y2="370.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="375.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">0</text>
+<line x1="715.00" y1="280.00" x2="1180.00" y2="280.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="285.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">250</text>
+<line x1="715.00" y1="190.00" x2="1180.00" y2="190.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="195.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">500</text>
+<line x1="715.00" y1="370.00" x2="715.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="715.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0</text>
+<line x1="777.00" y1="370.00" x2="777.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="777.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.3</text>
+<line x1="839.00" y1="370.00" x2="839.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="839.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.6</text>
+<line x1="921.67" y1="370.00" x2="921.67" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="921.67" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">1</text>
+<line x1="1180.00" y1="370.00" x2="1180.00" y2="375.00" stroke="#777" stroke-width="1"/>
+<text x="1180.00" y="394.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">2.25</text>
+<line x1="715.00" y1="190.00" x2="715.00" y2="370.00" stroke="#444" stroke-width="1"/>
+<line x1="715.00" y1="370.00" x2="1180.00" y2="370.00" stroke="#444" stroke-width="1"/>
+<line x1="715.00" y1="190.00" x2="1180.00" y2="190.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="840.96" y1="190.00" x2="840.96" y2="370.00" stroke="#999" stroke-width="1" stroke-dasharray="2 4"/>
+<line x1="861.19" y1="190.00" x2="861.19" y2="370.00" stroke="#999" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="867.19" y="210.00" font-size="12" text-anchor="start" fill="#555" font-weight="normal">restart</text>
+<path d="M 715.00 190.00 H 727.19 V 345.88 H 729.64 V 347.68 H 740.51 V 349.48 H 750.87 V 350.56 H 762.21 V 350.92 H 770.60 V 351.64 H 789.80 V 333.28 H 812.13 V 296.56 H 918.60 V 223.12 H 1004.10 V 190.00 H 1007.93 V 352.00 H 1011.45 V 352.00 H 1014.82 V 352.00 H 1018.14 V 352.00 H 1021.76 V 352.00 H 1024.88 V 352.00 H 1028.76 V 352.00 H 1032.56 V 352.00 H 1035.98 V 352.00 H 1039.21 V 352.00 H 1043.34 V 352.00 H 1047.03 V 352.00 H 1050.55 V 352.00 H 1175.18 V 352.00" stroke="#111" stroke-width="2.3" fill="none"/>
+<circle cx="727.19" cy="345.88" r="2.5" fill="#111"/>
+<circle cx="729.64" cy="347.68" r="2.5" fill="#111"/>
+<circle cx="740.51" cy="349.48" r="2.5" fill="#111"/>
+<circle cx="750.87" cy="350.56" r="2.5" fill="#111"/>
+<circle cx="762.21" cy="350.92" r="2.5" fill="#111"/>
+<circle cx="770.60" cy="351.64" r="2.5" fill="#111"/>
+<circle cx="789.80" cy="333.28" r="2.5" fill="#111"/>
+<circle cx="812.13" cy="296.56" r="2.5" fill="#111"/>
+<circle cx="918.60" cy="223.12" r="2.5" fill="#111"/>
+<circle cx="1004.10" cy="190.00" r="2.5" fill="#111"/>
+<circle cx="1007.93" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1011.45" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1014.82" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1018.14" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1021.76" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1024.88" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1028.76" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1032.56" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1035.98" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1039.21" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1043.34" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1047.03" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1050.55" cy="352.00" r="2.5" fill="#111"/>
+<circle cx="1175.18" cy="352.00" r="2.5" fill="#111"/>
+<text x="715.00" y="427.00" font-size="15" text-anchor="start" fill="#222" font-weight="bold">Next retry delay (ms)</text>
+<rect x="777.00" y="445" width="144.67" height="180" fill="#e5e5e5"/>
+<line x1="715.00" y1="625.00" x2="1180.00" y2="625.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="630.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">0</text>
+<line x1="715.00" y1="535.00" x2="1180.00" y2="535.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="540.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">500</text>
+<line x1="715.00" y1="445.00" x2="1180.00" y2="445.00" stroke="#d1d1d1" stroke-width="1"/>
+<text x="703.00" y="450.00" font-size="13" text-anchor="end" fill="#666" font-weight="normal">1000</text>
+<line x1="715.00" y1="625.00" x2="715.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="715.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0</text>
+<line x1="777.00" y1="625.00" x2="777.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="777.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.3</text>
+<line x1="839.00" y1="625.00" x2="839.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="839.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">0.6</text>
+<line x1="921.67" y1="625.00" x2="921.67" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="921.67" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">1</text>
+<line x1="1180.00" y1="625.00" x2="1180.00" y2="630.00" stroke="#777" stroke-width="1"/>
+<text x="1180.00" y="649.00" font-size="13" text-anchor="middle" fill="#666" font-weight="normal">2.25</text>
+<line x1="715.00" y1="445.00" x2="715.00" y2="625.00" stroke="#444" stroke-width="1"/>
+<line x1="715.00" y1="625.00" x2="1180.00" y2="625.00" stroke="#444" stroke-width="1"/>
+<line x1="715.00" y1="607.00" x2="1180.00" y2="607.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="840.96" y1="445.00" x2="840.96" y2="625.00" stroke="#999" stroke-width="1" stroke-dasharray="2 4"/>
+<line x1="861.19" y1="445.00" x2="861.19" y2="625.00" stroke="#999" stroke-width="1" stroke-dasharray="2 4"/>
+<path d="M 715.00 607.00 H 727.19 V 616.00 H 729.64 V 620.50 H 740.51 V 620.50 H 750.87 V 620.50 H 762.21 V 620.50 H 770.60 V 620.50 H 789.80 V 607.00 H 812.13 V 589.00 H 918.60 V 553.00 H 1004.10 V 481.00 H 1007.93 V 553.00 H 1011.45 V 589.00 H 1014.82 V 607.00 H 1018.14 V 616.00 H 1021.76 V 620.50 H 1024.88 V 620.50 H 1028.76 V 620.50 H 1032.56 V 620.50 H 1035.98 V 620.50 H 1039.21 V 620.50 H 1043.34 V 620.50 H 1047.03 V 620.50 H 1050.55 V 620.50 H 1175.18 V 620.50" stroke="#111" stroke-width="2.3" fill="none"/>
+<circle cx="727.19" cy="616.00" r="2.5" fill="#111"/>
+<circle cx="729.64" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="740.51" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="750.87" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="762.21" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="770.60" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="789.80" cy="607.00" r="2.5" fill="#111"/>
+<circle cx="812.13" cy="589.00" r="2.5" fill="#111"/>
+<circle cx="918.60" cy="553.00" r="2.5" fill="#111"/>
+<circle cx="1004.10" cy="481.00" r="2.5" fill="#111"/>
+<circle cx="1007.93" cy="553.00" r="2.5" fill="#111"/>
+<circle cx="1011.45" cy="589.00" r="2.5" fill="#111"/>
+<circle cx="1014.82" cy="607.00" r="2.5" fill="#111"/>
+<circle cx="1018.14" cy="616.00" r="2.5" fill="#111"/>
+<circle cx="1021.76" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1024.88" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1028.76" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1032.56" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1035.98" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1039.21" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1043.34" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1047.03" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1050.55" cy="620.50" r="2.5" fill="#111"/>
+<circle cx="1175.18" cy="620.50" r="2.5" fill="#111"/>
+<text x="947.50" y="674.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Elapsed since trial origin (seconds)</text>
+<line x1="45.00" y1="705.00" x2="80.00" y2="705.00" stroke="#111" stroke-width="2.3"/>
+<text x="90.00" y="710.00" font-size="13" text-anchor="start" fill="#222" font-weight="normal">Persisted setting after each completed attempt</text>
+<line x1="438.00" y1="705.00" x2="473.00" y2="705.00" stroke="#888" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="483.00" y="710.00" font-size="13" text-anchor="start" fill="#222" font-weight="normal">Initial setting</text>
+<rect x="650" y="696" width="32" height="17" fill="#e5e5e5"/>
+<text x="692.00" y="710.00" font-size="13" text-anchor="start" fill="#222" font-weight="normal">Planned disruption: 0.3–1.0 s</text>
+<text x="45.00" y="750.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Phase shading is added after the run. The controller receives completed network observations only; it never sees the fault schedule.</text>
+<text x="45.00" y="773.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Timeout observations are censored. Interrupted attempts produce no calibration observation. Restart markers use measured times.</text>
+</g></svg>

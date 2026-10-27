@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="530" viewBox="0 0 1000 530">
+<rect width="1000" height="530" fill="#fafafa"/>
+<g font-family="Arial,sans-serif" fill="#171717">
+<text x="30" y="36" font-size="22">Owned localhost HTTP: mean trial ACK p95</text>
+<text x="30" y="61" font-size="14">Transport-fault emulation only; radio anti-jamming is not validated.</text>
+<text x="30" y="128" font-size="14">normal / static</text>
+<rect x="345" y="110" width="17.9" height="26" rx="3" fill="#929292"/>
+<text x="372.9" y="128" font-size="14">37.6 ms</text>
+<text x="30" y="173" font-size="14">normal / adaptive</text>
+<rect x="345" y="155" width="18.7" height="26" rx="3" fill="#171717"/>
+<text x="373.7" y="173" font-size="14">39.1 ms</text>
+<text x="30" y="218" font-size="14">latency_jump_recovery / static</text>
+<rect x="345" y="200" width="289.5" height="26" rx="3" fill="#929292"/>
+<text x="644.5" y="218" font-size="14">607.2 ms</text>
+<text x="30" y="263" font-size="14">latency_jump_recovery / adaptive</text>
+<rect x="345" y="245" width="296.4" height="26" rx="3" fill="#171717"/>
+<text x="651.4" y="263" font-size="14">621.8 ms</text>
+<text x="30" y="308" font-size="14">ack_loss_after_commit / static</text>
+<rect x="345" y="290" width="72.0" height="26" rx="3" fill="#929292"/>
+<text x="427.0" y="308" font-size="14">150.9 ms</text>
+<text x="30" y="353" font-size="14">ack_loss_after_commit / adaptive</text>
+<rect x="345" y="335" width="500.0" height="26" rx="3" fill="#171717"/>
+<text x="855.0" y="353" font-size="14">1048.8 ms</text>
+<text x="30" y="398" font-size="14">blackout_return / static</text>
+<rect x="345" y="380" width="453.5" height="26" rx="3" fill="#929292"/>
+<text x="808.5" y="398" font-size="14">951.3 ms</text>
+<text x="30" y="443" font-size="14">blackout_return / adaptive</text>
+<rect x="345" y="425" width="392.1" height="26" rx="3" fill="#171717"/>
+<text x="747.1" y="443" font-size="14">822.4 ms</text>
+<text x="30" y="500" font-size="13">Nearest-rank p95 per run, then mean across runs; paired raw observations are in aggregate.json.</text></g></svg>

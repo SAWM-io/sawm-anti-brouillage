@@ -1,0 +1,19 @@
+{
+  "axes": {
+    "x": "real completed-attempt offset from trial origin, milliseconds displayed as seconds",
+    "y": "persisted integer controller setting, milliseconds"
+  },
+  "examples_not_aggregate": true,
+  "figure_sha256": {
+    "calibration-examples.svg": "5141a2e9c4b7a8d84ad03f7b885d5a6e25ef596b4b7763b280bee285adf49cd8"
+  },
+  "renderer_sha256": "9b128d289e2c88cf735e2b565810bd76ca00376d9b9504a85a3d0d1df6ee30ca",
+  "repetition": 1,
+  "schema": "resilience-calibration-figure/v1",
+  "source_sha256": {
+    "r1-blackout_return-adaptive/calibration-postanalysis.json": "2cab6925f70051ad127858b1c45f0963fb2e3681fa0e1c00ff8aa247a3df2856",
+    "r1-blackout_return-adaptive/report.json": "50ae8c006a298fe78f358316866f7d648d4a433e1cd2c21d1d33d3d7d113072b",
+    "r1-latency_jump_recovery-adaptive/calibration-postanalysis.json": "166176b97c0fe3b5f8650ccd08f2e611b1b1d467c1e1354475187ed93d300f6e",
+    "r1-latency_jump_recovery-adaptive/report.json": "cc04500cc436d95a18a016c4a53a8f9eefee605edf9d04b50b0791c4f6b74859"
+  }
+}

@@ -1,0 +1,1 @@
+{"attempts":22,"outcome":"all_acknowledged","planned_messages":20,"schema":"resilience-worker-result/v1","states":{"acked":20},"worker_runs":[{"finished_at_ms":null,"id":1,"outcome":null,"started_at_ms":1793116781284},{"finished_at_ms":1793116782756,"id":2,"outcome":"all_acknowledged","started_at_ms":1793116782001}]}

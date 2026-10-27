@@ -1,6 +1,6 @@
-# Grille de validation du banc local
+# SAWM Anti-Brouillage — grille de validation du banc local
 
-Cette grille décrit les assertions à vérifier à partir des traces et des bases SQLite d’un essai. Les attentes de la grille sont distinctes du relevé réel présenté à la fin.
+Cette grille décrit les assertions à vérifier à partir des traces et des bases SQLite d’un essai. Les attentes de la grille sont distinctes du relevé réel présenté à la fin. Voir aussi le [guide technique](GUIDE-TECHNIQUE.md) et la [présentation](../README.md).
 
 ## Scénarios et preuves attendues
 
@@ -41,7 +41,7 @@ Le terme `lost`, s’il apparaît dans les mesures, signifie seulement « absenc
 
 Les durées doivent être calculées avec une horloge monotone. Les heures civiles servent à situer les traces, sans remplacer cette horloge pour calculer une durée ou une échéance. Les fichiers de sortie doivent permettre de retrouver l’ordre des événements et de distinguer le premier worker du processus repris.
 
-Dans ce code, `end_to_end_ms` va de la création du message à l’horodatage d’acceptation enregistré dans la première transaction ensuite committée par le destinataire, sur la même horloge monotone. L’horodatage est pris avant la fin du commit ; il ne mesure donc pas cette fin exacte ni la réception de l’ACK. La moyenne volatile de l’essai final porte sur cinq messages arrivés, tandis que la moyenne durable porte sur dix messages et inclut l’attente pendant la coupure. Ces populations différentes ne permettent pas de conclure à un gain de vitesse réseau. Le bénéfice observé concerne le nombre d’effets livrés, au prix d’un délai supplémentaire pour les messages conservés.
+Dans ce code, `end_to_end_ms` va de la création du message à l’horodatage d’acceptation enregistré dans la première transaction ensuite committée par le destinataire, sur la même horloge monotone. L’horodatage est pris avant la fin du commit ; il ne mesure donc pas cette fin exacte ni la réception de l’ACK. La moyenne volatile de l’essai local initial à dix messages porte sur cinq messages arrivés, tandis que la moyenne durable porte sur dix messages et inclut l’attente pendant la coupure. Pour la campagne à vingt messages du 27 octobre, les populations sont respectivement cinq et vingt messages. Ces populations différentes ne permettent pas de conclure à un gain de vitesse réseau. Le bénéfice observé concerne le nombre d’effets livrés, au prix d’un délai supplémentaire pour les messages conservés.
 
 L’ACK n’est fiable dans ce protocole que s’il correspond au bon identifiant et au bon digest, et confirme un commit. Une réussite de connexion TCP ou un statut HTTP isolé ne suffisent pas. Les messages et réponses restent bornés, avec une cible locale fixe et sans redirection vers une destination externe.
 
@@ -54,13 +54,31 @@ Conserver les fichiers de l’essai, les paramètres, les versions de code et le
 - L’arrêt/reprise du worker teste la persistance entre processus. Il ne certifie ni la tenue à une panne électrique ni celle du stockage matériel.
 - Les trente secondes constituent le budget du banc, pas une exigence de temps réel certifiée par le système d’exploitation.
 - Les délais et compteurs ne mesurent pas un gain de bande passante réseau.
-- Aucun appel Cloud n’est réalisé par ce banc ; `measurements.json` est un artefact local.
-- Un futur dépôt Cloud pourrait conserver une mémoire utile à l’audit. À politique de livraison identique, il ne change pas les tentatives ni les effets et n’apporte pas, à lui seul, de gain de livraison. Aucune validation Cloud n’est revendiquée ici.
+- Aucun appel Cloud n’est réalisé par `lab.py` ; `measurements.json` est un artefact local. Le contrôleur Cloud s’exécute séparément avant ou après le banc.
+- La campagne du 27 octobre comprend des dépôts et rappels Cloud réels, documentés dans le [guide technique](GUIDE-TECHNIQUE.md#preuves-conservées). À politique identique, l’exécution locale de calibration obtenait déjà 20/20 effets durables : les preuves ne démontrent aucun gain de livraison causé par le Cloud.
 
-## Résultat de l’essai
+## Résultat de l’essai local initial
 
-Le [rapport réel du code final](lab-report.json), pour l’essai `8f8b860e672f4f8691121db727e15342` sur Darwin 25.6.0 arm64 avec la politique par défaut, indique une durée de 2,779408 secondes, dont une coupure mesurée de 2,008543 secondes. Le worker interrompu sort avec le code `-9` ; son remplaçant termine avec le code `0` et dix messages acquittés. Le destinataire compte dix effets uniques côté durable, cinq côté volatile, une tentative durable reçue en double et aucun effet dupliqué. Deux pertes d’ACK après commit sont enregistrées, une par canal. Les quatorze contrôles du rapport sont vrais, y compris la correspondance des digests reçus avec les messages source. La fermeture finale des ressources est également confirmée par `owned_processes_and_server_stopped=true`. Le rapport conserve les SHA256 des trois sources exécutées.
+Le [rapport conservé de l’essai local initial](lab-report.json), pour l’essai `8f8b860e672f4f8691121db727e15342` sur Darwin 25.6.0 arm64 avec la politique par défaut, indique une durée de 2,779408 secondes, dont une coupure mesurée de 2,008543 secondes. Le worker interrompu sort avec le code `-9` ; son remplaçant termine avec le code `0` et dix messages acquittés. Le destinataire compte dix effets uniques côté durable, cinq côté volatile, une tentative durable reçue en double et aucun effet dupliqué. Deux pertes d’ACK après commit sont enregistrées, une par canal. Les quatorze contrôles du rapport sont vrais, y compris la correspondance des digests reçus avec les messages source. La fermeture finale des ressources est également confirmée par `owned_processes_and_server_stopped=true`. Le rapport conserve les SHA256 des trois sources exécutées.
 
-La suite locale compte onze tests réussis. Un test distinct interrompt réellement un worker après commit du destinataire, avant l’ACK : l’état `inflight` est constaté, puis la reprise obtient trois effets uniques, une tentative reçue en double et aucun effet supplémentaire. Cette vérification complète l’arrêt pendant la coupure du banc principal ; elle ne doit pas être confondue avec ce dernier. Les tests couvrent aussi la conservation du budget de tentatives, les ACK invalides et les conflits d’identifiant et de contenu.
+Le relevé local initial indiquait onze tests réussis. La vérification initiale du 27 octobre 2026, comprenant aussi les validateurs Cloud, a passé vingt tests sur vingt sans appel API réel. Après ajout de la calibration continue et du banc comparatif, la suite complète a passé quarante et un tests sur quarante et un. Un test distinct interrompt réellement un worker après commit du destinataire, avant l’ACK : l’état `inflight` est constaté, puis la reprise obtient trois effets uniques, une tentative reçue en double et aucun effet supplémentaire. Cette vérification complète l’arrêt pendant la coupure du banc principal ; elle ne doit pas être confondue avec ce dernier. Les tests couvrent aussi la conservation du budget de tentatives, les ACK invalides et les conflits d’identifiant et de contenu.
 
 Ces faits montrent une livraison complète dans ce scénario précis, avec des délais supplémentaires pour les messages conservés pendant la coupure. Ils ne démontrent pas une livraison plus rapide sur réseau physique. Pour tout autre essai, conserver sa version de code, ses paramètres, son rapport et ses éventuels échecs ; une attente du scénario ne doit jamais être présentée comme une mesure.
+
+## Campagne du 27 octobre 2026
+
+Le [rapport à vingt messages](measured-2026-10-27/benchmark.json) constate vingt effets uniques et vingt ACK vérifiés côté durable, cinq effets uniques et quatre ACK vérifiés côté volatil, une requête durable répétée et aucun effet dupliqué. Les quatorze contrôles sont vrais. La [calibration sans Cloud](measured-2026-10-27/calibration.json) utilisait la même politique et obtenait les mêmes comptes de livraison.
+
+Les [preuves de préparation Cloud](measured-2026-10-27/cloud/cloud-report.json) enregistrent cinq opérations réussies, une politique validée et le rappel littéral de la calibration. Ce rapport historique ne porte pas de champ global `completed` ; ne pas le confondre avec le format du contrôleur actuel. Le [bilan Cloud](measured-2026-10-27/results-cloud/cloud-report.json) indique quatre opérations réussies et `completed: true`. La [vérification finale](measured-2026-10-27/final-validator-check.json) est une relecture locale des preuves, avec `real_api_rerun: false`. Ces éléments documentent le raccordement et la mémoire des essais ; ils ne mesurent pas une amélioration de livraison attribuable au Cloud.
+
+## Extension adaptative
+
+Le banc `adaptive_lab.py` compare la politique fixe et la calibration locale avec la même charge par paire, quatre profils et un ordre d'exécution alterné. Il complète le scénario initial durable contre volatil ; ses résultats ne doivent pas être attribués rétroactivement à ce dernier.
+
+Vérifier que chaque transition du contrôleur provient d'une tentative terminée, qu'un timeout ne devient pas un faux échantillon RTT, qu'un ACK invalide ne réduit pas le timeout, et que les plafonds, les compteurs de tentatives et l'échéance initiale restent conservés. L'état, la fin de tentative et l'événement de calibration doivent être atomiques ; la reprise doit retrouver le même état à partir des mêmes observations.
+
+Pour ce banc, `success: true` constate la validité de l'expérience et de ses preuves. La livraison complète se lit séparément dans `metrics.all_messages_delivered_and_acked`, avec les effets uniques, les ACK, les messages restants et les délais. Publier les profils défavorables et le coût en tentatives, même lorsque la campagne est valide.
+
+Voir la [méthode adaptative](GUIDE-TECHNIQUE.md#calibration-continue-locale) et le [protocole radio futur](RADIO-VALIDATION.md). Les contrôles logiciels et les fautes HTTP ne constituent pas des mesures RF.
+
+La [campagne adaptative finale](measured-adaptive-2026-10-27/report.json) contient 24 passages valides, avec 20/20 effets et 20/20 ACK chacun, zéro effet dupliqué et zéro conflit. Elle ne montre pas de gain général : 285 tentatives en adaptatif contre 270 en fixe, et un p95 ACK moyen supérieur en adaptatif sur trois profils. Les [résultats détaillés](GUIDE-TECHNIQUE.md#résultats-finaux-mesurés) conservent les coûts, la dispersion et la première version.

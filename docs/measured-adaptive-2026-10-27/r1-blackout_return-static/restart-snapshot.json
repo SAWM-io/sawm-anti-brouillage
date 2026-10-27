@@ -1,0 +1,254 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.157292,
+      "error": null,
+      "finished_monotonic_ns": 293678023416000,
+      "http_status": 200,
+      "id": 1,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0001",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678008940833
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 11.046458,
+      "error": null,
+      "finished_monotonic_ns": 293678035123791,
+      "http_status": 200,
+      "id": 2,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0002",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678023793041
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.969042,
+      "error": null,
+      "finished_monotonic_ns": 293678076113083,
+      "http_status": 200,
+      "id": 3,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0003",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678060662291
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 11.815291,
+      "error": null,
+      "finished_monotonic_ns": 293678124701916,
+      "http_status": 200,
+      "id": 4,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0004",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678112401666
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.045209,
+      "error": null,
+      "finished_monotonic_ns": 293678176275250,
+      "http_status": 200,
+      "id": 5,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0005",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678160629625
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.024292,
+      "error": null,
+      "finished_monotonic_ns": 293678230463875,
+      "http_status": 200,
+      "id": 6,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0006",
+      "result": "ack_verified",
+      "started_monotonic_ns": 293678214760583
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": null,
+      "duration_ms": null,
+      "error": null,
+      "finished_monotonic_ns": null,
+      "http_status": null,
+      "id": 7,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0007",
+      "result": "started",
+      "started_monotonic_ns": 293678257094625
+    }
+  ],
+  "messages": [
+    {
+      "acked_at_ms": 1793117098265,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000000,\"created_monotonic_ns\":0,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0001\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":1,\"value\":7}",
+      "digest": "5339a82b3729189a3b7eeaa2472a04a62492627cee408127c3b6f672f554d4f7",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0001",
+      "next_attempt_ns": 293677953146333,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117098276,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000050,\"created_monotonic_ns\":50000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0002\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":2,\"value\":14}",
+      "digest": "53c9dbf14f24874632909eaa7750bec0ed9c48b1fe56668a12dee66fc4e351d6",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0002",
+      "next_attempt_ns": 293678000097958,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117098317,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000100,\"created_monotonic_ns\":100000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0003\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":3,\"value\":21}",
+      "digest": "d55944ff17274c6e4580f5ae6edd7b6f5e609c5914ac8f9a3f1db672581748a5",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0003",
+      "next_attempt_ns": 293678050820750,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117098366,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000150,\"created_monotonic_ns\":150000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0004\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":4,\"value\":28}",
+      "digest": "aa37a2bb7d9b3b35506bff5f5a5a608e13726f57dc935ef05769c3a9f5d4b892",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0004",
+      "next_attempt_ns": 293678099949000,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117098417,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000200,\"created_monotonic_ns\":200000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0005\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":5,\"value\":35}",
+      "digest": "e10cc252ed86ed51c797c2af81ba61d104396d0df9c7ba7abf1b03f0e3a1a4fb",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0005",
+      "next_attempt_ns": 293678150604000,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117098472,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000250,\"created_monotonic_ns\":250000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0006\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":6,\"value\":42}",
+      "digest": "6859b4a5d9d8bf5b22f108d796a627579d530f71bb9a23bf2e3b7095c719917c",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0006",
+      "next_attempt_ns": 293678202222833,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000300,\"created_monotonic_ns\":300000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0007\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":7,\"value\":49}",
+      "digest": "bbbeef1da5abdee3494a376e19dc157bf9e33f5692afca527e961a79d2d7acfc",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0007",
+      "next_attempt_ns": 293678250552791,
+      "state": "inflight"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000350,\"created_monotonic_ns\":350000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0008\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":8,\"value\":56}",
+      "digest": "640f138896847445c22d04beb3d5579e6ca39fdb22deef557a704dca1c5fed03",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0008",
+      "next_attempt_ns": 293678301350041,
+      "state": "pending"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000400,\"created_monotonic_ns\":400000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0009\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":9,\"value\":63}",
+      "digest": "6ca0b3b6a4895904609576a62fba6d13da7595a911aea1b2d0e44f9503dfc9ec",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0009",
+      "next_attempt_ns": 293678351022750,
+      "state": "pending"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000450,\"created_monotonic_ns\":450000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0010\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":10,\"value\":70}",
+      "digest": "e8be9dc07dc216d4dc5a9df2e069bbad81cd6fbd18f9b064fb736bc44ae36b50",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0010",
+      "next_attempt_ns": 293678400974041,
+      "state": "pending"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000500,\"created_monotonic_ns\":500000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0011\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":11,\"value\":77}",
+      "digest": "f7f9781bab899f7c767fb63b02d3a5f53b4fb7606c12e1e0c46525e7d1c90e40",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0011",
+      "next_attempt_ns": 293678451008375,
+      "state": "pending"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000550,\"created_monotonic_ns\":550000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0012\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":12,\"value\":84}",
+      "digest": "7f982c26a02823c7b11d5acf669d8dbe2a2183fd5db7574d3bb2d2d866faff68",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0012",
+      "next_attempt_ns": 293678501250125,
+      "state": "pending"
+    },
+    {
+      "acked_at_ms": null,
+      "attempts": 0,
+      "body": "{\"created_at_ms\":1700000000600,\"created_monotonic_ns\":600000000,\"message_id\":\"demo-7411932b6f76634474add3d46bd490c8-0013\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":13,\"value\":91}",
+      "digest": "3b4705bb39b7be5101796a5f4bfb64a46fd45c2db0577a72b2ff6e73d76b2285",
+      "last_error": null,
+      "message_id": "demo-7411932b6f76634474add3d46bd490c8-0013",
+      "next_attempt_ns": 293678551325375,
+      "state": "pending"
+    }
+  ],
+  "metadata": {
+    "created_at_ms": 1793117098186,
+    "deadline_monotonic_ns": 293702945360416,
+    "host": "127.0.0.1",
+    "origin_monotonic_ns": 293677945360416,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 59818,
+    "schema": "resilience-queue/v1"
+  },
+  "summary": {
+    "attempts": 7,
+    "planned_messages": 20,
+    "states": {
+      "acked": 6,
+      "inflight": 1,
+      "pending": 6
+    },
+    "worker_runs": [
+      {
+        "finished_at_ms": null,
+        "id": 1,
+        "outcome": null,
+        "started_at_ms": 1793117098250
+      }
+    ]
+  }
+}

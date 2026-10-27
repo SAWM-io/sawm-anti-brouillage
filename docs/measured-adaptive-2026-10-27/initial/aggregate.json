@@ -1,0 +1,983 @@
+{
+  "groups": [
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 27.795375,
+          "mean": 25.959610666666666,
+          "min": 23.498916,
+          "observed": [
+            23.498916,
+            26.584541,
+            27.795375
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 43.148209,
+          "mean": 37.63411133333333,
+          "min": 30.6465,
+          "observed": [
+            30.6465,
+            43.148209,
+            39.107625
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 25.556583,
+          "mean": 24.442749666666668,
+          "min": 22.536958,
+          "observed": [
+            22.536958,
+            25.234708,
+            25.556583
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 42.411542,
+          "mean": 36.708278,
+          "min": 29.079042,
+          "observed": [
+            29.079042,
+            42.411542,
+            38.63425
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "normal",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 24.840625,
+          "mean": 24.04641666666667,
+          "min": 22.699,
+          "observed": [
+            24.599625,
+            24.840625,
+            22.699
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 40.697167,
+          "mean": 39.145861333333336,
+          "min": 36.594792,
+          "observed": [
+            36.594792,
+            40.697167,
+            40.145625
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 24.239416,
+          "mean": 22.354791666666667,
+          "min": 20.623709,
+          "observed": [
+            22.20125,
+            24.239416,
+            20.623709
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 40.158084,
+          "mean": 38.19054166666667,
+          "min": 34.781,
+          "observed": [
+            34.781,
+            40.158084,
+            39.632541
+          ]
+        },
+        "policy_changes": {
+          "max": 11,
+          "mean": 10.333333333333334,
+          "min": 10,
+          "observed": [
+            11,
+            10,
+            10
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "normal",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 353.418959,
+          "mean": 352.948167,
+          "min": 352.096667,
+          "observed": [
+            353.418959,
+            352.096667,
+            353.328875
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 609.077083,
+          "mean": 607.1705553333333,
+          "min": 603.675375,
+          "observed": [
+            609.077083,
+            603.675375,
+            608.759208
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 351.888667,
+          "mean": 350.993542,
+          "min": 349.736209,
+          "observed": [
+            351.35575,
+            349.736209,
+            351.888667
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 608.444958,
+          "mean": 606.0094443333334,
+          "min": 603.22075,
+          "observed": [
+            608.444958,
+            603.22075,
+            606.362625
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "latency_jump_recovery",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 381.593375,
+          "mean": 376.27711100000005,
+          "min": 367.316875,
+          "observed": [
+            381.593375,
+            367.316875,
+            379.921083
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 628.762708,
+          "mean": 621.7869166666667,
+          "min": 611.835084,
+          "observed": [
+            628.762708,
+            611.835084,
+            624.762958
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 22,
+          "mean": 22.0,
+          "min": 22,
+          "observed": [
+            22,
+            22,
+            22
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 348.34475,
+          "mean": 329.5238193333333,
+          "min": 296.437208,
+          "observed": [
+            348.34475,
+            296.437208,
+            343.7895
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 594.350834,
+          "mean": 587.6792783333334,
+          "min": 576.087709,
+          "observed": [
+            594.350834,
+            576.087709,
+            592.599292
+          ]
+        },
+        "policy_changes": {
+          "max": 22,
+          "mean": 22.0,
+          "min": 22,
+          "observed": [
+            22,
+            22,
+            22
+          ]
+        },
+        "timeouts": {
+          "max": 2,
+          "mean": 2.0,
+          "min": 2,
+          "observed": [
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "latency_jump_recovery",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 41.4735,
+          "mean": 34.804542,
+          "min": 30.042459,
+          "observed": [
+            32.897667,
+            41.4735,
+            30.042459
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 155.761042,
+          "mean": 150.92043066666668,
+          "min": 147.649125,
+          "observed": [
+            147.649125,
+            149.351125,
+            155.761042
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 28,
+          "mean": 28.0,
+          "min": 28,
+          "observed": [
+            28,
+            28,
+            28
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 25.336125,
+          "mean": 25.029639,
+          "min": 24.455125,
+          "observed": [
+            24.455125,
+            25.336125,
+            25.297667
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 42.319042,
+          "mean": 38.162847666666664,
+          "min": 33.754042,
+          "observed": [
+            33.754042,
+            42.319042,
+            38.415459
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "ack_loss_after_commit",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 37.616458,
+          "mean": 35.346236,
+          "min": 32.608875,
+          "observed": [
+            37.616458,
+            32.608875,
+            35.813375
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 1050.562291,
+          "mean": 1048.7845136666667,
+          "min": 1045.978667,
+          "observed": [
+            1045.978667,
+            1049.812583,
+            1050.562291
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 28,
+          "mean": 28.0,
+          "min": 28,
+          "observed": [
+            28,
+            28,
+            28
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 26.960083,
+          "mean": 25.966263666666666,
+          "min": 24.269541,
+          "observed": [
+            24.269541,
+            26.960083,
+            26.669167
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 38.592833,
+          "mean": 36.12224966666667,
+          "min": 32.529875,
+          "observed": [
+            37.244041,
+            32.529875,
+            38.592833
+          ]
+        },
+        "policy_changes": {
+          "max": 26,
+          "mean": 25.666666666666668,
+          "min": 25,
+          "observed": [
+            25,
+            26,
+            26
+          ]
+        },
+        "timeouts": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "ack_loss_after_commit",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 664.783583,
+          "mean": 656.040986,
+          "min": 641.094,
+          "observed": [
+            662.245375,
+            664.783583,
+            641.094
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 953.370792,
+          "mean": 951.3275140000001,
+          "min": 948.847625,
+          "observed": [
+            953.370792,
+            951.764125,
+            948.847625
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 22,
+          "mean": 22.0,
+          "min": 22,
+          "observed": [
+            22,
+            22,
+            22
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 663.874916,
+          "mean": 654.9825,
+          "min": 640.24925,
+          "observed": [
+            660.823334,
+            663.874916,
+            640.24925
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 951.0525,
+          "mean": 949.6413056666667,
+          "min": 947.776709,
+          "observed": [
+            951.0525,
+            950.094708,
+            947.776709
+          ]
+        },
+        "policy_changes": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0,
+          "observed": [
+            0,
+            0,
+            0
+          ]
+        },
+        "timeouts": {
+          "max": 1,
+          "mean": 1.0,
+          "min": 1,
+          "observed": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "mode": "static",
+      "profile": "blackout_return",
+      "runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "metrics": {
+        "ack_p50_ms": {
+          "max": 786.034375,
+          "mean": 517.870097,
+          "min": 382.50775,
+          "observed": [
+            786.034375,
+            382.50775,
+            385.068166
+          ]
+        },
+        "ack_p95_ms": {
+          "max": 1127.453917,
+          "mean": 822.426278,
+          "min": 669.874625,
+          "observed": [
+            1127.453917,
+            669.950292,
+            669.874625
+          ]
+        },
+        "acked": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "attempts": {
+          "max": 25,
+          "mean": 24.333333333333332,
+          "min": 24,
+          "observed": [
+            25,
+            24,
+            24
+          ]
+        },
+        "delivered_unique": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20,
+          "observed": [
+            20,
+            20,
+            20
+          ]
+        },
+        "delivery_p50_ms": {
+          "max": 784.768334,
+          "mean": 516.4848613333334,
+          "min": 380.818417,
+          "observed": [
+            784.768334,
+            380.818417,
+            383.867833
+          ]
+        },
+        "delivery_p95_ms": {
+          "max": 1126.285792,
+          "mean": 820.7181113333332,
+          "min": 667.821542,
+          "observed": [
+            1126.285792,
+            668.047,
+            667.821542
+          ]
+        },
+        "policy_changes": {
+          "max": 21,
+          "mean": 19.666666666666668,
+          "min": 17,
+          "observed": [
+            17,
+            21,
+            21
+          ]
+        },
+        "timeouts": {
+          "max": 4,
+          "mean": 3.3333333333333335,
+          "min": 3,
+          "observed": [
+            4,
+            3,
+            3
+          ]
+        }
+      },
+      "mode": "adaptive",
+      "profile": "blackout_return",
+      "runs": 3,
+      "valid_runs": 3
+    }
+  ],
+  "interpretation": "Raw measured observations, including failed runs. Positive latency/attempt deltas mean adaptive used more. No adaptive gain is assumed; three repetitions do not establish general performance.",
+  "paired_deltas": [
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 1.1007089999999984,
+        "ack_p95_ms": 5.948291999999999,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -0.3357079999999968,
+        "delivery_p95_ms": 5.701957999999998,
+        "policy_changes": 11,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -1.7439160000000022,
+        "ack_p95_ms": -2.451042000000001,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -0.9952920000000027,
+        "delivery_p95_ms": -2.253457999999995,
+        "policy_changes": 10,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -5.096374999999998,
+        "ack_p95_ms": 1.0380000000000038,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -4.932873999999998,
+        "delivery_p95_ms": 0.9982910000000018,
+        "policy_changes": 10,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "normal",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 28.174416000000008,
+        "ack_p95_ms": 19.68562499999996,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -3.011000000000024,
+        "delivery_p95_ms": -14.094124000000079,
+        "policy_changes": 22,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 15.220207999999957,
+        "ack_p95_ms": 8.15970900000002,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -53.299000999999976,
+        "delivery_p95_ms": -27.133040999999935,
+        "policy_changes": 22,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 26.592208000000028,
+        "ack_p95_ms": 16.003750000000082,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -8.099167000000023,
+        "delivery_p95_ms": -13.763332999999989,
+        "policy_changes": 22,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "latency_jump_recovery",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 4.718791000000003,
+        "ack_p95_ms": 898.3295420000001,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -0.18558399999999864,
+        "delivery_p95_ms": 3.4899990000000045,
+        "policy_changes": 25,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -8.864625000000004,
+        "ack_p95_ms": 900.4614579999999,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 1.6239580000000018,
+        "delivery_p95_ms": -9.789167000000006,
+        "policy_changes": 26,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 5.770916,
+        "ack_p95_ms": 894.801249,
+        "acked": 0,
+        "attempts": 0,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 1.371500000000001,
+        "delivery_p95_ms": 0.17737400000000036,
+        "policy_changes": 26,
+        "timeouts": 0
+      },
+      "both_runs_valid": true,
+      "profile": "ack_loss_after_commit",
+      "repetition": 3
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": 123.78899999999999,
+        "ack_p95_ms": 174.083125,
+        "acked": 0,
+        "attempts": 3,
+        "delivered_unique": 0,
+        "delivery_p50_ms": 123.94499999999994,
+        "delivery_p95_ms": 175.2332919999999,
+        "policy_changes": 17,
+        "timeouts": 3
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 1
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -282.27583300000003,
+        "ack_p95_ms": -281.81383300000005,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -283.056499,
+        "delivery_p95_ms": -282.04770799999994,
+        "policy_changes": 21,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 2
+    },
+    {
+      "adaptive_minus_static": {
+        "ack_p50_ms": -256.02583400000003,
+        "ack_p95_ms": -278.97299999999996,
+        "acked": 0,
+        "attempts": 2,
+        "delivered_unique": 0,
+        "delivery_p50_ms": -256.38141699999994,
+        "delivery_p95_ms": -279.95516699999996,
+        "policy_changes": 21,
+        "timeouts": 2
+      },
+      "both_runs_valid": true,
+      "profile": "blackout_return",
+      "repetition": 3
+    }
+  ]
+}

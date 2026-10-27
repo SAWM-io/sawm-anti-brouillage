@@ -1,0 +1,24 @@
+{
+  "schema": "resilience-test-validation/v1",
+  "recorded_at_utc": "2026-10-27T16:07:15.259642+00:00",
+  "command": "python -m unittest discover -s tests -v",
+  "python": "3.14.4",
+  "tests_run": 41,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 8.508,
+  "result": "OK",
+  "cloud_calls": 0,
+  "scope": "macOS; stdlib loopback HTTP tests and local mocked Cloud responses",
+  "source_sha256": {
+    "delivery.py": "2b959f48abb86e3985f65e359cddf7d235bd1652034a800c89d4accbd06576c9",
+    "adaptive_policy.py": "09ea86c7b78f2a77902f4b7863c0ab421921f3e95d1e7bcd92cd7f414ccb20b9",
+    "adaptive_lab.py": "db179fa96ab507baa6e2e3ed16d103a9430b12c89ca4ae95616292a53fa89eb2",
+    "witness.py": "679b03e4f637cac120d3eec70b3208ff1015c8009a6e3f10f82593f29c14d60f",
+    "tests/test_adaptive_delivery.py": "5a247269f6a5ae141eead4de8687aa34ac6bca199691dddc5f20306d14d87dcc",
+    "tests/test_adaptive_lab.py": "c5e371c9285d4c32df21548ee61d496dc8bf8f9468f3550c1ecd6d87cf589fc6",
+    "tests/test_delivery.py": "836b629567d49d317800295936c77eaf9db7d32b7dcfc55dd8d7cff33fd4c12c",
+    "tests/test_delivery_cloud_control.py": "410587b002a0e7e12a70966b0887617a5f3549b07d4c24becc1bd8173148438e"
+  }
+}

@@ -2,5 +2,14 @@
   "monorepo": "private/not-distributed",
   "source_commit": "9b5ef79e08a34addf2ada8a9d8a0010177b7ef1e",
   "source_path": "experiments/resilience-applicative/",
-  "export": "tracked files only"
+  "export": "tracked files only",
+  "distribution": {
+    "repository": "ulookme/sawm-anti-brouillage",
+    "base_repository_commit": "3520e807be26b75cfe98a9b9528bc6e85540cc95",
+    "standalone_additions": [
+      "optional bounded-rto/v2 continuous local calibration",
+      "paired real HTTP fault benchmark and preserved evidence"
+    ],
+    "validation": "docs/measured-adaptive-2026-10-27/README.md"
+  }
 }

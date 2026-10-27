@@ -1,0 +1,142 @@
+[
+  {
+    "arrival_lateness_ms": 1.472708,
+    "enqueue_finished_monotonic_ns": 293675608562750,
+    "enqueue_started_monotonic_ns": 293675607937208,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0001",
+    "scheduled_offset_ms": 0
+  },
+  {
+    "arrival_lateness_ms": 1.0447500000000005,
+    "enqueue_finished_monotonic_ns": 293675658057583,
+    "enqueue_started_monotonic_ns": 293675657509250,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0002",
+    "scheduled_offset_ms": 50
+  },
+  {
+    "arrival_lateness_ms": 1.1403329999999983,
+    "enqueue_finished_monotonic_ns": 293675708421125,
+    "enqueue_started_monotonic_ns": 293675707604833,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0003",
+    "scheduled_offset_ms": 100
+  },
+  {
+    "arrival_lateness_ms": 1.046875,
+    "enqueue_finished_monotonic_ns": 293675758203916,
+    "enqueue_started_monotonic_ns": 293675757511375,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0004",
+    "scheduled_offset_ms": 150
+  },
+  {
+    "arrival_lateness_ms": 1.1192499999999939,
+    "enqueue_finished_monotonic_ns": 293675808542291,
+    "enqueue_started_monotonic_ns": 293675807583750,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0005",
+    "scheduled_offset_ms": 200
+  },
+  {
+    "arrival_lateness_ms": 1.0548750000000098,
+    "enqueue_finished_monotonic_ns": 293675859848333,
+    "enqueue_started_monotonic_ns": 293675857519375,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0006",
+    "scheduled_offset_ms": 250
+  },
+  {
+    "arrival_lateness_ms": 0.14999999999997726,
+    "enqueue_finished_monotonic_ns": 293675908713500,
+    "enqueue_started_monotonic_ns": 293675906614500,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0007",
+    "scheduled_offset_ms": 300
+  },
+  {
+    "arrival_lateness_ms": 0.10066599999998971,
+    "enqueue_finished_monotonic_ns": 293675959248208,
+    "enqueue_started_monotonic_ns": 293675956565166,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0008",
+    "scheduled_offset_ms": 350
+  },
+  {
+    "arrival_lateness_ms": 0.7830410000000256,
+    "enqueue_finished_monotonic_ns": 293676009793500,
+    "enqueue_started_monotonic_ns": 293676007247541,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0009",
+    "scheduled_offset_ms": 400
+  },
+  {
+    "arrival_lateness_ms": 0.725750000000005,
+    "enqueue_finished_monotonic_ns": 293676059308625,
+    "enqueue_started_monotonic_ns": 293676057190250,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0010",
+    "scheduled_offset_ms": 450
+  },
+  {
+    "arrival_lateness_ms": 1.1480829999999855,
+    "enqueue_finished_monotonic_ns": 293676110308708,
+    "enqueue_started_monotonic_ns": 293676107612583,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0011",
+    "scheduled_offset_ms": 500
+  },
+  {
+    "arrival_lateness_ms": 0.67512499999998,
+    "enqueue_finished_monotonic_ns": 293676160022791,
+    "enqueue_started_monotonic_ns": 293676157139625,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0012",
+    "scheduled_offset_ms": 550
+  },
+  {
+    "arrival_lateness_ms": 0.09279100000003382,
+    "enqueue_finished_monotonic_ns": 293676208931916,
+    "enqueue_started_monotonic_ns": 293676206557291,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0013",
+    "scheduled_offset_ms": 600
+  },
+  {
+    "arrival_lateness_ms": 1.1174160000000484,
+    "enqueue_finished_monotonic_ns": 293676260377333,
+    "enqueue_started_monotonic_ns": 293676257581916,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0014",
+    "scheduled_offset_ms": 650
+  },
+  {
+    "arrival_lateness_ms": 0.8762500000000273,
+    "enqueue_finished_monotonic_ns": 293676310336875,
+    "enqueue_started_monotonic_ns": 293676307340750,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0015",
+    "scheduled_offset_ms": 700
+  },
+  {
+    "arrival_lateness_ms": 0.04666599999995924,
+    "enqueue_finished_monotonic_ns": 293676357729541,
+    "enqueue_started_monotonic_ns": 293676356511166,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0016",
+    "scheduled_offset_ms": 750
+  },
+  {
+    "arrival_lateness_ms": 1.1748750000000427,
+    "enqueue_finished_monotonic_ns": 293676408282083,
+    "enqueue_started_monotonic_ns": 293676407639375,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0017",
+    "scheduled_offset_ms": 800
+  },
+  {
+    "arrival_lateness_ms": 1.1060410000000047,
+    "enqueue_finished_monotonic_ns": 293676458304625,
+    "enqueue_started_monotonic_ns": 293676457570541,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0018",
+    "scheduled_offset_ms": 850
+  },
+  {
+    "arrival_lateness_ms": 1.1031659999999874,
+    "enqueue_finished_monotonic_ns": 293676508455875,
+    "enqueue_started_monotonic_ns": 293676507567666,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0019",
+    "scheduled_offset_ms": 900
+  },
+  {
+    "arrival_lateness_ms": 1.15787499999999,
+    "enqueue_finished_monotonic_ns": 293676560143291,
+    "enqueue_started_monotonic_ns": 293676557622375,
+    "message_id": "demo-7411932b6f76634474add3d46bd490c8-0020",
+    "scheduled_offset_ms": 950
+  }
+]
