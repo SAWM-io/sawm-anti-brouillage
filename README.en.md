@@ -1,5 +1,7 @@
 # SAWM Anti-Brouillage
 
+**Public SAWM-io repository.** No credentials or private configuration are included. Evidence identifiers are pseudonymised; the engines remain private. [Publication scope](PUBLICATION.md).
+
 ![sawm-anti-brouillage — measured software demonstration](docs/images/sawm-anti-brouillage-overview.png)
 
 [Article Medium — Français](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM.md) · [Medium article — English](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM-EN.md)
@@ -65,7 +67,7 @@ python3 -m venv .venv
 python lab.py --output-dir output/demo --messages 20 --policy examples/policy.json
 ```
 
-Appropriate GitHub access is required. Use a new output directory for every run. The scenario normally takes a few seconds, within a 30-second overall budget. It starts its own HTTP server, stops it for two seconds, restarts the worker, then restores the server.
+The demonstration repository is publicly readable. Use a new output directory for every run. The scenario normally takes a few seconds, within a 30-second overall budget. It starts its own HTTP server, stops it for two seconds, restarts the worker, then restores the server.
 
 Read `output/demo/report.json` for results and `output/demo/measurements.json` for structured measurements. SQLite databases and logs remain available for inspection. Omitting `--messages` uses 10 messages; the supported range is 3–20 per channel.
 

@@ -1,5 +1,7 @@
 # SAWM Anti-Brouillage
 
+**Dépôt public SAWM-io.** Aucune clé ni configuration privée n’est incluse. Les identifiants des preuves sont pseudonymisés ; les moteurs restent privés. [Périmètre de publication](PUBLICATION.md).
+
 ![sawm-anti-brouillage — measured software demonstration](docs/images/sawm-anti-brouillage-overview.png)
 
 [Article Medium — Français](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM.md) · [Medium article — English](docs/articles/SAWM-ANTI-BROUILLAGE-MEDIUM-EN.md)
@@ -65,7 +67,7 @@ python3 -m venv .venv
 python lab.py --output-dir output/demo --messages 20 --policy examples/policy.json
 ```
 
-Le dépôt nécessite les droits GitHub appropriés. Utilisez un nouveau répertoire de sortie à chaque essai. Le scénario dure normalement quelques secondes, avec un budget global de 30 secondes. Il crée son propre serveur HTTP, le coupe pendant deux secondes, redémarre le worker puis restaure le serveur.
+Le démonstrateur est consultable publiquement. Utilisez un nouveau répertoire de sortie à chaque essai. Le scénario dure normalement quelques secondes, avec un budget global de 30 secondes. Il crée son propre serveur HTTP, le coupe pendant deux secondes, redémarre le worker puis restaure le serveur.
 
 Consultez `output/demo/report.json` pour les résultats et `output/demo/measurements.json` pour les mesures structurées. Les bases SQLite et les journaux restent disponibles pour l'analyse. Sans `--messages`, le banc utilise 10 messages ; il accepte de 3 à 20 messages par canal.
 

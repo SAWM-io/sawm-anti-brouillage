@@ -5,3 +5,14 @@ __pycache__/
 *.env
 output/
 *.sqlite*
+
+# Credentials stay outside version control
+.env.*
+!.env.example
+*.token
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets/
