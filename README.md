@@ -12,6 +12,20 @@ SAWM Anti-Brouillage est un démonstrateur exécutable de livraison HTTP résili
 
 Le parcours Cloud ajoute une mémoire des essais avec **Basira**, un rappel vérifié avec **TSST**, un classement consultatif avec **ODVL** et une proposition de politique bornée par **SAWM**. Pendant l'essai, un mode optionnel de **calibration continue locale** ajuste le timeout HTTP et le délai entre reprises à partir des seules tentatives terminées. La livraison reste locale et autonome ; SAWM prépare la politique initiale avant l'exécution.
 
+## Reproduire les résultats du rapport
+
+![Reference report results — original numerical model](docs/reference-report-2026-10-27/summary.svg)
+
+Le rapport **« Le Réseau qui se souvient »** repose sur un autre banc que les essais HTTP ci-dessous. Son protocole original est maintenant rejoué avec le **moteur ODVL privé réel**, ses empreintes et ses traces. Les moteurs privés ne sont pas distribués dans ce dépôt.
+
+**16 canaux simulés, 8 graines × 1 200 pas** : réactif → ODVL, balayage **81,54 % → 84,76 %**, poursuivant **53,59 % → 55,41 %**. Il s’agit du débit relatif du modèle, pas de mesures RF. Le barrage global et le canal ciblé donnent des égalités.
+
+[Protocole et chiffres](docs/reference-report-2026-10-27/) · [Visualisation autonome](docs/reference-report-2026-10-27/index.html) · [Démonstration en direct VM → Mac](docs/DEMONSTRATION-LIVE.md)
+
+La démonstration en direct vérifie une livraison réelle et un changement entre deux chemins IP virtuels. Son contrôleur est local : il ne mesure pas l’apport d’ODVL.
+
+Ce rejeu utilise ODVL avec état local, sans nouvel appel Cloud ni bras TSST. Il ne remplace pas une validation radio physique ou sur réseau opérateur.
+
 ## Ce que vous pouvez évaluer
 
 | Besoin | Mécanisme démontré |

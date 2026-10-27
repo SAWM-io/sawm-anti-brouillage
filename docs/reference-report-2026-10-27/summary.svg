@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 548" role="img" aria-labelledby="title desc">
+<title id="title">SAWM Anti-Brouillage : comparaison de référence</title>
+<desc id="desc">Débit cumulé / nominal du modèle · moyennes sur 8 graines. Rejeu numérique original, pas de trafic radio ou opérateur mesuré.</desc>
+<rect width="1200" height="548" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#111">
+<text x="36" y="44" font-size="28" font-weight="700">SAWM Anti-Brouillage</text>
+<text x="36" y="76" font-size="18">Débit cumulé / nominal du modèle · moyennes sur 8 graines</text>
+<text x="36" y="106" font-size="14" fill="#555">Rejeu du simulateur original — pas un trafic radio/opérateur mesuré.</text>
+<rect x="36" y="126" width="24" height="8" fill="#999"/>
+<text x="70" y="137" font-size="15">Conduite réactive</text>
+<rect x="346" y="126" width="24" height="8" fill="#111"/>
+<text x="380" y="137" font-size="15">Mémoire ODVL</text>
+<line x1="245.00" y1="166" x2="245.00" y2="440" stroke="#e3e3e3"/>
+<text x="245.00" y="464" text-anchor="middle" font-size="13" fill="#555">0 %</text>
+<line x1="438.75" y1="166" x2="438.75" y2="440" stroke="#e3e3e3"/>
+<text x="438.75" y="464" text-anchor="middle" font-size="13" fill="#555">25 %</text>
+<line x1="632.50" y1="166" x2="632.50" y2="440" stroke="#e3e3e3"/>
+<text x="632.50" y="464" text-anchor="middle" font-size="13" fill="#555">50 %</text>
+<line x1="826.25" y1="166" x2="826.25" y2="440" stroke="#e3e3e3"/>
+<text x="826.25" y="464" text-anchor="middle" font-size="13" fill="#555">75 %</text>
+<line x1="1020.00" y1="166" x2="1020.00" y2="440" stroke="#e3e3e3"/>
+<text x="1020.00" y="464" text-anchor="middle" font-size="13" fill="#555">100 %</text>
+<text x="225" y="200" text-anchor="end" font-size="17">Barrage global</text>
+<rect x="245" y="178" width="143.375" height="14" rx="2" fill="#999"/>
+<text x="396.38" y="190" font-size="14">18,50 %</text>
+<rect x="245" y="201" width="143.375" height="14" rx="2" fill="#111"/>
+<text x="396.38" y="213" font-size="14">18,50 %</text>
+<text x="225" y="264" text-anchor="end" font-size="17">Canal ciblé</text>
+<rect x="245" y="242" width="688.975" height="14" rx="2" fill="#999"/>
+<text x="941.98" y="254" font-size="14">88,90 %</text>
+<rect x="245" y="265" width="688.975" height="14" rx="2" fill="#111"/>
+<text x="941.98" y="277" font-size="14">88,90 %</text>
+<text x="225" y="328" text-anchor="end" font-size="17">Balayage</text>
+<rect x="245" y="306" width="631.935" height="14" rx="2" fill="#999"/>
+<text x="884.94" y="318" font-size="14">81,54 %</text>
+<rect x="245" y="329" width="656.890" height="14" rx="2" fill="#111"/>
+<text x="909.89" y="341" font-size="14">84,76 %</text>
+<text x="225" y="392" text-anchor="end" font-size="17">Poursuivant</text>
+<rect x="245" y="370" width="415.322" height="14" rx="2" fill="#999"/>
+<text x="668.32" y="382" font-size="14">53,59 %</text>
+<rect x="245" y="393" width="429.428" height="14" rx="2" fill="#111"/>
+<text x="682.43" y="405" font-size="14">55,41 %</text>
+<text x="36" y="495" font-size="13" fill="#555">ODVL privé local avec état · Aucun appel Cloud · Source : reproduction.json, 27 octobre 2026.</text>
+</g></svg>

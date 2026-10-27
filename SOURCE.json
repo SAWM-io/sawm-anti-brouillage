@@ -9,9 +9,13 @@
     "standalone_additions": [
       "optional bounded-rto/v2 continuous local calibration",
       "paired real HTTP fault benchmark and preserved evidence",
-      "isolated Linux VM tc netem benchmark, calibration plots and raw delivery evidence"
+      "isolated Linux VM tc netem benchmark, calibration plots and raw delivery evidence",
+      "reference report replay adapter requiring external private stateful ODVL; source hashes and numerical step traces",
+      "live VM-to-Mac delivery dashboard with two isolated virtual paths and local adaptive failover"
     ],
     "validation": "docs/measured-adaptive-2026-10-27/README.md",
-    "vm_validation": "docs/measured-vm-2026-10-27/README.md"
+    "vm_validation": "docs/measured-vm-2026-10-27/README.md",
+    "reference_validation": "docs/reference-report-2026-10-27/README.md",
+    "live_validation": "docs/measured-live-2026-10-27/README.md"
   }
 }

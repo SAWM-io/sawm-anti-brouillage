@@ -1,0 +1,43 @@
+{
+  "schema": "sawm-radio-reference-replay/v1",
+  "source_sha256": {
+    "experiments/lien-adaptatif/lien.py": "fe296f15b92dd4f1ec2520d6e4a114770e7396412c1eeebf84288565c0a3de39",
+    "experiments/lien-adaptatif/adaptation.py": "52e569b72fb23997148640784fe22bd13d2b86c9ecde69a0e3b6377e41965d79",
+    "experiments/lien-adaptatif/equivalence.py": "e08bd8a5921f77eb6bcb9f1f68f8ee016609bcc530666b423a701fdad0ff274b",
+    "experiments/lien-adaptatif/run_bench.py": "f2fac7fe797fb678dbf70f1135d94686e471967892a6fd496019a0aef54cf30a",
+    "backend/services/basira_odvl.py": "8d2d1d2a3365e9ceefaeebf98a76ed12ad74424296319e8ddc96812fce47a42c"
+  },
+  "scope": {
+    "simulation": true,
+    "physical_radio": false,
+    "live_transport": false,
+    "cloud_calls": 0,
+    "tsst_exercised": false,
+    "sawm_llm_exercised": false
+  },
+  "engine": "Private stateful ODVLNetwork; a stateless /odvl/rank call is not equivalent.",
+  "protocol": {
+    "seeds": 8,
+    "steps": 1200,
+    "channels": 16,
+    "power_db": 22.0,
+    "jam_start_step": 150,
+    "jam_duration_steps": 950,
+    "pursuit_latency_steps": 4,
+    "sweep_width_channels": 3,
+    "retune_cost_steps": 2
+  },
+  "trace_only": true,
+  "success": true,
+  "trace_files": [
+    "trace-barrage-reactive-seed0.json",
+    "trace-barrage-odvl-seed0.json",
+    "trace-spot-reactive-seed0.json",
+    "trace-spot-odvl-seed0.json",
+    "trace-balayage-reactive-seed0.json",
+    "trace-balayage-odvl-seed0.json",
+    "trace-poursuivant-reactive-seed0.json",
+    "trace-poursuivant-odvl-seed0.json"
+  ],
+  "elapsed_s": 1.0334624169627205
+}

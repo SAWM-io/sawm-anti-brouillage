@@ -1,0 +1,309 @@
+{
+  "actual": {
+    "conflicts": 0,
+    "duplicate_effects": 0,
+    "duplicate_requests": 0,
+    "received_unique": 13
+  },
+  "age_seconds": 80.6,
+  "command": {
+    "command_version": 2,
+    "mode": "scripted",
+    "profile": "healthy"
+  },
+  "events": [
+    {
+      "at_ms": 4439.509543,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-012",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 4031.239418,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-011",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 3631.755751,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-010",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 3283.756043,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-009",
+      "path": "b",
+      "reason": "periodic_recovery_probe",
+      "type": "acked"
+    },
+    {
+      "at_ms": 2836.970418,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-008",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 2424.276501,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-007",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 2027.863084,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-006",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 1627.33825,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-005",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 1230.027209,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-004",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 833.258625,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-003",
+      "path": "a",
+      "reason": "current_observed_path",
+      "type": "acked"
+    },
+    {
+      "at_ms": 521.80925,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-002",
+      "path": "b",
+      "reason": "periodic_recovery_probe",
+      "type": "acked"
+    },
+    {
+      "at_ms": 108.550541,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-001",
+      "path": "a",
+      "reason": "initial_path_prior",
+      "type": "acked"
+    }
+  ],
+  "finished": true,
+  "fresh": false,
+  "history": [
+    {
+      "acked": 0,
+      "elapsed_ms": 26.481083,
+      "generated": 1,
+      "pending": 1,
+      "received": 0,
+      "srtt_a_ms": null,
+      "srtt_b_ms": null
+    },
+    {
+      "acked": 2,
+      "elapsed_ms": 541.456,
+      "generated": 2,
+      "pending": 0,
+      "received": 2,
+      "srtt_a_ms": 25.863957999999997,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 3,
+      "elapsed_ms": 1045.110917,
+      "generated": 3,
+      "pending": 0,
+      "received": 3,
+      "srtt_a_ms": 24.798030999999998,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 4,
+      "elapsed_ms": 1558.053292,
+      "generated": 4,
+      "pending": 0,
+      "received": 4,
+      "srtt_a_ms": 23.854673000000012,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 6,
+      "elapsed_ms": 2071.232209,
+      "generated": 6,
+      "pending": 0,
+      "received": 6,
+      "srtt_a_ms": 22.10812725000003,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 7,
+      "elapsed_ms": 2582.612251,
+      "generated": 7,
+      "pending": 0,
+      "received": 7,
+      "srtt_a_ms": 21.36651759375,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 8,
+      "elapsed_ms": 3089.147918,
+      "generated": 8,
+      "pending": 0,
+      "received": 8,
+      "srtt_a_ms": 20.94493726953121,
+      "srtt_b_ms": 100.27208300000001
+    },
+    {
+      "acked": 9,
+      "elapsed_ms": 3607.10446,
+      "generated": 10,
+      "pending": 1,
+      "received": 9,
+      "srtt_a_ms": 20.94493726953121,
+      "srtt_b_ms": 96.08619237499997
+    },
+    {
+      "acked": 11,
+      "elapsed_ms": 4118.079668,
+      "generated": 11,
+      "pending": 0,
+      "received": 11,
+      "srtt_a_ms": 20.08310098760989,
+      "srtt_b_ms": 96.08619237499997
+    },
+    {
+      "acked": 12,
+      "elapsed_ms": 4633.799627,
+      "generated": 12,
+      "pending": 0,
+      "received": 12,
+      "srtt_a_ms": 19.72937473915865,
+      "srtt_b_ms": 96.08619237499997
+    }
+  ],
+  "last_message_ms": 1793121047330,
+  "last_status_ms": 1793121047139,
+  "launcher": {
+    "active": false,
+    "available": true,
+    "returncode": 255,
+    "run_registered": true,
+    "started_ms": 1793121042134
+  },
+  "receipts": [
+    {
+      "accepted_ms": 1793121047330,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-013",
+      "payload": "SAWM live resilience message 013 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "794be6da14f26312db7e7a1f106edcef2aa7819f3ddc4ac8a5b84718cd1a1d40"
+    },
+    {
+      "accepted_ms": 1793121046937,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-012",
+      "payload": "SAWM live resilience message 012 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "9095f439ebe299d08ae2d3cba63a50dd8b1548e71165f0cf179a84929c621b8b"
+    },
+    {
+      "accepted_ms": 1793121046529,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-011",
+      "payload": "SAWM live resilience message 011 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "10dee910b0cb2e4b7438d01a5e12fb4b701350f7a06ee46c4bd8f64689d0cfb4"
+    },
+    {
+      "accepted_ms": 1793121046129,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-010",
+      "payload": "SAWM live resilience message 010 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "90bb8886cc65ad9eb42dc4ce61c83fa97a6ccc6004704068ada973e66dad6056"
+    },
+    {
+      "accepted_ms": 1793121045767,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-009",
+      "payload": "SAWM live resilience message 009 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "a1ba3f773e51dcf2cdf0b2fa4757346cf759c10f9be19aeed6e03cbbb373205e"
+    },
+    {
+      "accepted_ms": 1793121045334,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-008",
+      "payload": "SAWM live resilience message 008 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "dde9c5d7cef24f1c237ab2665edef062532d8bb81b6ecc9b059a4f172756def0"
+    },
+    {
+      "accepted_ms": 1793121044922,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-007",
+      "payload": "SAWM live resilience message 007 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "6edafa62303db075759713409cdce78f1b792292b94a40c6f26b9d810efd01d3"
+    },
+    {
+      "accepted_ms": 1793121044525,
+      "message_id": "live-9c909d7d916b41baa7527c6b63cc7e86-006",
+      "payload": "SAWM live resilience message 006 / fictitious demonstration",
+      "requests": 1,
+      "sha256": "d936dab54cc5334beb5b0a2e9c511373a987a8f92785887d8d4e66941723ad11"
+    }
+  ],
+  "run_id": "live-9c909d7d916b41baa7527c6b63cc7e86",
+  "runs": [
+    {
+      "last_status_ms": 1793121047139,
+      "run_id": "live-9c909d7d916b41baa7527c6b63cc7e86",
+      "started_ms": 1793121042537
+    },
+    {
+      "last_status_ms": 1793120974592,
+      "run_id": "live-2926459f1ea04c8ca3d794a2a0033e71",
+      "started_ms": 1793120951021
+    }
+  ],
+  "status": {
+    "acked": 12,
+    "active_path": "a",
+    "attempts": 12,
+    "elapsed_ms": 4633.799627,
+    "generated": 12,
+    "mode": "scripted",
+    "paths": {
+      "a": {
+        "consecutive_failures": 0,
+        "failures": 0,
+        "last_attempt_ms": 4439.509543,
+        "last_success_ms": 4439.509543,
+        "rttvar_ms": 4.814851264667481,
+        "srtt_ms": 19.72937473915865,
+        "successes": 10,
+        "timeout_ms": 80.0
+      },
+      "b": {
+        "consecutive_failures": 0,
+        "failures": 0,
+        "last_attempt_ms": 3283.756043,
+        "last_success_ms": 3283.756043,
+        "rttvar_ms": 45.97381237500007,
+        "srtt_ms": 96.08619237499997,
+        "successes": 2,
+        "timeout_ms": 304.98144187500026
+      }
+    },
+    "pending": 0,
+    "phase": "healthy",
+    "run_id": "live-9c909d7d916b41baa7527c6b63cc7e86",
+    "scope": "two_virtual_paths_shared_ssh_tunnel_no_radio",
+    "timeouts": 0
+  }
+}

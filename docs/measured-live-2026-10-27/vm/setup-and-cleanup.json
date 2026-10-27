@@ -1,0 +1,1573 @@
+[
+  {
+    "at_monotonic_ns": 167429242870,
+    "command": [
+      "ip",
+      "netns",
+      "add",
+      "sawm-live-16f2ac1abc83-tx"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167431718120,
+    "command": [
+      "ip",
+      "link",
+      "add",
+      "sl16f2ac1aba",
+      "type",
+      "veth",
+      "peer",
+      "name",
+      "sp16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167440409495,
+    "command": [
+      "ip",
+      "link",
+      "set",
+      "sp16f2ac1aba",
+      "netns",
+      "sawm-live-16f2ac1abc83-tx"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167448827203,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "link",
+      "set",
+      "sp16f2ac1aba",
+      "name",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167452330620,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "address",
+      "add",
+      "198.18.20.1/30",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167454232995,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "link",
+      "set",
+      "linka",
+      "up"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167456486328,
+    "command": [
+      "ip",
+      "address",
+      "add",
+      "198.18.20.2/30",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167460968120,
+    "command": [
+      "ip",
+      "link",
+      "set",
+      "sl16f2ac1aba",
+      "up"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167464278995,
+    "command": [
+      "ip",
+      "link",
+      "add",
+      "sl16f2ac1abb",
+      "type",
+      "veth",
+      "peer",
+      "name",
+      "sp16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167469428620,
+    "command": [
+      "ip",
+      "link",
+      "set",
+      "sp16f2ac1abb",
+      "netns",
+      "sawm-live-16f2ac1abc83-tx"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167476452703,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "link",
+      "set",
+      "sp16f2ac1abb",
+      "name",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167479725495,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "address",
+      "add",
+      "198.18.21.1/30",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167482163162,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "link",
+      "set",
+      "linkb",
+      "up"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167482632203,
+    "command": [
+      "ip",
+      "address",
+      "add",
+      "198.18.21.2/30",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167485078120,
+    "command": [
+      "ip",
+      "link",
+      "set",
+      "sl16f2ac1abb",
+      "up"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167492680828,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "ip",
+      "link",
+      "set",
+      "lo",
+      "up"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167501796245,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167503060787,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167503640537,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167506333620,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167510152995,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1aba",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "3ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167511775412,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linka",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "3ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167512737162,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1abb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167514275745,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linkb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 167515099620,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167517139370,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167518851162,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 167520954745,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172503930248,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8916,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172506425248,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9895,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172507029998,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2004,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172508767123,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2182,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172509362164,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1aba",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "80ms",
+      "20ms",
+      "loss",
+      "random",
+      "10%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 172510377081,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linka",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "80ms",
+      "20ms",
+      "loss",
+      "random",
+      "10%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 172510862373,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1abb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 172511807706,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linkb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 172512366498,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8916,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172514410331,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9895,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172515056831,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2004,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 172515849498,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2182,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179507398501,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179510737876,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179511712126,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":14362,\"packets\":115,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179514234876,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":15964,\"packets\":115,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":74,\"qlen\":1}]\n"
+  },
+  {
+    "at_monotonic_ns": 179516481459,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1aba",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 179517893251,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linka",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 179518606334,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1abb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 179520951209,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linkb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 179521640293,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179523991918,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 179524754418,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":14362,\"packets\":115,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":74,\"qlen\":1}]\n"
+  },
+  {
+    "at_monotonic_ns": 179527037001,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":16038,\"packets\":116,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187537513296,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187550240338,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":4,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187554632463,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":29866,\"packets\":237,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187558487588,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":33248,\"packets\":237,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":651,\"qlen\":3}]\n"
+  },
+  {
+    "at_monotonic_ns": 187563379755,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1aba",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 187568081213,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linka",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 187572591130,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1abb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 187577088963,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linkb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "loss",
+      "random",
+      "100%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 187579340921,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187584852130,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":4,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187588242130,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":29998,\"packets\":239,\"drops\":2,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 187591840796,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":33899,\"packets\":240,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192517609757,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192525041215,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192526138549,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":29998,\"packets\":239,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192527839799,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":33899,\"packets\":240,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192529873965,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1aba",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "3ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 192531336965,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linka",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "3ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 192531900590,
+    "command": [
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "sl16f2ac1abb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 192532859090,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "qdisc",
+      "replace",
+      "dev",
+      "linkb",
+      "root",
+      "handle",
+      "10:",
+      "netem",
+      "limit",
+      "256",
+      "delay",
+      "15ms",
+      "loss",
+      "random",
+      "0%"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 192533396507,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9980,\"packets\":82,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192534336465,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":11276,\"packets\":86,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192535478132,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":29998,\"packets\":239,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 192539828007,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":33899,\"packets\":240,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 207191907431,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":39233,\"packets\":311,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 207193641222,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linka"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":43912,\"packets\":315,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 207194800764,
+    "command": [
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":39648,\"packets\":312,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":66,\"qlen\":1}]\n"
+  },
+  {
+    "at_monotonic_ns": 207197324722,
+    "command": [
+      "ip",
+      "netns",
+      "exec",
+      "sawm-live-16f2ac1abc83-tx",
+      "tc",
+      "-s",
+      "-j",
+      "qdisc",
+      "show",
+      "dev",
+      "linkb"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":44307,\"packets\":314,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  {
+    "at_monotonic_ns": 207259956514,
+    "command": [
+      "ip",
+      "netns",
+      "delete",
+      "sawm-live-16f2ac1abc83-tx"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 207262943264,
+    "command": [
+      "ip",
+      "link",
+      "show",
+      "dev",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "8: sl16f2ac1aba@if7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc netem state UP mode DEFAULT group default qlen 1000\n    link/ether 6a:07:43:92:6b:a1 brd ff:ff:ff:ff:ff:ff link-netnsid unknown\n"
+  },
+  {
+    "at_monotonic_ns": 207267423431,
+    "command": [
+      "ip",
+      "link",
+      "delete",
+      "sl16f2ac1aba"
+    ],
+    "returncode": 1,
+    "stderr": "Cannot find device \"sl16f2ac1aba\"\n",
+    "stdout": ""
+  },
+  {
+    "at_monotonic_ns": 207268481556,
+    "command": [
+      "ip",
+      "-j",
+      "link",
+      "show"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "[{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\"},{\"ifindex\":2,\"ifname\":\"enp0s1\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"fq_codel\",\"operstate\":\"UP\",\"linkmode\":\"DEFAULT\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"02:00:5e:09:b5:4b\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\"}]\n"
+  },
+  {
+    "at_monotonic_ns": 207270716014,
+    "command": [
+      "ip",
+      "link",
+      "show",
+      "dev",
+      "sl16f2ac1abb"
+    ],
+    "returncode": 1,
+    "stderr": "Device \"sl16f2ac1abb\" does not exist.\n",
+    "stdout": ""
+  }
+]

@@ -1,0 +1,581 @@
+{
+  "checks": {
+    "all_acks_correlated": true,
+    "all_messages_acked": true,
+    "all_scripted_phases_exercised": true,
+    "attempt_budgets": true,
+    "cleanup": false,
+    "degraded_delivery": true,
+    "fallback_delivery": true,
+    "nominal_delivery": true,
+    "primary_network_preserved": true,
+    "recovery_delivery": true,
+    "source_unchanged": true,
+    "total_cut_no_stable_ack": true
+  },
+  "cleanup": {
+    "network_removed": false,
+    "proxy_0_stopped": true,
+    "proxy_1_stopped": true,
+    "worker_stopped": true
+  },
+  "command_events": [
+    {
+      "at_ms": 80.927583,
+      "command_version": 3,
+      "mode": "scripted",
+      "profile": "healthy"
+    }
+  ],
+  "control_errors": [],
+  "elapsed_ms": 39738.362352,
+  "final_status": {
+    "acked": 100,
+    "active_path": "a",
+    "attempts": 117,
+    "elapsed_ms": 39652.27506,
+    "events": [
+      {
+        "at_ms": 28033.897721,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-071",
+        "path": "a",
+        "reason": "periodic_recovery_probe",
+        "type": "acked"
+      },
+      {
+        "at_ms": 28438.032013,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-072",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 28828.214388,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-073",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 29238.843138,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-074",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 29630.257389,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-075",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 30028.992722,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-076",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 30476.445681,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-077",
+        "path": "b",
+        "reason": "periodic_recovery_probe",
+        "type": "acked"
+      },
+      {
+        "at_ms": 30834.174681,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-078",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 31235.607764,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-079",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 31624.395015,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-080",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 32038.590556,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-081",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 32430.378182,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-082",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 32829.408349,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-083",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 33285.49164,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-084",
+        "path": "b",
+        "reason": "periodic_recovery_probe",
+        "type": "acked"
+      },
+      {
+        "at_ms": 33629.198974,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-085",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 34035.882099,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-086",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 34428.557808,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-087",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 34840.046474,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-088",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 35227.241058,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-089",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 35629.974683,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-090",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 36074.8306,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-091",
+        "path": "b",
+        "reason": "periodic_recovery_probe",
+        "type": "acked"
+      },
+      {
+        "at_ms": 36431.32485,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-092",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 36827.332142,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-093",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 37230.139059,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-094",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 37638.437392,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-095",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 38027.635643,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-096",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 38436.205435,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-097",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 38877.94381,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-098",
+        "path": "b",
+        "reason": "periodic_recovery_probe",
+        "type": "acked"
+      },
+      {
+        "at_ms": 39225.49756,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-099",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      },
+      {
+        "at_ms": 39624.382185,
+        "message_id": "live-233843d721e0403f99acb43863e355bf-100",
+        "path": "a",
+        "reason": "current_observed_path",
+        "type": "acked"
+      }
+    ],
+    "generated": 100,
+    "paths": {
+      "a": {
+        "consecutive_failures": 0,
+        "failures": 11,
+        "last_attempt_ms": 39624.382185,
+        "last_success_ms": 39624.382185,
+        "rttvar_ms": 1.196208175566864,
+        "srtt_ms": 16.79344925566174,
+        "successes": 37,
+        "timeout_ms": 80.0
+      },
+      "b": {
+        "consecutive_failures": 0,
+        "failures": 6,
+        "last_attempt_ms": 38877.94381,
+        "last_success_ms": 38877.94381,
+        "rttvar_ms": 0.7193563264243956,
+        "srtt_ms": 64.85253671719727,
+        "successes": 63,
+        "timeout_ms": 92.72996202289485
+      }
+    },
+    "pending": 0,
+    "phase": "recovery",
+    "run_id": "live-233843d721e0403f99acb43863e355bf",
+    "scope": "two_virtual_paths_shared_ssh_tunnel_no_radio",
+    "timeouts": 17
+  },
+  "finished_at_ms": 1793121236282,
+  "phase_events": [
+    {
+      "after": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "applied_ms": 40.344666,
+      "before": {
+        "a_host": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"noqueue\",\"handle\":\"0:\",\"root\":true,\"refcnt\":2,\"options\":{},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "profile": "healthy",
+      "started_ms": 6.881166
+    },
+    {
+      "after": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8916,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9895,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2004,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2182,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "applied_ms": 5018.207794,
+      "before": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8916,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9895,\"packets\":72,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2004,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2182,\"packets\":18,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "profile": "degraded_a",
+      "started_ms": 5007.44746
+    },
+    {
+      "after": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":2,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":15204,\"packets\":122,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":16895,\"packets\":122,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":651,\"qlen\":3}]\n"
+      },
+      "applied_ms": 12044.29413,
+      "before": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.08,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":2,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":15130,\"packets\":121,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":16821,\"packets\":121,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":74,\"qlen\":1}]\n"
+      },
+      "profile": "cut_a",
+      "started_ms": 12012.691047
+    },
+    {
+      "after": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":30560,\"packets\":242,\"drops\":1,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":34105,\"packets\":243,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "applied_ms": 20033.023801,
+      "before": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":30560,\"packets\":242,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":34031,\"packets\":242,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":74,\"qlen\":1}]\n"
+      },
+      "profile": "cut_both",
+      "started_ms": 20011.572051
+    },
+    {
+      "after": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":30560,\"packets\":242,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":34105,\"packets\":243,\"drops\":5,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "applied_ms": 25010.709845,
+      "before": {
+        "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":9504,\"packets\":80,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":10757,\"packets\":82,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":30560,\"packets\":242,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+        "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":34105,\"packets\":243,\"drops\":5,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+      },
+      "profile": "recovery",
+      "started_ms": 25002.938636
+    }
+  ],
+  "phase_metrics": [
+    {
+      "ack_count": 13,
+      "applied_ms": 40.344666,
+      "boundary_acks": 0,
+      "first_ack_after_recovery_ms": null,
+      "path_b_acks_attempted_during_phase": 2,
+      "profile": "healthy",
+      "stable_ack_count": 13,
+      "stable_after_guard_ms": 0,
+      "until_ms": 5007.44746
+    },
+    {
+      "ack_count": 17,
+      "applied_ms": 5018.207794,
+      "boundary_acks": 0,
+      "first_ack_after_recovery_ms": null,
+      "path_b_acks_attempted_during_phase": 17,
+      "profile": "degraded_a",
+      "stable_ack_count": 17,
+      "stable_after_guard_ms": 0,
+      "until_ms": 12012.691047
+    },
+    {
+      "ack_count": 20,
+      "applied_ms": 12044.29413,
+      "boundary_acks": 0,
+      "first_ack_after_recovery_ms": null,
+      "path_b_acks_attempted_during_phase": 19,
+      "profile": "cut_a",
+      "stable_ack_count": 20,
+      "stable_after_guard_ms": 0,
+      "until_ms": 20011.572051
+    },
+    {
+      "ack_count": 0,
+      "applied_ms": 20033.023801,
+      "boundary_acks": 0,
+      "first_ack_after_recovery_ms": null,
+      "path_b_acks_attempted_during_phase": 0,
+      "profile": "cut_both",
+      "stable_ack_count": 0,
+      "stable_after_guard_ms": 200,
+      "until_ms": 25002.938636
+    },
+    {
+      "ack_count": 50,
+      "applied_ms": 25010.709845,
+      "boundary_acks": 0,
+      "first_ack_after_recovery_ms": 394.6656249999978,
+      "path_b_acks_attempted_during_phase": 24,
+      "profile": "recovery",
+      "stable_ack_count": 50,
+      "stable_after_guard_ms": 0,
+      "until_ms": 39651.657768
+    }
+  ],
+  "qdisc_final": {
+    "a_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":29596,\"packets\":238,\"drops\":8,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+    "a_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.003,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":33430,\"packets\":240,\"drops\":14,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+    "b_host": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":49136,\"packets\":388,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+    "b_sender": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.015,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":54797,\"packets\":389,\"drops\":5,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  "run_id": "live-233843d721e0403f99acb43863e355bf",
+  "schema": "sawm-live-vm/v1",
+  "scope": {
+    "core_delivery_modified": false,
+    "physical_path_independence": false,
+    "radio": false,
+    "shared_tunnel": "VM loopback:18901 to Mac receiver"
+  },
+  "scripted_scenario_unmodified": true,
+  "setup_elapsed_ms": 110.4455,
+  "source_sha256": "7870c88f9e9c92c85990b8c00d0e2f0534be00b0bc83e01041fafba0873443ce",
+  "started_at_ms": 1793121196454,
+  "success": false,
+  "topology": {
+    "links": [
+      {
+        "addr_info": [
+          {
+            "family": "inet",
+            "label": "lo",
+            "local": "127.0.0.1",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 8,
+            "scope": "host",
+            "valid_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "::1",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 128,
+            "scope": "host",
+            "valid_life_time": 4294967295
+          }
+        ],
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "group": "default",
+        "ifindex": 1,
+        "ifname": "lo",
+        "link_type": "loopback",
+        "mtu": 65536,
+        "operstate": "UNKNOWN",
+        "qdisc": "noqueue",
+        "txqlen": 1000
+      },
+      {
+        "addr_info": [
+          {
+            "family": "inet",
+            "label": "linka",
+            "local": "198.18.20.1",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 30,
+            "scope": "global",
+            "valid_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "2001:db8::22",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 64,
+            "scope": "link",
+            "tentative": true,
+            "valid_life_time": 4294967295
+          }
+        ],
+        "address": "4a:f7:95:40:dd:4b",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "group": "default",
+        "ifindex": 3,
+        "ifname": "linka",
+        "link_index": 4,
+        "link_netnsid": 0,
+        "link_type": "ether",
+        "mtu": 1500,
+        "operstate": "UP",
+        "qdisc": "noqueue",
+        "txqlen": 1000
+      },
+      {
+        "addr_info": [
+          {
+            "family": "inet",
+            "label": "linkb",
+            "local": "198.18.21.1",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 30,
+            "scope": "global",
+            "valid_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "2001:db8::1b",
+            "preferred_life_time": 4294967295,
+            "prefixlen": 64,
+            "scope": "link",
+            "tentative": true,
+            "valid_life_time": 4294967295
+          }
+        ],
+        "address": "da:1e:37:be:e5:8e",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "group": "default",
+        "ifindex": 5,
+        "ifname": "linkb",
+        "link_index": 6,
+        "link_netnsid": 0,
+        "link_type": "ether",
+        "mtu": 1500,
+        "operstate": "UP",
+        "qdisc": "noqueue",
+        "txqlen": 1000
+      }
+    ],
+    "routes": [
+      {
+        "dev": "linka",
+        "dst": "198.18.20.0/30",
+        "flags": [],
+        "prefsrc": "198.18.20.1",
+        "protocol": "kernel",
+        "scope": "link"
+      },
+      {
+        "dev": "linkb",
+        "dst": "198.18.21.0/30",
+        "flags": [],
+        "prefsrc": "198.18.21.1",
+        "protocol": "kernel",
+        "scope": "link"
+      }
+    ]
+  },
+  "worker_exit_code": 0
+}

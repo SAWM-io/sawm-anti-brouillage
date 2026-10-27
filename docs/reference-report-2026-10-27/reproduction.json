@@ -1,0 +1,588 @@
+{
+  "puissance_db": 22.0,
+  "graines": 8,
+  "pas": 1200,
+  "canaux": 16,
+  "cout_saut_pas": 2,
+  "reference": "B — réactif",
+  "resultats": {
+    "barrage": {
+      "A — fixe": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      },
+      "B — réactif": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      },
+      "C — mémoire": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      },
+      "D — provenance": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      },
+      "E — patient": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      },
+      "F — ODVL": {
+        "debit_relatif": 0.185,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7917,
+        "sauts": 0.0,
+        "par_graine": [
+          0.1941,
+          0.1916,
+          0.1963,
+          0.1972,
+          0.17,
+          0.1719,
+          0.1667,
+          0.1923
+        ]
+      }
+    },
+    "spot": {
+      "A — fixe": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      },
+      "B — réactif": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      },
+      "C — mémoire": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      },
+      "D — provenance": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      },
+      "E — patient": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      },
+      "F — ODVL": {
+        "debit_relatif": 0.889,
+        "ecart_type": 0.0595,
+        "part_du_temps_coupe": 0.0,
+        "sauts": 0.0,
+        "par_graine": [
+          0.933,
+          0.9173,
+          0.9466,
+          0.9465,
+          0.8144,
+          0.8263,
+          0.7997,
+          0.9282
+        ]
+      }
+    },
+    "balayage": {
+      "A — fixe": {
+        "debit_relatif": 0.7616,
+        "ecart_type": 0.0511,
+        "part_du_temps_coupe": 0.1433,
+        "sauts": 0.0,
+        "par_graine": [
+          0.7992,
+          0.7862,
+          0.8108,
+          0.8113,
+          0.6981,
+          0.7074,
+          0.6848,
+          0.795
+        ]
+      },
+      "B — réactif": {
+        "debit_relatif": 0.8154,
+        "ecart_type": 0.0169,
+        "part_du_temps_coupe": 0.0847,
+        "sauts": 33.9,
+        "par_graine": [
+          0.8201,
+          0.8047,
+          0.7963,
+          0.8315,
+          0.8393,
+          0.8314,
+          0.7896,
+          0.81
+        ]
+      },
+      "C — mémoire": {
+        "debit_relatif": 0.8102,
+        "ecart_type": 0.0113,
+        "part_du_temps_coupe": 0.0894,
+        "sauts": 35.8,
+        "par_graine": [
+          0.8162,
+          0.8068,
+          0.7971,
+          0.8144,
+          0.8305,
+          0.8153,
+          0.7914,
+          0.81
+        ]
+      },
+      "D — provenance": {
+        "debit_relatif": 0.7457,
+        "ecart_type": 0.036,
+        "part_du_temps_coupe": 0.155,
+        "sauts": 62.0,
+        "par_graine": [
+          0.7674,
+          0.7464,
+          0.7929,
+          0.7319,
+          0.7108,
+          0.7875,
+          0.6787,
+          0.7503
+        ]
+      },
+      "E — patient": {
+        "debit_relatif": 0.7774,
+        "ecart_type": 0.0269,
+        "part_du_temps_coupe": 0.1592,
+        "sauts": 31.9,
+        "par_graine": [
+          0.7905,
+          0.7817,
+          0.8031,
+          0.7621,
+          0.7919,
+          0.7146,
+          0.775,
+          0.8005
+        ]
+      },
+      "F — ODVL": {
+        "debit_relatif": 0.8476,
+        "ecart_type": 0.0088,
+        "part_du_temps_coupe": 0.0966,
+        "sauts": 38.6,
+        "par_graine": [
+          0.8622,
+          0.8392,
+          0.8366,
+          0.8431,
+          0.8461,
+          0.8592,
+          0.8525,
+          0.8422
+        ]
+      }
+    },
+    "poursuivant": {
+      "A — fixe": {
+        "debit_relatif": 0.1858,
+        "ecart_type": 0.0122,
+        "part_du_temps_coupe": 0.7908,
+        "sauts": 0.0,
+        "par_graine": [
+          0.195,
+          0.1924,
+          0.1971,
+          0.198,
+          0.1707,
+          0.1727,
+          0.1674,
+          0.1931
+        ]
+      },
+      "B — réactif": {
+        "debit_relatif": 0.5359,
+        "ecart_type": 0.0132,
+        "part_du_temps_coupe": 0.3975,
+        "sauts": 159.0,
+        "par_graine": [
+          0.5336,
+          0.5444,
+          0.5309,
+          0.5491,
+          0.5401,
+          0.5438,
+          0.504,
+          0.5412
+        ]
+      },
+      "C — mémoire": {
+        "debit_relatif": 0.5381,
+        "ecart_type": 0.0115,
+        "part_du_temps_coupe": 0.3975,
+        "sauts": 159.0,
+        "par_graine": [
+          0.5388,
+          0.5366,
+          0.5426,
+          0.5511,
+          0.5449,
+          0.5346,
+          0.5107,
+          0.5452
+        ]
+      },
+      "D — provenance": {
+        "debit_relatif": 0.5321,
+        "ecart_type": 0.0058,
+        "part_du_temps_coupe": 0.3975,
+        "sauts": 159.0,
+        "par_graine": [
+          0.5322,
+          0.5352,
+          0.5344,
+          0.5399,
+          0.5355,
+          0.5278,
+          0.5192,
+          0.5326
+        ]
+      },
+      "E — patient": {
+        "debit_relatif": 0.4288,
+        "ecart_type": 0.0187,
+        "part_du_temps_coupe": 0.53,
+        "sauts": 106.0,
+        "par_graine": [
+          0.4443,
+          0.44,
+          0.4486,
+          0.4438,
+          0.4063,
+          0.41,
+          0.3994,
+          0.4381
+        ]
+      },
+      "F — ODVL": {
+        "debit_relatif": 0.5541,
+        "ecart_type": 0.0057,
+        "part_du_temps_coupe": 0.3975,
+        "sauts": 159.0,
+        "par_graine": [
+          0.5585,
+          0.5533,
+          0.5562,
+          0.56,
+          0.5521,
+          0.552,
+          0.5412,
+          0.5592
+        ]
+      }
+    }
+  },
+  "contre_la_conduite_du_marche": {
+    "barrage": {
+      "A — fixe": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "B — réactif": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "C — mémoire": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "D — provenance": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "E — patient": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "F — ODVL": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      }
+    },
+    "spot": {
+      "A — fixe": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "B — réactif": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "C — mémoire": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "D — provenance": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "E — patient": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "F — ODVL": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      }
+    },
+    "balayage": {
+      "A — fixe": {
+        "delta_moyen": -0.0538,
+        "devant": 1,
+        "egal": 0,
+        "derriere": 7,
+        "n": 8
+      },
+      "B — réactif": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "C — mémoire": {
+        "delta_moyen": -0.0052,
+        "devant": 3,
+        "egal": 1,
+        "derriere": 4,
+        "n": 8
+      },
+      "D — provenance": {
+        "delta_moyen": -0.0696,
+        "devant": 0,
+        "egal": 0,
+        "derriere": 8,
+        "n": 8
+      },
+      "E — patient": {
+        "delta_moyen": -0.0379,
+        "devant": 1,
+        "egal": 0,
+        "derriere": 7,
+        "n": 8
+      },
+      "F — ODVL": {
+        "delta_moyen": 0.0323,
+        "devant": 8,
+        "egal": 0,
+        "derriere": 0,
+        "n": 8
+      }
+    },
+    "poursuivant": {
+      "A — fixe": {
+        "delta_moyen": -0.3501,
+        "devant": 0,
+        "egal": 0,
+        "derriere": 8,
+        "n": 8
+      },
+      "B — réactif": {
+        "delta_moyen": 0.0,
+        "devant": 0,
+        "egal": 8,
+        "derriere": 0,
+        "n": 8
+      },
+      "C — mémoire": {
+        "delta_moyen": 0.0022,
+        "devant": 6,
+        "egal": 0,
+        "derriere": 2,
+        "n": 8
+      },
+      "D — provenance": {
+        "delta_moyen": -0.0038,
+        "devant": 2,
+        "egal": 0,
+        "derriere": 6,
+        "n": 8
+      },
+      "E — patient": {
+        "delta_moyen": -0.1071,
+        "devant": 0,
+        "egal": 0,
+        "derriere": 8,
+        "n": 8
+      },
+      "F — ODVL": {
+        "delta_moyen": 0.0182,
+        "devant": 8,
+        "egal": 0,
+        "derriere": 0,
+        "n": 8
+      }
+    }
+  },
+  "elapsed_s": 6.110688416985795,
+  "source_sha256": {
+    "experiments/lien-adaptatif/lien.py": "fe296f15b92dd4f1ec2520d6e4a114770e7396412c1eeebf84288565c0a3de39",
+    "experiments/lien-adaptatif/adaptation.py": "52e569b72fb23997148640784fe22bd13d2b86c9ecde69a0e3b6377e41965d79",
+    "experiments/lien-adaptatif/run_bench.py": "f2fac7fe797fb678dbf70f1135d94686e471967892a6fd496019a0aef54cf30a",
+    "backend/services/basira_odvl.py": "8d2d1d2a3365e9ceefaeebf98a76ed12ad74424296319e8ddc96812fce47a42c"
+  },
+  "execution": "new local replay with the private production Python ODVL implementation; no Cloud calls, no RF"
+}

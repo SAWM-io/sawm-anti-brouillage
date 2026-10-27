@@ -12,6 +12,20 @@ SAWM Anti-Brouillage is an executable demonstration of resilient HTTP delivery: 
 
 The Cloud workflow adds experiment memory through **Basira**, verified recall through **TSST**, advisory ranking through **ODVL**, and a bounded policy proposal from **SAWM**. During the experiment, optional **continuous local calibration** adjusts the HTTP timeout and retry delay using only completed attempts. Delivery remains local and independent; SAWM prepares the initial policy before execution.
 
+## Reproducing the reference report
+
+![Reference report results — original numerical model](docs/reference-report-2026-10-27/summary.svg)
+
+**“Le Réseau qui se souvient”** uses a different benchmark from the HTTP experiments below. Its original protocol has now been replayed with the **actual private ODVL engine**, source hashes and step traces. Private engines are not distributed in this repository.
+
+**16 simulated channels, 8 seeds × 1,200 steps**: reactive → ODVL, sweeping **81.54% → 84.76%**, chasing **53.59% → 55.41%**. These are relative model throughput values, not RF measurements. Wideband and spot scenarios are ties.
+
+[Protocol and evidence](docs/reference-report-2026-10-27/) · [Standalone visualization](docs/reference-report-2026-10-27/index.html) · [Live VM → Mac demonstration](docs/DEMONSTRATION-LIVE.md)
+
+The live demo verifies actual delivery and switching between two virtual IP paths. Its controller is local and does not measure ODVL’s contribution.
+
+This replay uses stateful local ODVL, without new Cloud calls or a TSST arm. It does not replace physical radio or operator-network validation.
+
 ## What you can evaluate
 
 | Need | Demonstrated mechanism |
