@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "report.json": "f4531113951cbca4d55ef86ea41693559139738dd4299a7e72c0c9eca09b3ae1",
+    "r1-adaptive/report.json": "9c2bdf891f954693ff0b23cffbad9a7af8a23392dd06bdf332a0c5d051ac9954",
+    "r1-adaptive/queue-final.json": "92ae271fd683868e2fd4377fe6daf5748f357119314c31cb05e798def86ea611",
+    "r1-adaptive/phase-events.json": "192a8f0a86d1ba925c4f36b961b2f8de1d7d320cadcc74868a86d0222611c4fa"
+  },
+  "renderer_sha256": "93cfeb4945f2e0780c4fb5e45f28b05b2aedfe72c03abbc4bc62806a0286ff72",
+  "figure_sha256": {
+    "vm-results.svg": "fa77b58af57a61afd1dbc71a90b506773d07461279f1f7e2d310f6b18b5fa57a"
+  },
+  "comparison": "All 3 repetitions, no pooled percentiles; calibration is repetition 1 only."
+}

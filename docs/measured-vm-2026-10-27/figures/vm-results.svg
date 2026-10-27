@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-label="Résultats VM Linux : reprise, latence et adaptation mesurées">
+<rect width="1280" height="900" fill="#fafafa"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="45.00" y="45.00" font-size="27" text-anchor="start" fill="#222" font-weight="bold">SAWM Anti-Brouillage · Preuves VM Linux</text>
+<text x="45.00" y="75.00" font-size="16" text-anchor="start" fill="#222" font-weight="normal">120/120 messages livrés et confirmés · 0 effet doublé · 6 essais · Émulation de paquets, pas de radio physique</text>
+<text x="100.00" y="115.00" font-size="19" text-anchor="start" fill="#222" font-weight="bold">Premier ACK après retour du lien</text>
+<text x="100.00" y="137.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Millisecondes · plus bas = plus rapide</text>
+<line x1="100.00" y1="390.00" x2="575.00" y2="390.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="395.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">0</text>
+<line x1="100.00" y1="270.00" x2="575.00" y2="270.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="275.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">350</text>
+<line x1="100.00" y1="150.00" x2="575.00" y2="150.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="155.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">700</text>
+<rect x="131" y="353.88" width="44" height="36.12" fill="#aaa"/>
+<text x="153.00" y="344.88" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">105</text>
+<rect x="182" y="347.33" width="44" height="42.67" fill="#111"/>
+<text x="204.00" y="338.33" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">124</text>
+<text x="180.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 1</text>
+<rect x="286" y="165.96" width="44" height="224.04" fill="#aaa"/>
+<text x="308.00" y="156.96" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">653</text>
+<rect x="337" y="361.03" width="44" height="28.97" fill="#111"/>
+<text x="359.00" y="352.03" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">84</text>
+<text x="335.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 2</text>
+<rect x="441" y="321.34" width="44" height="68.66" fill="#aaa"/>
+<text x="463.00" y="312.34" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">200</text>
+<rect x="492" y="379.04" width="44" height="10.96" fill="#111"/>
+<text x="514.00" y="370.04" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">32</text>
+<text x="490.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 3</text>
+<text x="710.00" y="115.00" font-size="19" text-anchor="start" fill="#222" font-weight="bold">Latence p95 jusqu’à l’ACK, par essai</text>
+<text x="710.00" y="137.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Millisecondes · plus bas = plus rapide</text>
+<line x1="710.00" y1="390.00" x2="1185.00" y2="390.00" stroke="#ddd" stroke-width="1"/>
+<text x="698.00" y="395.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">0</text>
+<line x1="710.00" y1="270.00" x2="1185.00" y2="270.00" stroke="#ddd" stroke-width="1"/>
+<text x="698.00" y="275.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">1500</text>
+<line x1="710.00" y1="150.00" x2="1185.00" y2="150.00" stroke="#ddd" stroke-width="1"/>
+<text x="698.00" y="155.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">3000</text>
+<rect x="741" y="275.87" width="44" height="114.13" fill="#aaa"/>
+<text x="763.00" y="266.87" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">1427</text>
+<rect x="792" y="268.56" width="44" height="121.44" fill="#111"/>
+<text x="814.00" y="259.56" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">1518</text>
+<text x="790.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 1</text>
+<rect x="896" y="162.85" width="44" height="227.15" fill="#aaa"/>
+<text x="918.00" y="153.85" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">2839</text>
+<rect x="947" y="196.49" width="44" height="193.51" fill="#111"/>
+<text x="969.00" y="187.49" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">2419</text>
+<text x="945.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 2</text>
+<rect x="1051" y="321.22" width="44" height="68.78" fill="#aaa"/>
+<text x="1073.00" y="312.22" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">860</text>
+<rect x="1102" y="267.93" width="44" height="122.07" fill="#111"/>
+<text x="1124.00" y="258.93" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">1526</text>
+<text x="1100.00" y="415.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Essai 3</text>
+<rect x="460" y="437" width="20" height="14" fill="#aaa"/>
+<text x="490.00" y="450.00" font-size="14" text-anchor="start" fill="#222" font-weight="normal">Réglage fixe</text>
+<rect x="650" y="437" width="20" height="14" fill="#111"/>
+<text x="680.00" y="450.00" font-size="14" text-anchor="start" fill="#222" font-weight="normal">Adaptatif</text>
+<text x="45.00" y="490.00" font-size="20" text-anchor="start" fill="#222" font-weight="bold">Adaptation réellement enregistrée · exemple : essai 1 adaptatif</text>
+<rect x="244.79" y="540" width="269.08" height="210" fill="#ededed"/>
+<text x="379.34" y="530.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">Dégradé</text>
+<rect x="520.95" y="540" width="121.71" height="210" fill="#cecece"/>
+<text x="581.80" y="530.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">Coupure</text>
+<line x1="100.00" y1="750.00" x2="1180.00" y2="750.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="755.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">0</text>
+<line x1="100.00" y1="697.50" x2="1180.00" y2="697.50" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="702.50" font-size="13" text-anchor="end" fill="#222" font-weight="normal">250</text>
+<line x1="100.00" y1="645.00" x2="1180.00" y2="645.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="650.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">500</text>
+<line x1="100.00" y1="592.50" x2="1180.00" y2="592.50" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="597.50" font-size="13" text-anchor="end" fill="#222" font-weight="normal">750</text>
+<line x1="100.00" y1="540.00" x2="1180.00" y2="540.00" stroke="#ddd" stroke-width="1"/>
+<text x="88.00" y="545.00" font-size="13" text-anchor="end" fill="#222" font-weight="normal">1000</text>
+<text x="100.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">0</text>
+<text x="235.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">1</text>
+<text x="370.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">2</text>
+<text x="505.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">3</text>
+<text x="640.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">4</text>
+<text x="775.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">5</text>
+<text x="910.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">6</text>
+<text x="1045.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">7</text>
+<text x="1180.00" y="772.00" font-size="13" text-anchor="middle" fill="#222" font-weight="normal">8</text>
+<path d="M 100.00 645.00 H 143.34 V 725.22 H 155.02 V 725.64 H 201.17 V 727.74 H 280.57 V 705.48 H 339.97 V 660.96 H 378.57 V 672.30 H 416.24 V 645.00 H 460.81 V 645.00 H 501.89 V 645.00 H 579.13 V 645.00 H 650.88 V 645.00 H 665.08 V 645.00 H 669.06 V 645.00 H 672.50 V 645.00 H 676.21 V 645.00 H 681.22 V 645.00 H 686.92 V 654.45 H 721.89 V 665.16 H 766.68 V 672.30 H 813.27 V 679.23 H 875.89 V 688.89 H 914.92 V 698.55 H 961.73 V 702.12 H 1002.25 V 704.85" fill="none" stroke="#111" stroke-width="2.6" stroke-dasharray=""/>
+<path d="M 100.00 729.00 H 143.34 V 739.50 H 155.02 V 744.75 H 201.17 V 744.75 H 280.57 V 729.00 H 339.97 V 708.00 H 378.57 V 729.00 H 416.24 V 739.50 H 460.81 V 744.75 H 501.89 V 744.75 H 579.13 V 729.00 H 650.88 V 708.00 H 665.08 V 729.00 H 669.06 V 739.50 H 672.50 V 744.75 H 676.21 V 744.75 H 681.22 V 744.75 H 686.92 V 744.75 H 721.89 V 744.75 H 766.68 V 744.75 H 813.27 V 744.75 H 875.89 V 744.75 H 914.92 V 744.75 H 961.73 V 744.75 H 1002.25 V 744.75" fill="none" stroke="#666" stroke-width="2.6" stroke-dasharray="6 4"/>
+<text x="100.00" y="520.00" font-size="13" text-anchor="start" fill="#222" font-weight="normal">Réglage (ms)</text>
+<text x="640.00" y="800.00" font-size="14" text-anchor="middle" fill="#222" font-weight="normal">Temps écoulé depuis le début de l’essai (secondes)</text>
+<line x1="100.00" y1="828.00" x2="140.00" y2="828.00" stroke="#111" stroke-width="2.6"/>
+<text x="150.00" y="833.00" font-size="14" text-anchor="start" fill="#222" font-weight="normal">Délai maximal d’une requête</text>
+<line x1="510.00" y1="828.00" x2="550.00" y2="828.00" stroke="#666" stroke-width="2.6" stroke-dasharray="6 4"/>
+<text x="560.00" y="833.00" font-size="14" text-anchor="start" fill="#222" font-weight="normal">Attente avant nouvel essai</text>
+<text x="45.00" y="866.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Pertes aléatoires non appariées. Réglages locaux déterministes ; aucun nouvel appel Cloud. Le contrôleur ne connaît pas les phases à venir.</text>
+<text x="45.00" y="887.00" font-size="13" text-anchor="start" fill="#555" font-weight="normal">Adaptatif : 73 tentatives, fixe : 69. La reprise est plus rapide dans 2 essais sur 3 ; aucun avantage général de latence n’est démontré.</text>
+</g></svg>

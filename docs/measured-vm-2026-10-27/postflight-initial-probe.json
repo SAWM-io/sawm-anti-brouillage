@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_by_controlled_shutdown",
+  "service_health": "not_observed",
+  "note": "The optional post-campaign health probe was still running when the operator stopped the VM; campaign integrity and cleanup checks were already complete. A fresh postflight check follows a controlled restart."
+}

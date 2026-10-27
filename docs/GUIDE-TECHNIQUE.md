@@ -4,9 +4,9 @@
 
 Ce guide détaille le démonstrateur de résilience applicative HTTP, ses commandes, les preuves conservées et le parcours Cloud optionnel. Le nom SAWM Anti-Brouillage désigne ici la continuité d'envoi face aux coupures du banc ; le programme n'agit pas sur une liaison radio.
 
-## Banc et scénario de fautes
+## Banc initial et scénario de fautes
 
-Le banc utilise de vraies connexions HTTP sur `127.0.0.1`. Son serveur, ses messages synthétiques, ses fichiers et ses processus lui appartiennent. Il ne modifie aucune configuration réseau système. `lab.py` n'appelle aucun Cloud ; `cloud_control.py` s'exécute séparément avant ou après les essais locaux.
+Le banc initial `lab.py` utilise de vraies connexions HTTP sur `127.0.0.1`. Son serveur, ses messages synthétiques, ses fichiers et ses processus lui appartiennent. Il ne modifie aucune configuration réseau système. `lab.py` n'appelle aucun Cloud ; `cloud_control.py` s'exécute séparément avant ou après les essais locaux.
 
 Depuis la racine du dépôt, dans un environnement Python 3.10+ :
 
@@ -83,7 +83,7 @@ La politique initiale est un JSON fermé, vérifié avant le démarrage du worke
 
 Les clés inconnues, doublons de clés JSON, mauvais types et valeurs hors bornes sont refusés. En mode statique, après une tentative non acquittée, le délai est `min(max_delay_ms, base_delay_ms × 2^(tentative − 1))`.
 
-La destination est fixe : l'hôte `127.0.0.1`, le port provisionné par le banc et le chemin `/deliver/durable`. Une politique ne peut fournir ni destination libre ni commande à exécuter.
+Pour `lab.py` et la CLI publique `delivery.py`, la destination est fixe : l'hôte `127.0.0.1`, le port provisionné par le banc et le chemin `/deliver/durable`. L’extension VM utilise uniquement sa destination de laboratoire fixe `198.18.0.2`, après vérification de ses espaces réseau isolés. Une politique ne peut fournir ni destination libre ni commande à exécuter.
 
 Le worker peut être appelé directement dans un scénario où le témoin correspondant reste actif :
 
@@ -200,6 +200,87 @@ Voir aussi le [graphique des délais](measured-adaptive-2026-10-27/ack-p95.svg),
 | `measurements.json` | Mesures structurées de l'exécution locale |
 
 Les fichiers auxiliaires SQLite éventuels font partie de l'état local tant que les connexions ne sont pas fermées. `measurements.json` et son champ `cloud_sent: false` décrivent la production locale ; ils n'interdisent pas un dépôt séparé de résumé ensuite. Une empreinte vérifie la correspondance avec une valeur connue, sans fournir à elle seule une attestation externe inviolable.
+
+## Émulation réseau dans une VM Linux
+
+Le banc `vm_netem_lab.py` complète les essais en loopback avec une liaison virtuelle Linux réellement traversée par les paquets TCP/HTTP. Il crée deux namespaces réseau appartenant à la campagne, reliés uniquement entre eux par une paire `veth`. Les adresses sont fixées à `198.18.0.1/30` pour l’émetteur et `198.18.0.2/30` pour le témoin, sur le port `18057`. Aucune route par défaut n’est ajoutée.
+
+Dans ce scénario VM, le serveur et le worker restent actifs pendant les phases réseau : la coupure est injectée dans le chemin des paquets, sans arrêt volontaire du processus émetteur. Les essais de redémarrage du worker restent ceux des bancs précédents.
+
+Cette extension adapte la destination uniquement dans les processus du banc, après vérification du namespace et de sa topologie. La CLI publique du worker reste limitée à loopback. Le réseau principal de la VM, ses interfaces et ses routes sont relevés avant et après les essais ; les contrôles vérifient leur conservation et le retrait des ressources créées.
+
+### Lancement et périmètre
+
+Prérequis : une VM Linux dont vous contrôlez l’environnement, Python 3.10+, `iproute2` fournissant `ip` et `tc`, et un noyau prenant en charge les namespaces réseau, `veth` et la discipline `netem`. La commande utilise root pour provisionner ces seules ressources de laboratoire :
+
+```sh
+sudo python3 vm_netem_lab.py --output-dir output/vm-netem-demo --repetitions 3 \
+  --policy docs/measured-2026-10-27/cloud/policy.json
+```
+
+Le répertoire de sortie doit être nouveau. Une à trois répétitions sont acceptées ; chacune exécute les modes fixe et adaptatif, avec 20 messages espacés de 350 ms. L’ordre des modes est alterné entre répétitions. Le plafond est de 25 secondes par passage et 180 secondes pour la campagne.
+
+Les deux modes reçoivent la même politique initiale archivée issue de la préparation SAWM. La lecture de ce fichier ne contacte pas le Cloud. Le contrôleur adaptatif reste local et reçoit les seuls résultats des tentatives terminées ; il ne connaît pas les prochaines phases `netem`.
+
+### Dégradation, coupure et retour
+
+| Phase prévue depuis le début des arrivées | Paramètres `netem` dans chaque sens |
+| --- | --- |
+| `healthy`, 0–1 s | 1 ms de délai, 0 % de perte injectée |
+| `degraded`, 1–3 s | 60 ± 20 ms de délai, 3 % de pertes aléatoires |
+| `blackout`, 3–4 s | 100 % de pertes |
+| `recovery`, dès 4 s | 1 ms de délai, 0 % de perte injectée |
+
+Ces paramètres décrivent les règles appliquées à chaque extrémité du lien ; le taux de perte applicatif et le délai jusqu’à ACK ne sont pas directement ces valeurs. TCP, les nouvelles tentatives, SQLite et l’ordonnancement de la VM contribuent aux observations finales. Les modes partagent le contenu des messages, le calendrier d’arrivées, la politique et le profil demandé, mais les tirages aléatoires des pertes ne sont pas appariés. Trois répétitions ne suffisent pas à isoler un avantage général du contrôleur.
+
+```mermaid
+flowchart LR
+    Q[File SQLite et worker] --> TX[Namespace TX : 198.18.0.1]
+    TX --> N[Paire veth avec netem dans chaque sens]
+    N --> RX[Namespace RX : 198.18.0.2]
+    RX --> W[Témoin HTTP et registre SQLite]
+    W --> N
+    N --> TX
+    TX --> A[ACK vérifié et observations locales]
+    A --> Q
+```
+
+### Lire les preuves par phase
+
+Les règles des deux sens sont appliquées successivement. Le banc conserve donc le début et la fin réels de chaque changement, les instantanés `tc -s -j`, puis classe les événements dans `healthy`, `degraded`, `blackout`, `recovery` ou `transition`. Les instants demandés ne remplacent pas les instants mesurés.
+
+`phase_counts` compte séparément les messages mis en file, les effets horodatés au destinataire et les ACK vérifiés dans chaque phase. Il ne s’agit pas de cohortes identiques : un message mis en file pendant la coupure peut être enregistré et acquitté après la reprise. Le compteur `committed` classe l’horodatage d’acceptation pris dans la transaction, avant la fin du commit ; un ACK vérifié confirme que le commit a ensuite abouti.
+
+`blackout_stabilized_window` commence 200 ms après la fin d’application du profil de coupure et s’arrête au début du changement vers la reprise. Cette garde distingue la fenêtre stabilisée des requêtes déjà en cours autour des transitions. Le total final de messages livrés ne permet pas d’affirmer que des communications ont traversé cette coupure à 100 % de perte.
+
+`first_ack_after_recovery_ms` mesure le temps entre la fin d’application du profil de reprise et le premier ACK vérifié ensuite. Les délais `delivery_p95_ms` et `ack_p95_ms` partent du début réel de la mise en file. Les valeurs par passage restent dans les rapports ; l’agrégat donne la moyenne des p95, pas un p95 de toutes les répétitions fusionnées.
+
+Les artefacts comprennent `report.json`, `aggregate.json`, `manifest.json`, puis pour chaque passage les bases SQLite, `queue-final.json`, `recipient.json`, `arrivals.json`, `phase-events.json`, les journaux et `setup-and-cleanup.json`. Le champ `success` vérifie la validité de l’expérience et de ses contrôles ; la livraison complète se lit séparément dans `metrics.all_messages_delivered_and_acked`.
+
+Cette émulation évalue les conséquences de délais et de pertes IP sur l’application. Elle n’implémente aucun modèle de propagation RF, de modulation ou d’interférence et ne fournit pas de RSSI/SNR. La [validation réseau et radio](RADIO-VALIDATION.md) décrit cette frontière et le protocole physique qui resterait à réaliser.
+
+### Résultats mesurés dans la VM
+
+La [campagne VM du 27 octobre 2026](measured-vm-2026-10-27/report.json) s’est exécutée sous Linux `6.8.0-138-generic` aarch64 et Python `3.10.12`, dans une VM de 2 vCPU et 3 Gio. Les six passages sont valides, pour une durée totale de 46,001 secondes ; les sources n’ont pas changé pendant la campagne. Chaque passage a finalement livré et acquitté ses 20 messages, sans effet dupliqué ni conflit. Les vérifications d’isolement, de conservation du réseau principal et de nettoyage ont abouti.
+
+Les comptes ci-dessous utilisent les instants réels des phases. « Effets dégradés » désigne les acceptations du destinataire horodatées pendant cette phase, pas nécessairement les seuls messages qui y ont été mis en file.
+
+| Passage | Effets pendant dégradation | ACK pendant dégradation | Effets / ACK dans la coupure stabilisée | Premier ACK après retour | Tentatives | p95 ACK |
+| --- | ---: | ---: | --- | ---: | ---: | ---: |
+| r1 fixe | 4 | 4 | 0 / 0 | 105,35 ms | 22 | 1426,66 ms |
+| r1 adaptatif | 4 | 4 | 0 / 0 | 124,44 ms | 24 | 1518,01 ms |
+| r2 fixe | 2 | 2 | 0 / 0 | 653,46 ms | 25 | 2839,41 ms |
+| r2 adaptatif | 3 | 2 | 0 / 0 | 84,49 ms | 25 | 2418,93 ms |
+| r3 fixe | 6 | 5 | 0 / 0 | 200,27 ms | 22 | 859,73 ms |
+| r3 adaptatif | 4 | 4 | 0 / 0 | 31,97 ms | 24 | 1525,90 ms |
+
+Dans chaque passage, six messages sont mis en file pendant la dégradation, trois pendant la coupure et huit après le retour ; les trois premiers arrivent pendant la phase nominale. Ces comptes d’arrivées ne sont pas des taux de livraison par cohorte. Le nombre d’ACK reçus après le retour comprend les messages retenus en file auparavant : il est de 13 / 15 / 11 pour les passages fixes et de 13 / 15 / 13 pour les adaptatifs.
+
+**La coupure stabilisée ne laisse passer aucun effet ni ACK observé dans les six passages.** Un événement à sa frontière est conservé : dans `r3-static`, le message se terminant par `0009` est accepté 3,255 ms avant le début d’application de la coupure ; son ACK est vérifié 62,825 ms après la fin de cette application. Il appartient à une requête déjà engagée avant la coupure et se trouve avant la garde de 200 ms. Il ne démontre pas une communication à travers une perte stabilisée de 100 %.
+
+Sur les trois répétitions, le mode fixe utilise 69 tentatives et 9 timeouts ; le mode adaptatif utilise 73 tentatives et 13 timeouts. Les moyennes des p95 jusqu’à ACK sont respectivement 1708,60 et 1820,95 ms. Les moyennes des p95 jusqu’à effet sont 1669,23 et 1572,28 ms : une confirmation plus tardive peut coexister avec un effet enregistré plus tôt. Les trois délais de première confirmation après retour ne constituent pas non plus le délai de vidage complet de la file.
+
+Ces résultats établissent une livraison finale complète, des confirmations pendant la dégradation partielle et une reprise après la coupure. Ils ne montrent ni communication pendant la coupure stabilisée, ni avantage général du mode adaptatif. Les [mesures individuelles et agrégats](measured-vm-2026-10-27/aggregate.json), les phases et les traces permettent d’examiner les différences, sans supposer des tirages de pertes identiques. Aucune conclusion RF ne découle de ces paquets Linux.
 
 ## Parcours Cloud
 
@@ -361,7 +442,7 @@ Exécuter les tests après installation de `requirements.txt` :
 python -m unittest discover -s tests -v
 ```
 
-La vérification du 27 octobre 2026 après l’ajout de la calibration continue et du banc comparatif a passé **41 tests sur 41**. La suite initiale, avant cette extension, comportait 20 tests. Les tests du contrôleur Cloud utilisent des réponses locales simulées ; ils ne relancent pas les API réelles. Les tests couvrent notamment les ACK invalides, les conflits d'identité/contenu, les budgets de tentatives, l'interruption après commit avant réception de l'ACK et les validations des reçus, rappels et classements Cloud. Les tests adaptatifs ajoutent la causalité des mises à jour, les timeouts censurés, les limites immuables, l’atomicité SQLite et la reprise de l’état. La [grille de validation](validation.md) explicite les preuves attendues.
+La vérification du 27 octobre 2026 après l’ajout du banc VM a passé **51 tests sur 51**. Le palier précédent, avec la calibration continue et son banc comparatif, avait passé 41 tests sur 41. La suite initiale, avant cette extension, comportait 20 tests. Les tests du contrôleur Cloud utilisent des réponses locales simulées ; ils ne relancent pas les API réelles. Les tests couvrent notamment les ACK invalides, les conflits d'identité/contenu, les budgets de tentatives, l'interruption après commit avant réception de l'ACK et les validations des reçus, rappels et classements Cloud. Les tests adaptatifs ajoutent la causalité des mises à jour, les timeouts censurés, les limites immuables, l’atomicité SQLite et la reprise de l’état. La [grille de validation](validation.md) explicite les preuves attendues.
 
 La reprise concerne un processus arrêté puis relancé sur le même hôte resté démarré, avec SQLite conservé. Les échéances monotones ne constituent pas un protocole de reprise après redémarrage de la machine. Le banc ne certifie ni une coupure électrique, ni une corruption du disque, ni la résistance à un administrateur malveillant. Il ne mesure aucune liaison radio, bande passante physique ou performance opérateur. Le [protocole de validation radio futur](RADIO-VALIDATION.md) distingue le Mac/VM disponible d’une future liaison isolée et instrumentée entre deux radios. Le résultat doit être reproduit et étendu au protocole du destinataire avant toute adaptation à un service réel.
 

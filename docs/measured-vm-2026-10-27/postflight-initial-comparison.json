@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-27T16:22:39.211514+00:00",
+  "after_controlled_restart": true,
+  "vm_network_matches_before_campaign": false,
+  "remaining_namespaces": [],
+  "remaining_test_children": [],
+  "existing_service_health": {
+    "status": 200,
+    "body": {
+      "etat": "vivant",
+      "uptime_s": 106.7,
+      "version_jeton": 3,
+      "requetes": 34,
+      "erreurs": 0,
+      "octets_lus": 2437722,
+      "refus_noyau": 0,
+      "jetons_refuses": 0
+    }
+  }
+}

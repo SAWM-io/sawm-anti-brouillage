@@ -1,0 +1,502 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 17.466416,
+      "error": null,
+      "finished_monotonic_ns": 298628872432,
+      "http_status": 200,
+      "id": 1,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0001",
+      "result": "ack_verified",
+      "started_monotonic_ns": 298602945557
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 11.490417,
+      "error": null,
+      "finished_monotonic_ns": 298762297974,
+      "http_status": 200,
+      "id": 2,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0002",
+      "result": "ack_verified",
+      "started_monotonic_ns": 298745130557
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.828917,
+      "error": null,
+      "finished_monotonic_ns": 299109210016,
+      "http_status": 200,
+      "id": 3,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0003",
+      "result": "ack_verified",
+      "started_monotonic_ns": 299086660766
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 441.388667,
+      "error": null,
+      "finished_monotonic_ns": 299887891058,
+      "http_status": 200,
+      "id": 4,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0004",
+      "result": "ack_verified",
+      "started_monotonic_ns": 299435390849
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 271.289042,
+      "error": null,
+      "finished_monotonic_ns": 300172596183,
+      "http_status": 200,
+      "id": 5,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0005",
+      "result": "ack_verified",
+      "started_monotonic_ns": 299893604683
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 275.077625,
+      "error": null,
+      "finished_monotonic_ns": 300465543558,
+      "http_status": 200,
+      "id": 6,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0006",
+      "result": "ack_verified",
+      "started_monotonic_ns": 300183404766
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 351.996125,
+      "error": null,
+      "finished_monotonic_ns": 300839911808,
+      "http_status": 200,
+      "id": 7,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0007",
+      "result": "ack_verified",
+      "started_monotonic_ns": 300482782225
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 278.819084,
+      "error": null,
+      "finished_monotonic_ns": 301182607392,
+      "http_status": 200,
+      "id": 8,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0008",
+      "result": "ack_verified",
+      "started_monotonic_ns": 300886163767
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 265.033292,
+      "error": null,
+      "finished_monotonic_ns": 301482530517,
+      "http_status": 200,
+      "id": 9,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0009",
+      "result": "ack_verified",
+      "started_monotonic_ns": 301207208517
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 501.05775,
+      "error": "timeout",
+      "finished_monotonic_ns": 302047961059,
+      "http_status": null,
+      "id": 10,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0010",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 301540288892
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 510.941125,
+      "error": "timeout",
+      "finished_monotonic_ns": 302590918976,
+      "http_status": null,
+      "id": 11,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0011",
+      "result": "unacknowledged",
+      "started_monotonic_ns": 302059931142
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 0,
+      "duration_ms": 55.225917,
+      "error": null,
+      "finished_monotonic_ns": 302685940434,
+      "http_status": 200,
+      "id": 12,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0010",
+      "result": "ack_verified",
+      "started_monotonic_ns": 302619901976
+    },
+    {
+      "attempt": 2,
+      "duplicate_ack": 0,
+      "duration_ms": 27.198209,
+      "error": null,
+      "finished_monotonic_ns": 302734541268,
+      "http_status": 200,
+      "id": 13,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0011",
+      "result": "ack_verified",
+      "started_monotonic_ns": 302696817726
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 27.458583,
+      "error": null,
+      "finished_monotonic_ns": 302776791726,
+      "http_status": 200,
+      "id": 14,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0012",
+      "result": "ack_verified",
+      "started_monotonic_ns": 302740977226
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 14.9365,
+      "error": null,
+      "finished_monotonic_ns": 302814557268,
+      "http_status": 200,
+      "id": 15,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0013",
+      "result": "ack_verified",
+      "started_monotonic_ns": 302789641976
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 12.374541,
+      "error": null,
+      "finished_monotonic_ns": 302964570184,
+      "http_status": 200,
+      "id": 16,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0014",
+      "result": "ack_verified",
+      "started_monotonic_ns": 302938342893
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 18.152542,
+      "error": null,
+      "finished_monotonic_ns": 303326553726,
+      "http_status": 200,
+      "id": 17,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0015",
+      "result": "ack_verified",
+      "started_monotonic_ns": 303301736226
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 18.261125,
+      "error": null,
+      "finished_monotonic_ns": 303672756393,
+      "http_status": 200,
+      "id": 18,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0016",
+      "result": "ack_verified",
+      "started_monotonic_ns": 303648426643
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 16.115792,
+      "error": null,
+      "finished_monotonic_ns": 304007563018,
+      "http_status": 200,
+      "id": 19,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0017",
+      "result": "ack_verified",
+      "started_monotonic_ns": 303987506351
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 16.834041,
+      "error": null,
+      "finished_monotonic_ns": 304358677268,
+      "http_status": 200,
+      "id": 20,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0018",
+      "result": "ack_verified",
+      "started_monotonic_ns": 304336889018
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 17.052125,
+      "error": null,
+      "finished_monotonic_ns": 304708662768,
+      "http_status": 200,
+      "id": 21,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0019",
+      "result": "ack_verified",
+      "started_monotonic_ns": 304687991435
+    },
+    {
+      "attempt": 1,
+      "duplicate_ack": 0,
+      "duration_ms": 15.954042,
+      "error": null,
+      "finished_monotonic_ns": 305057583227,
+      "http_status": 200,
+      "id": 22,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0020",
+      "result": "ack_verified",
+      "started_monotonic_ns": 305036541977
+    }
+  ],
+  "messages": [
+    {
+      "acked_at_ms": 1793117806493,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000000,\"created_monotonic_ns\":0,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0001\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":1,\"value\":7}",
+      "digest": "8741dd689e6cd9b149e015b9f52370c3ac030ec80e4bb3ecf1dd4777c3fc3c30",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0001",
+      "next_attempt_ns": 298378847849,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117806627,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000350,\"created_monotonic_ns\":350000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0002\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":2,\"value\":14}",
+      "digest": "0b65fd3da1adb4ab980584db78e3efff3d5338d76b87c60bacc10128c54f955b",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0002",
+      "next_attempt_ns": 298735272807,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117806974,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000000700,\"created_monotonic_ns\":700000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0003\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":3,\"value\":21}",
+      "digest": "bcb1e7d65763d5ef67c8ecef96675872acd1362424df088a910fbd063cb9dd59",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0003",
+      "next_attempt_ns": 299076151766,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117807752,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000001050,\"created_monotonic_ns\":1050000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0004\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":4,\"value\":28}",
+      "digest": "b186e5c8e910dd65da742a2e8bd28f0aa9f08c38c60087a1a28c5bd4799b0156",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0004",
+      "next_attempt_ns": 299425901641,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117808037,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000001400,\"created_monotonic_ns\":1400000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0005\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":5,\"value\":35}",
+      "digest": "62b81ebebba0339f60e083ad82d97f2f8e93a699c868837e47dbee53f141563d",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0005",
+      "next_attempt_ns": 299780375516,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117808330,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000001750,\"created_monotonic_ns\":1750000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0006\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":6,\"value\":42}",
+      "digest": "ea6730a063a6b72c5fc0571741e374c2f07899bffd58a852111823f223b9c065",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0006",
+      "next_attempt_ns": 300134987016,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117808710,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000002100,\"created_monotonic_ns\":2100000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0007\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":7,\"value\":49}",
+      "digest": "e8cbe6dddfac88bde106b94445eb6bc2666170652e66d1b800a4e67f9524fd35",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0007",
+      "next_attempt_ns": 300476579641,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117809047,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000002450,\"created_monotonic_ns\":2450000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0008\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":8,\"value\":56}",
+      "digest": "74093535f323e6d7fb6c6d0c0a9b8b8199eebf1d6a2c5d32236b7505a0e2a0d7",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0008",
+      "next_attempt_ns": 300872342350,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117809347,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000002800,\"created_monotonic_ns\":2800000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0009\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":9,\"value\":63}",
+      "digest": "4a5d9b21a0e847fc1ee285e64d77019edefdebb2a6bddb381f3db36e74840a79",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0009",
+      "next_attempt_ns": 301176538600,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117810550,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000003150,\"created_monotonic_ns\":3150000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0010\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":10,\"value\":70}",
+      "digest": "1c218d83ed820d91db301b6829e4ce6df84d818039b99779adbd5185ef7249ca",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0010",
+      "next_attempt_ns": 302148080726,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117810599,
+      "attempts": 2,
+      "body": "{\"created_at_ms\":1700000003500,\"created_monotonic_ns\":3500000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0011\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":11,\"value\":77}",
+      "digest": "def5fc118c8221f21fdfe1efc098af60fe9e3e9aa13f055e0d9b2b1f65a6d41c",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0011",
+      "next_attempt_ns": 302693525476,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117810641,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000003850,\"created_monotonic_ns\":3850000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0012\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":12,\"value\":84}",
+      "digest": "d4492c73ecbbc68a7d3781a933fd176a86fe770069f563f809a63e4ff1fd37ee",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0012",
+      "next_attempt_ns": 302243916184,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117810679,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000004200,\"created_monotonic_ns\":4200000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0013\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":13,\"value\":91}",
+      "digest": "47b764a0cf02f5fba9f2e2d2bce1dd47d8c7e01bcabae3b768a825197e81a47a",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0013",
+      "next_attempt_ns": 302583165726,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117810829,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000004550,\"created_monotonic_ns\":4550000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0014\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":14,\"value\":98}",
+      "digest": "dd1e73f2d6fdf3c0ae117550ce752f3f0c56c81a10b46c1ac3db1df451bd5053",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0014",
+      "next_attempt_ns": 302925415726,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117811191,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000004900,\"created_monotonic_ns\":4900000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0015\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":15,\"value\":105}",
+      "digest": "534b3de2a724cd4875fad14894d78e99adf170a6fc7a4859785f1008f0d8ec7d",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0015",
+      "next_attempt_ns": 303290897018,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117811537,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000005250,\"created_monotonic_ns\":5250000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0016\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":16,\"value\":112}",
+      "digest": "da3eb04008444a561e9d19d5b768530869ec292bbc67b713444818d4c1daa7a9",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0016",
+      "next_attempt_ns": 303638737935,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117811872,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000005600,\"created_monotonic_ns\":5600000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0017\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":17,\"value\":119}",
+      "digest": "8515aa5f4d1d1fe10fcddfe279162d0ecc4b6b644aeeaa794c22efd01b2bd252",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0017",
+      "next_attempt_ns": 303979691976,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117812223,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000005950,\"created_monotonic_ns\":5950000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0018\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":18,\"value\":126}",
+      "digest": "59fdf6a282e39c2e03756916387ec601c8665514a0007adb7e3625a50169eb1a",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0018",
+      "next_attempt_ns": 304326521185,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117812573,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000006300,\"created_monotonic_ns\":6300000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0019\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":19,\"value\":133}",
+      "digest": "72cb5dd5687b8df983b096813a7c82ead5c344ff497fbffd5819ce0926895142",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0019",
+      "next_attempt_ns": 304675962268,
+      "state": "acked"
+    },
+    {
+      "acked_at_ms": 1793117812922,
+      "attempts": 1,
+      "body": "{\"created_at_ms\":1700000006650,\"created_monotonic_ns\":6650000000,\"message_id\":\"demo-a5bccfc3eabc52689ee295d447130ed2-0020\",\"schema\":\"resilience-demo-message/v1\",\"sequence\":20,\"value\":140}",
+      "digest": "a0f9c089145f05cf50b8a0bc722974eb648580c05fc4bb96f173b5169a0a2ba5",
+      "last_error": null,
+      "message_id": "demo-a5bccfc3eabc52689ee295d447130ed2-0020",
+      "next_attempt_ns": 305026070852,
+      "state": "acked"
+    }
+  ],
+  "metadata": {
+    "created_at_ms": 1793117805936,
+    "deadline_monotonic_ns": 323071879474,
+    "host": "198.18.0.2",
+    "origin_monotonic_ns": 298071879474,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 18057,
+    "schema": "resilience-queue/v1"
+  },
+  "summary": {
+    "attempts": 22,
+    "planned_messages": 20,
+    "states": {
+      "acked": 20
+    },
+    "worker_runs": [
+      {
+        "finished_at_ms": 1793117812933,
+        "id": 1,
+        "outcome": "all_acknowledged",
+        "started_at_ms": 1793117806460
+      }
+    ]
+  }
+}

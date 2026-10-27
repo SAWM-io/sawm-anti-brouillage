@@ -1,0 +1,453 @@
+{
+  "artifact_sha256": {
+    "arrivals.json": "9a16e28492d27e1a4186149b129c7db8fbf6a5b303dd3472e741129a127b1479",
+    "messages.json": "fa1e645b5b238ca5cc07e8d01fad27932045b3ac774b9c2644bdaac723c6501d",
+    "phase-events.json": "bcc7121d941267b6db36d8f3889d1cbc9d805561c7d02d5effb7737bacebc2d8",
+    "queue-final.json": "7f15d2aa207620887da72230ebc38e381ca482ab16b9e8bd1cb9c404760157c7",
+    "queue.sqlite": "871be1d6a57b19ed07718faa7ac84173690faf3422f337c09f51837a58e78f0f",
+    "queue.worker.sqlite": "56acb58fd6ad0806a553d77fdbafecd57445f8cd632587810d5db8c2204bacaa",
+    "ready.json": "2e917518245e5f2b3a8888aaf993b4aa96dac939266d50773026d5053be108a5",
+    "recipient.json": "a91201c39fcbbb56c33a3aab78de5a1be14d6a0f3b0279f5f8da4d84a54bd045",
+    "setup-and-cleanup.json": "a0f172c09db5ef724afd979bf83d5d4b7add2d16708a681a666ea1b2ede30785",
+    "witness.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "witness.sqlite": "c8e22aae4e57795f34de0bdc653a488f6e1984e9704e5470eb9b58607ae0b9f5",
+    "worker.log": "2080b1780aeae1b1fac1ee4a011a95b72e88a80971b42ffbf945a9edbe03196e"
+  },
+  "checks": {
+    "ack_has_committed_effect": true,
+    "all_enqueued_match_plan": true,
+    "attempt_budget_respected": true,
+    "attempt_counts_match": true,
+    "host_network_preserved": true,
+    "latency_nonnegative": true,
+    "namespaces_isolated": true,
+    "no_content_conflict": true,
+    "owned_resources_removed": true,
+    "policy_and_deadline_unchanged": true,
+    "received_content_matches_source": true,
+    "unique_effects": true,
+    "within_trial_cap": true,
+    "worker_known_outcome": true,
+    "worker_result_verified": true
+  },
+  "cleanup": {
+    "link": {
+      "stopped": true
+    },
+    "witness": {
+      "stopped": true
+    },
+    "worker": {
+      "stopped": true
+    }
+  },
+  "elapsed_seconds": 7.7523819619999585,
+  "host_network_after": {
+    "interfaces": {
+      "enp0s1": {
+        "address": "02:00:5e:09:b5:4b",
+        "inet": [
+          [
+            "inet",
+            "192.0.2.21",
+            24
+          ],
+          [
+            "inet6",
+            "2001:db8::14",
+            64
+          ],
+          [
+            "inet6",
+            "2001:db8::23",
+            64
+          ]
+        ],
+        "mtu": 1500
+      },
+      "lo": {
+        "address": "00:00:00:00:00:00",
+        "inet": [
+          [
+            "inet",
+            "127.0.0.1",
+            8
+          ],
+          [
+            "inet6",
+            "::1",
+            128
+          ]
+        ],
+        "mtu": 65536
+      }
+    },
+    "routes": [
+      {
+        "dev": "enp0s1",
+        "dst": "100.100.100.100",
+        "flags": [],
+        "metric": 100,
+        "prefsrc": "192.0.2.21",
+        "protocol": "dhcp",
+        "scope": "link"
+      },
+      {
+        "dev": "enp0s1",
+        "dst": "192.0.2.20/24",
+        "flags": [],
+        "metric": 100,
+        "prefsrc": "192.0.2.21",
+        "protocol": "kernel",
+        "scope": "link"
+      }
+    ]
+  },
+  "host_network_before": {
+    "interfaces": {
+      "enp0s1": {
+        "address": "02:00:5e:09:b5:4b",
+        "inet": [
+          [
+            "inet",
+            "192.0.2.21",
+            24
+          ],
+          [
+            "inet6",
+            "2001:db8::14",
+            64
+          ],
+          [
+            "inet6",
+            "2001:db8::23",
+            64
+          ]
+        ],
+        "mtu": 1500
+      },
+      "lo": {
+        "address": "00:00:00:00:00:00",
+        "inet": [
+          [
+            "inet",
+            "127.0.0.1",
+            8
+          ],
+          [
+            "inet6",
+            "::1",
+            128
+          ]
+        ],
+        "mtu": 65536
+      }
+    },
+    "routes": [
+      {
+        "dev": "enp0s1",
+        "dst": "100.100.100.100",
+        "flags": [],
+        "metric": 100,
+        "prefsrc": "192.0.2.21",
+        "protocol": "dhcp",
+        "scope": "link"
+      },
+      {
+        "dev": "enp0s1",
+        "dst": "192.0.2.20/24",
+        "flags": [],
+        "metric": 100,
+        "prefsrc": "192.0.2.21",
+        "protocol": "kernel",
+        "scope": "link"
+      }
+    ]
+  },
+  "initial_policy": {
+    "base_delay_ms": 100,
+    "max_attempts": 12,
+    "max_delay_ms": 1000,
+    "request_timeout_ms": 500,
+    "schema": "resilience-retry-policy/v1",
+    "total_budget_ms": 25000
+  },
+  "initial_queue_metadata": {
+    "created_at_ms": 1793117798170,
+    "deadline_monotonic_ns": 315305885345,
+    "host": "198.18.0.2",
+    "origin_monotonic_ns": 290305885345,
+    "planned_messages": 20,
+    "policy": {
+      "base_delay_ms": 100,
+      "max_attempts": 12,
+      "max_delay_ms": 1000,
+      "request_timeout_ms": 500,
+      "schema": "resilience-retry-policy/v1",
+      "total_budget_ms": 25000
+    },
+    "port": 18057,
+    "schema": "resilience-queue/v1"
+  },
+  "metrics": {
+    "ack_p50_ms": 377.898292,
+    "ack_p95_ms": 2839.408584,
+    "acked": 20,
+    "all_messages_delivered_and_acked": true,
+    "attempts": 25,
+    "blackout_stabilized_window": {
+      "acked": 0,
+      "committed": 0,
+      "end_monotonic_ns": 294599796764,
+      "guard_ms": 200,
+      "start_monotonic_ns": 293818632805
+    },
+    "content_conflicts": 0,
+    "delivered_unique": 20,
+    "delivery_p50_ms": 343.068125,
+    "delivery_p95_ms": 2749.572959,
+    "duplicate_effects": 0,
+    "duplicate_requests": 1,
+    "enqueued": 20,
+    "first_ack_after_recovery_ms": 653.46125,
+    "not_delivered": 0,
+    "phase_counts": {
+      "blackout": {
+        "acked": 0,
+        "committed": 0,
+        "enqueued": 3
+      },
+      "degraded": {
+        "acked": 2,
+        "committed": 2,
+        "enqueued": 6
+      },
+      "healthy": {
+        "acked": 3,
+        "committed": 3,
+        "enqueued": 3
+      },
+      "recovery": {
+        "acked": 15,
+        "committed": 15,
+        "enqueued": 8
+      },
+      "setup": {
+        "acked": 0,
+        "committed": 0,
+        "enqueued": 0
+      },
+      "transition": {
+        "acked": 0,
+        "committed": 0,
+        "enqueued": 0
+      }
+    },
+    "planned": 20,
+    "states": {
+      "acked": 20
+    },
+    "timeouts": 5,
+    "unacknowledged": 0
+  },
+  "mode": "static",
+  "namespace_topology": {
+    "rx": {
+      "links": [
+        {
+          "addr_info": [
+            {
+              "family": "inet",
+              "label": "lo",
+              "local": "127.0.0.1",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 8,
+              "scope": "host",
+              "valid_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "::1",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 128,
+              "scope": "host",
+              "valid_life_time": 4294967295
+            }
+          ],
+          "address": "00:00:00:00:00:00",
+          "broadcast": "00:00:00:00:00:00",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "group": "default",
+          "ifindex": 1,
+          "ifname": "lo",
+          "link_type": "loopback",
+          "mtu": 65536,
+          "operstate": "UNKNOWN",
+          "qdisc": "noqueue",
+          "txqlen": 1000
+        },
+        {
+          "addr_info": [
+            {
+              "family": "inet",
+              "label": "link0",
+              "local": "198.18.0.2",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 30,
+              "scope": "global",
+              "valid_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "2001:db8::26",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 64,
+              "scope": "link",
+              "tentative": true,
+              "valid_life_time": 4294967295
+            }
+          ],
+          "address": "02:00:5e:e0:68:7a",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "group": "default",
+          "ifindex": 11,
+          "ifname": "link0",
+          "link_index": 12,
+          "link_netnsid": 0,
+          "link_type": "ether",
+          "mtu": 1500,
+          "operstate": "UP",
+          "qdisc": "noqueue",
+          "txqlen": 1000
+        }
+      ],
+      "routes": [
+        {
+          "dev": "link0",
+          "dst": "198.18.0.0/30",
+          "flags": [],
+          "prefsrc": "198.18.0.2",
+          "protocol": "kernel",
+          "scope": "link"
+        }
+      ]
+    },
+    "tx": {
+      "links": [
+        {
+          "addr_info": [
+            {
+              "family": "inet",
+              "label": "lo",
+              "local": "127.0.0.1",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 8,
+              "scope": "host",
+              "valid_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "::1",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 128,
+              "scope": "host",
+              "valid_life_time": 4294967295
+            }
+          ],
+          "address": "00:00:00:00:00:00",
+          "broadcast": "00:00:00:00:00:00",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "group": "default",
+          "ifindex": 1,
+          "ifname": "lo",
+          "link_type": "loopback",
+          "mtu": 65536,
+          "operstate": "UNKNOWN",
+          "qdisc": "noqueue",
+          "txqlen": 1000
+        },
+        {
+          "addr_info": [
+            {
+              "family": "inet",
+              "label": "link0",
+              "local": "198.18.0.1",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 30,
+              "scope": "global",
+              "valid_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "2001:db8::17",
+              "preferred_life_time": 4294967295,
+              "prefixlen": 64,
+              "scope": "link",
+              "tentative": true,
+              "valid_life_time": 4294967295
+            }
+          ],
+          "address": "02:00:5e:7d:e2:1d",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "group": "default",
+          "ifindex": 12,
+          "ifname": "link0",
+          "link_index": 11,
+          "link_netnsid": 1,
+          "link_type": "ether",
+          "mtu": 1500,
+          "operstate": "UP",
+          "qdisc": "noqueue",
+          "txqlen": 1000
+        }
+      ],
+      "routes": [
+        {
+          "dev": "link0",
+          "dst": "198.18.0.0/30",
+          "flags": [],
+          "prefsrc": "198.18.0.1",
+          "protocol": "kernel",
+          "scope": "link"
+        }
+      ]
+    }
+  },
+  "origin_monotonic_ns": 290569548387,
+  "qdisc_final": {
+    "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":16984,\"packets\":136,\"drops\":5,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+    "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":18821,\"packets\":141,\"drops\":7,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+  },
+  "repetition": 2,
+  "schema": "sawm-vm-netem-trial/v1",
+  "source_sha256": {
+    "adaptive_policy.py": "09ea86c7b78f2a77902f4b7863c0ab421921f3e95d1e7bcd92cd7f414ccb20b9",
+    "delivery.py": "2b959f48abb86e3985f65e359cddf7d235bd1652034a800c89d4accbd06576c9",
+    "vm_netem_lab.py": "d4e947a3b535f72827a17546ac08e327cc55b0e44c3b9be11bbf546046bb908e",
+    "witness.py": "679b03e4f637cac120d3eec70b3208ff1015c8009a6e3f10f82593f29c14d60f"
+  },
+  "started_at_ms": 1793117797903,
+  "success": true,
+  "success_meaning": "Valid measured execution/integrity; full delivery is separately metrics.all_messages_delivered_and_acked.",
+  "worker_exit_code": 0
+}

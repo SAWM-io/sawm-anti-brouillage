@@ -1,0 +1,109 @@
+[
+  {
+    "completed_monotonic_ns": 275566150296,
+    "profile": {
+      "at_ms": 0,
+      "delay_ms": 1,
+      "jitter_ms": 0,
+      "loss_percent": 0,
+      "name": "healthy"
+    },
+    "qdisc_after": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":0,\"packets\":0,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "sides": {
+      "rx": {
+        "applied_monotonic_ns": 275566147755
+      },
+      "tx": {
+        "applied_monotonic_ns": 275549311380
+      }
+    },
+    "started_monotonic_ns": 275524856671
+  },
+  {
+    "completed_monotonic_ns": 276697775672,
+    "profile": {
+      "at_ms": 1000,
+      "delay_ms": 60,
+      "jitter_ms": 20,
+      "loss_percent": 3,
+      "name": "degraded"
+    },
+    "qdisc_after": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.06,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.03,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2611,\"packets\":22,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.06,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.03,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2868,\"packets\":23,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "qdisc_before": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2611,\"packets\":22,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":2708,\"packets\":21,\"drops\":0,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "requested_offset_ms": 1000,
+    "sides": {
+      "rx": {
+        "applied_monotonic_ns": 276697770172
+      },
+      "tx": {
+        "applied_monotonic_ns": 276679376797
+      }
+    },
+    "started_monotonic_ns": 276658841838
+  },
+  {
+    "completed_monotonic_ns": 278743361006,
+    "profile": {
+      "at_ms": 3000,
+      "delay_ms": 0,
+      "jitter_ms": 0,
+      "loss_percent": 100,
+      "name": "blackout"
+    },
+    "qdisc_after": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":7913,\"packets\":67,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8817,\"packets\":71,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "qdisc_before": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.06,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.03,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":7847,\"packets\":66,\"drops\":2,\"overlimits\":0,\"requeues\":0,\"backlog\":66,\"qlen\":1}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.06,\"jitter\":0.02,\"correlation\":0},\"loss-random\":{\"loss\":0.03,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8677,\"packets\":69,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":66,\"qlen\":1}]\n"
+    },
+    "requested_offset_ms": 3000,
+    "sides": {
+      "rx": {
+        "applied_monotonic_ns": 278743356881
+      },
+      "tx": {
+        "applied_monotonic_ns": 278703774048
+      }
+    },
+    "started_monotonic_ns": 278690990006
+  },
+  {
+    "completed_monotonic_ns": 279686537923,
+    "profile": {
+      "at_ms": 4000,
+      "delay_ms": 1,
+      "jitter_ms": 0,
+      "loss_percent": 0,
+      "name": "recovery"
+    },
+    "qdisc_after": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":7913,\"packets\":67,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"delay\":{\"delay\":0.001,\"jitter\":0,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8817,\"packets\":71,\"drops\":4,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "qdisc_before": {
+      "rx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":7913,\"packets\":67,\"drops\":3,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n",
+      "tx": "[{\"kind\":\"netem\",\"handle\":\"10:\",\"root\":true,\"refcnt\":3,\"options\":{\"limit\":256,\"loss-random\":{\"loss\":1,\"correlation\":0},\"ecn\":false,\"gap\":0},\"bytes\":8817,\"packets\":71,\"drops\":4,\"overlimits\":0,\"requeues\":0,\"backlog\":0,\"qlen\":0}]\n"
+    },
+    "requested_offset_ms": 4000,
+    "sides": {
+      "rx": {
+        "applied_monotonic_ns": 279686531757
+      },
+      "tx": {
+        "applied_monotonic_ns": 279659800673
+      }
+    },
+    "started_monotonic_ns": 279644897007
+  }
+]

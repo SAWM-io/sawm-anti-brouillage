@@ -8,8 +8,10 @@
     "base_repository_commit": "3520e807be26b75cfe98a9b9528bc6e85540cc95",
     "standalone_additions": [
       "optional bounded-rto/v2 continuous local calibration",
-      "paired real HTTP fault benchmark and preserved evidence"
+      "paired real HTTP fault benchmark and preserved evidence",
+      "isolated Linux VM tc netem benchmark, calibration plots and raw delivery evidence"
     ],
-    "validation": "docs/measured-adaptive-2026-10-27/README.md"
+    "validation": "docs/measured-adaptive-2026-10-27/README.md",
+    "vm_validation": "docs/measured-vm-2026-10-27/README.md"
   }
 }

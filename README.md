@@ -2,7 +2,7 @@
 
 **Résilience applicative aux coupures — conserver les messages, reprendre leur envoi et vérifier chaque effet dans un démonstrateur HTTP.**
 
-[English](README.en.md) · [Démarrage](#démarrer-en-local) · [Guide technique](docs/GUIDE-TECHNIQUE.md) · [Preuves mesurées](docs/measured-2026-10-27/) · [Validation radio envisagée](docs/RADIO-VALIDATION.md)
+[English](README.en.md) · [Démarrage](#démarrer-en-local) · [Guide technique](docs/GUIDE-TECHNIQUE.md) · [Preuves mesurées](docs/measured-2026-10-27/) · [Simulation VM et portée radio](docs/RADIO-VALIDATION.md)
 
 SAWM Anti-Brouillage est un démonstrateur exécutable de livraison HTTP résiliente : une file SQLite conserve les messages, un worker reprend les tentatives après son redémarrage et un destinataire idempotent évite de répéter l'effet d'un message. Il donne aux équipes produit et intégration un cas concret pour évaluer la continuité d'un échange applicatif avant d'adapter ce mécanisme à leur service.
 
@@ -71,9 +71,9 @@ python adaptive_lab.py --output-dir output/adaptive-demo --repetitions 3 --messa
 
 La [méthode et les limites de la comparaison](docs/GUIDE-TECHNIQUE.md#calibration-continue-locale) distinguent les observations utilisées par le contrôleur des hypothèses de politique préparées avant l'essai. Un meilleur résultat n'est pas supposé : le rapport conserve aussi les régressions et les coûts en tentatives.
 
-### Résultat de la comparaison finale
+### Résultat de la comparaison locale
 
-La [campagne finale du 27 octobre](docs/measured-adaptive-2026-10-27/) comprend 24 passages : quatre profils, deux modes, trois répétitions. **Chaque passage livre et acquitte 20/20 messages, sans effet dupliqué.** Les valeurs ci-dessous sont les moyennes des p95 de délai jusqu'à ACK, calculés séparément dans les trois passages de chaque mode.
+La [campagne comparative en loopback du 27 octobre](docs/measured-adaptive-2026-10-27/) comprend 24 passages : quatre profils, deux modes, trois répétitions. **Chaque passage livre et acquitte 20/20 messages, sans effet dupliqué.** Les valeurs ci-dessous sont les moyennes des p95 de délai jusqu'à ACK, calculés séparément dans les trois passages de chaque mode.
 
 | Profil HTTP | Fixe : p95 ACK moyen | Adaptatif : p95 ACK moyen | Tentatives par passage, fixe / adaptatif |
 | --- | ---: | ---: | ---: |
@@ -86,6 +86,47 @@ La [campagne finale du 27 octobre](docs/measured-adaptive-2026-10-27/) comprend 
 
 Les [mesures individuelles](docs/measured-adaptive-2026-10-27/aggregate.json), le [graphique des délais](docs/measured-adaptive-2026-10-27/ack-p95.svg) et les [exemples de recalibration](docs/measured-adaptive-2026-10-27/figures/calibration-examples.svg) sont conservés. La première version et sa régression sur les ACK perdus restent [documentées dans le guide](docs/GUIDE-TECHNIQUE.md#correction-documentée-après-la-première-comparaison).
 
+## Émuler une liaison dégradée dans une VM Linux
+
+`vm_netem_lab.py` fait circuler de vrais paquets TCP/HTTP entre deux espaces réseau Linux isolés, reliés par une paire `veth`. `tc netem` applique le scénario suivant **dans chaque sens** :
+
+| Phase prévue | Paramètres réseau injectés |
+| --- | --- |
+| 0 à 1 s — nominal | Délai de 1 ms, sans perte injectée |
+| 1 à 3 s — dégradation | Délai de 60 ± 20 ms et 3 % de pertes aléatoires |
+| 3 à 4 s — coupure | 100 % de pertes |
+| Dès 4 s — reprise | Retour au délai de 1 ms, sans perte injectée |
+
+Le banc compare trois passages fixes et trois adaptatifs, avec 20 messages par passage. Il utilise le sous-réseau interne `198.18.0.0/30`, sans route par défaut ni liaison extérieure ; les interfaces principales de la VM ne reçoivent pas ces règles. Les mêmes contenus, arrivées et paramètres sont utilisés dans chaque paire, mais les tirages aléatoires de perte ne sont pas identiques.
+
+Dans une VM Linux disposant de Python 3.10+, d'`iproute2` (`ip`, `tc`), des namespaces réseau et de `netem`, depuis la racine du dépôt :
+
+```sh
+sudo python3 vm_netem_lab.py --output-dir output/vm-netem-demo --repetitions 3 \
+  --policy docs/measured-2026-10-27/cloud/policy.json
+```
+
+Le répertoire doit être nouveau. Les privilèges root servent à créer puis supprimer les ressources réseau isolées du banc. La politique SAWM archivée est lue localement : aucun nouvel appel Cloud n'est effectué. Le [guide VM](docs/GUIDE-TECHNIQUE.md#émulation-réseau-dans-une-vm-linux) explique les mesures pendant la dégradation, la coupure et la reprise.
+
+Cette expérience émule une communication IP dégradée. Elle ne simule pas la propagation RF, ne mesure ni RSSI ni SNR et ne prouve pas une résistance à un brouilleur physique. La différence est précisée dans la [validation réseau et radio](docs/RADIO-VALIDATION.md).
+
+### Ce qui a été observé dans la VM
+
+La [campagne Linux réelle](docs/measured-vm-2026-10-27/) a terminé six passages en 46,001 s : **120 messages sur 120 ont finalement produit un effet unique et reçu un ACK vérifié**. Le comportement pendant les phases reste visible :
+
+| Observation | Mode fixe | Mode adaptatif |
+| --- | --- | --- |
+| ACK vérifiés pendant la dégradation, r1 / r2 / r3 | 4 / 2 / 5 | 4 / 2 / 4 |
+| Effets et ACK dans la coupure stabilisée | 0 effet, 0 ACK dans chaque passage | 0 effet, 0 ACK dans chaque passage |
+| Premier ACK après retour, r1 / r2 / r3 | 105,35 / 653,46 / 200,27 ms | 124,44 / 84,49 / 31,97 ms |
+| Effets uniques et ACK à la clôture | 60 / 60 | 60 / 60 |
+| Tentatives totales | 69 | 73 |
+| Moyenne des p95 jusqu'à ACK | 1708,60 ms | 1820,95 ms |
+
+Des confirmations continuent pendant la dégradation partielle. Pendant la coupure stabilisée, aucun nouvel effet ni ACK vérifié n'est observé ; la file conserve les messages pour la reprise. Un ACK du troisième passage fixe est enregistré à la frontière, 62,83 ms après l'application de la coupure : son message avait été accepté avant celle-ci. Il est conservé dans les traces et exclu de la fenêtre stabilisée, qui commence après une garde de 200 ms.
+
+Le délai du premier ACK après retour peut être plus court sans que le p95 global le soit : les métriques mesurent des aspects différents. Ces six passages ne montrent pas de gain général du mode adaptatif. Les [résultats détaillés par phase](docs/GUIDE-TECHNIQUE.md#résultats-mesurés-dans-la-vm) conservent les événements, les transitions et les différences de coût.
+
 ## Architecture et rôle du Cloud
 
 ```mermaid
@@ -97,7 +138,7 @@ flowchart TB
         S --> V[Validation locale du JSON et des bornes]
         O[ODVL : classement des options] --> R[Rapport de préparation]
     end
-    subgraph Local[Essai local — HTTP sur 127.0.0.1]
+    subgraph Local[Banc initial — HTTP sur 127.0.0.1]
         M[Messages synthétiques] --> Q[File SQLite]
         Q --> W[Worker et reprises bornées]
         W --> H[Témoin HTTP et registre idempotent]
@@ -123,7 +164,7 @@ flowchart TB
 - **ODVL** classe trois options de livraison avant l'essai. L'ordre est validé et conservé à titre consultatif ; le code ne l'applique pas au worker et ne le transmet pas au prompt de politique SAWM.
 - **SAWM** propose avant l'essai un JSON de politique initiale et produit ensuite une lecture des mesures. Le code accepte uniquement les champs et bornes prévus ; il n'exécute aucune commande générée.
 
-Aucun de ces appels ne se trouve dans la boucle de livraison. La campagne archivée contient de vrais appels Cloud ; le champ local `cloud_access: false` décrit uniquement l'exécution de `lab.py`.
+Aucun de ces appels ne se trouve dans la boucle de livraison. La campagne archivée contient de vrais appels Cloud ; le champ `cloud_access: false` décrit le banc concerné, exécuté séparément des étapes Cloud.
 
 ## Utiliser Basira et SAWM
 

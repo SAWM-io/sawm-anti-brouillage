@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-10-27T16:24:26.159850+00:00",
+  "raw_artifact_hashes_verified": 80,
+  "campaign_source_hashes_match_repository": true,
+  "vm_initial_state": "stopped",
+  "vm_final_state": "stopped",
+  "mac_veille_restored": true,
+  "postflight": "postflight.json",
+  "figure_visually_reviewed": true
+}

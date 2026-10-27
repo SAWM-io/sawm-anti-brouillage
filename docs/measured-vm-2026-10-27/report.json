@@ -1,0 +1,506 @@
+{
+  "arrival_interval_ms": 350,
+  "checks": {
+    "all_trials_completed": true,
+    "paired_message_bytes_identical": true,
+    "source_unchanged": true,
+    "valid_trials": true,
+    "within_campaign_cap": true
+  },
+  "completed_trials": 6,
+  "elapsed_seconds": 46.001101146999986,
+  "initial_policy": {
+    "base_delay_ms": 100,
+    "max_attempts": 12,
+    "max_delay_ms": 1000,
+    "request_timeout_ms": 500,
+    "schema": "resilience-retry-policy/v1",
+    "total_budget_ms": 25000
+  },
+  "planned_trials": 6,
+  "platform": {
+    "kernel": "6.8.0-138-generic",
+    "machine": "aarch64",
+    "python": "3.10.12",
+    "system": "Linux"
+  },
+  "requested_phases": [
+    {
+      "at_ms": 0,
+      "delay_ms": 1,
+      "jitter_ms": 0,
+      "loss_percent": 0,
+      "name": "healthy"
+    },
+    {
+      "at_ms": 1000,
+      "delay_ms": 60,
+      "jitter_ms": 20,
+      "loss_percent": 3,
+      "name": "degraded"
+    },
+    {
+      "at_ms": 3000,
+      "delay_ms": 0,
+      "jitter_ms": 0,
+      "loss_percent": 100,
+      "name": "blackout"
+    },
+    {
+      "at_ms": 4000,
+      "delay_ms": 1,
+      "jitter_ms": 0,
+      "loss_percent": 0,
+      "name": "recovery"
+    }
+  ],
+  "schema": "sawm-vm-netem-campaign/v1",
+  "scope": {
+    "blackout": "No claim of communication through 100% loss. In-flight requests around transitions remain distinguishable.",
+    "cloud_access": false,
+    "destination": "198.18.0.2",
+    "effect": "One unique committed witness ledger row per message ID; not third-party API exactly-once assurance.",
+    "faults": "Linux tc netem in both directions on the two owned link0 devices only; VM primary interfaces unchanged.",
+    "max_campaign_seconds": 180,
+    "max_trial_seconds": 25,
+    "network": "two owned namespaces joined only to each other, no default route",
+    "pairing": "Same message bytes, arrivals, policy and requested impairment profile; not identical packet loss draws or exposure.",
+    "physical_radio_equipment": false,
+    "radio_claim": "Packet-level surrogate for degraded communications, not an RF propagation/interference model; no RSSI/SNR/modulation.",
+    "radio_validation": false,
+    "random_seed": null,
+    "real_linux_packets": true,
+    "recipient_timestamp": "accepted_monotonic_ns is sampled inside the transaction before commit completes; an ACK confirms completed commit.",
+    "seed_support": "not requested; iproute2 compatibility; stochastic loss draws are not paired",
+    "subnet": "198.18.0.0/30",
+    "transport_bootstrap": "Fixed lab address replaces module HOST only in this isolated benchmark; public core unchanged."
+  },
+  "source_sha256": {
+    "adaptive_policy.py": "09ea86c7b78f2a77902f4b7863c0ab421921f3e95d1e7bcd92cd7f414ccb20b9",
+    "delivery.py": "2b959f48abb86e3985f65e359cddf7d235bd1652034a800c89d4accbd06576c9",
+    "vm_netem_lab.py": "d4e947a3b535f72827a17546ac08e327cc55b0e44c3b9be11bbf546046bb908e",
+    "witness.py": "679b03e4f637cac120d3eec70b3208ff1015c8009a6e3f10f82593f29c14d60f"
+  },
+  "started_at_ms": 1793117774645,
+  "success": true,
+  "tools": {
+    "ip": "ip utility, iproute2-5.15.0, libbpf 0.5.0",
+    "tc": "tc utility, iproute2-5.15.0, libbpf 0.5.0"
+  },
+  "trials": [
+    {
+      "directory": "r1-static",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 199.830917,
+        "ack_p95_ms": 1426.658209,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 22,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 271510914669,
+          "guard_ms": 200,
+          "start_monotonic_ns": 270725239419
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 192.990584,
+        "delivery_p95_ms": 1415.17825,
+        "duplicate_effects": 0,
+        "duplicate_requests": 1,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 105.347042,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 4,
+            "committed": 4,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 13,
+            "committed": 13,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 2,
+        "unacknowledged": 0
+      },
+      "mode": "static",
+      "order_position": 1,
+      "repetition": 1,
+      "success": true
+    },
+    {
+      "directory": "r1-adaptive",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 147.170375,
+        "ack_p95_ms": 1518.006251,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 24,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 279644897007,
+          "guard_ms": 200,
+          "start_monotonic_ns": 278943361006
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 137.972917,
+        "delivery_p95_ms": 1509.939167,
+        "duplicate_effects": 0,
+        "duplicate_requests": 2,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 124.439917,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 4,
+            "committed": 4,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 13,
+            "committed": 13,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 4,
+        "unacknowledged": 0
+      },
+      "mode": "adaptive",
+      "order_position": 2,
+      "repetition": 1,
+      "success": true
+    },
+    {
+      "directory": "r2-adaptive",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 216.171375,
+        "ack_p95_ms": 2418.934918,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 25,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 287126523468,
+          "guard_ms": 200,
+          "start_monotonic_ns": 286389791885
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 205.23175,
+        "delivery_p95_ms": 1743.119709,
+        "duplicate_effects": 0,
+        "duplicate_requests": 1,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 84.493584,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 2,
+            "committed": 3,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 15,
+            "committed": 14,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 5,
+        "unacknowledged": 0
+      },
+      "mode": "adaptive",
+      "order_position": 1,
+      "repetition": 2,
+      "success": true
+    },
+    {
+      "directory": "r2-static",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 377.898292,
+        "ack_p95_ms": 2839.408584,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 25,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 294599796764,
+          "guard_ms": 200,
+          "start_monotonic_ns": 293818632805
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 343.068125,
+        "delivery_p95_ms": 2749.572959,
+        "duplicate_effects": 0,
+        "duplicate_requests": 1,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 653.46125,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 2,
+            "committed": 2,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 15,
+            "committed": 15,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 5,
+        "unacknowledged": 0
+      },
+      "mode": "static",
+      "order_position": 2,
+      "repetition": 2,
+      "success": true
+    },
+    {
+      "directory": "r3-static",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 238.418292,
+        "ack_p95_ms": 859.725709,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 22,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 302464210434,
+          "guard_ms": 200,
+          "start_monotonic_ns": 301619705059
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 224.78275,
+        "delivery_p95_ms": 842.948334,
+        "duplicate_effects": 0,
+        "duplicate_requests": 0,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 200.267667,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 1,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 5,
+            "committed": 6,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 11,
+            "committed": 11,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 2,
+        "unacknowledged": 0
+      },
+      "mode": "static",
+      "order_position": 1,
+      "repetition": 3,
+      "success": true
+    },
+    {
+      "directory": "r3-adaptive",
+      "error": null,
+      "metrics": {
+        "ack_p50_ms": 208.154208,
+        "ack_p95_ms": 1525.898667,
+        "acked": 20,
+        "all_messages_delivered_and_acked": true,
+        "attempts": 24,
+        "blackout_stabilized_window": {
+          "acked": 0,
+          "committed": 0,
+          "end_monotonic_ns": 309813349396,
+          "guard_ms": 200,
+          "start_monotonic_ns": 309029432062
+        },
+        "content_conflicts": 0,
+        "delivered_unique": 20,
+        "delivery_p50_ms": 188.069958,
+        "delivery_p95_ms": 1463.787917,
+        "duplicate_effects": 0,
+        "duplicate_requests": 1,
+        "enqueued": 20,
+        "first_ack_after_recovery_ms": 31.973,
+        "not_delivered": 0,
+        "phase_counts": {
+          "blackout": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 3
+          },
+          "degraded": {
+            "acked": 4,
+            "committed": 4,
+            "enqueued": 6
+          },
+          "healthy": {
+            "acked": 3,
+            "committed": 3,
+            "enqueued": 3
+          },
+          "recovery": {
+            "acked": 13,
+            "committed": 13,
+            "enqueued": 8
+          },
+          "setup": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          },
+          "transition": {
+            "acked": 0,
+            "committed": 0,
+            "enqueued": 0
+          }
+        },
+        "planned": 20,
+        "states": {
+          "acked": 20
+        },
+        "timeouts": 4,
+        "unacknowledged": 0
+      },
+      "mode": "adaptive",
+      "order_position": 2,
+      "repetition": 3,
+      "success": true
+    }
+  ]
+}

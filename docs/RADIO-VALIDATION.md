@@ -1,8 +1,8 @@
-# Validation radio — protocole futur
+# Simulation réseau en VM et validation radio
 
 [Présentation](../README.md) · [Guide technique](GUIDE-TECHNIQUE.md) · [English summary](#english-summary)
 
-**Statut : protocole proposé, aucune mesure RF réalisée.** L'environnement disponible est un Mac avec possibilité de machines virtuelles. Il permet d'exécuter les tests logiciels et le banc HTTP, mais ne fournit ni liaison radio instrumentée, ni mesure de RSSI ou de SNR.
+**Statut : essais HTTP et campagne réseau Linux en VM réalisés ; aucune mesure RF.** La VM fait circuler de vrais paquets avec des délais et des pertes imposés par `tc netem`. Elle ne fournit ni liaison radio instrumentée, ni mesure de RSSI ou de SNR. Le protocole physique proposé plus bas reste à réaliser.
 
 SAWM Anti-Brouillage démontre aujourd'hui la résilience applicative et l'ajustement local de paramètres de reprise à partir d'observations HTTP. Une erreur de connexion, un timeout ou une latence HTTP ne permet pas d'identifier un brouillage radio. Le code ne pilote pas d'émetteur RF.
 
@@ -13,10 +13,33 @@ SAWM Anti-Brouillage démontre aujourd'hui la résilience applicative et l'ajust
 | Les messages survivent-ils à l'arrêt du worker ? | Même file SQLite reprise, traces des processus et registre destinataire |
 | Un ACK perdu crée-t-il un second effet ? | Tentatives répétées comparées aux effets uniques du témoin |
 | Les paramètres suivent-ils les observations terminées ? | Trace de calibration et rejeu des états |
-| Le mode adaptatif fait-il mieux qu'une politique fixe ? | Comparaison appariée sur les profils HTTP locaux, avec résultats favorables et défavorables |
+| Le mode adaptatif fait-il mieux qu'une politique fixe ? | Comparaison à charge et paramètres identiques ; pas de gain général établi, et pertes aléatoires non identiques dans la VM |
+| Les messages sont-ils confirmés pendant une dégradation IP ? | Comptes par phase de la campagne Linux : confirmations partielles pendant la dégradation, puis reprise après la coupure |
 | Le programme résiste-t-il à une dégradation RF ? | Non mesuré : matériel radio et instrumentation nécessaires |
 
-Une VM supplémentaire peut compléter ultérieurement les essais de transport IP. Elle ne transforme pas une simulation de délai ou de perte en mesure radio. Le banc livré reste limité à `127.0.0.1` ; il faudrait une extension de transport distincte pour traverser des VM ou une liaison physique.
+L’extension `vm_netem_lab.py` utilise désormais deux namespaces Linux isolés, reliés par `veth` sur `198.18.0.0/30`, sans route extérieure. Le worker public reste limité à `127.0.0.1` ; seul ce banc adapte sa destination à une adresse interne fixe, après vérification de la topologie. Une simulation de délai ou de perte reste distincte d’une mesure radio.
+
+## Ce que montre la campagne VM
+
+Le [rapport Linux conservé](measured-vm-2026-10-27/report.json) contient six passages de 20 messages, trois fixes et trois adaptatifs. Les règles `netem` imposent dans chaque sens 60 ± 20 ms et 3 % de pertes entre 1 et 3 secondes, 100 % de pertes entre 3 et 4 secondes, puis un retour au profil nominal. La politique initiale SAWM est lue depuis l’archive locale ; aucun nouvel appel Cloud n’est réalisé. Les ajustements en cours d’essai proviennent du contrôleur local et des observations terminées.
+
+Les 120 messages sont finalement livrés et acquittés sans effet dupliqué, mais le comportement pendant la panne est distinct du bilan final :
+
+- Pendant la dégradation partielle, les passages adaptatifs reçoivent respectivement 4, 2 et 4 ACK vérifiés ; les passages fixes en reçoivent 4, 2 et 5.
+- Dans la fenêtre de coupure stabilisée, les six passages enregistrent zéro effet et zéro ACK. La file conserve les messages jusqu’au retour de la communication.
+- Le premier ACK après retour arrive après 124,44 / 84,49 / 31,97 ms en adaptatif et 105,35 / 653,46 / 200,27 ms en fixe. Ces valeurs ne mesurent pas le vidage complet de la file.
+- Un ACK du troisième passage fixe est observé à la frontière de la coupure, avant la garde de 200 ms. Son message avait été accepté avant la coupure ; cet événement est conservé et ne prouve pas une communication à travers la coupure stabilisée.
+
+Les 73 tentatives adaptatives contre 69 fixes, et le p95 ACK moyen plus élevé en adaptatif, ne montrent pas de gain général. Les tirages aléatoires de pertes ne sont pas appariés. Le [guide technique](GUIDE-TECHNIQUE.md#résultats-mesurés-dans-la-vm) donne les comptes, les délais et l’interprétation des transitions.
+
+Pour reproduire dans une VM Linux équipée de Python 3.10+, `iproute2`, namespaces, `veth` et `netem`, avec un nouveau répertoire de sortie :
+
+```sh
+sudo python3 vm_netem_lab.py --output-dir output/vm-netem-demo --repetitions 3 \
+  --policy docs/measured-2026-10-27/cloud/policy.json
+```
+
+Le banc émule des symptômes IP compatibles avec une communication dégradée. Il n’identifie pas leur cause et ne simule ni propagation RF, ni modulation, ni brouilleur. Il ne permet donc pas de mesurer une résistance physique au brouillage.
 
 ## Montage de laboratoire envisagé
 
@@ -67,7 +90,9 @@ Une conclusion recevable serait : « sur ce matériel, ce profil d'atténuation 
 
 ## English summary
 
-**Proposed protocol; no RF measurements have been performed.** The available Mac and virtual machines support software validation and local HTTP experiments. They do not establish RF interference resistance, RSSI or SNR performance. The current transport is fixed to loopback; a separate transport extension would be required for a physical link.
+**HTTP and Linux VM network experiments completed; no RF measurements performed.** The VM extension sends real TCP/HTTP packets through two isolated network namespaces and a `veth` link. Bidirectional `tc netem` applies 60 ± 20 ms delay with 3% random loss, a one-second 100% loss window, then recovery. The public worker remains loopback-only; the VM harness uses a fixed isolated destination. No new Cloud call is made: the initial SAWM policy is read from a local archive, and adaptation uses only completed local observations.
+
+All 120 messages were eventually delivered and acknowledged. Some ACKs arrived during partial degradation; none arrived in the stabilized blackout. One boundary ACK belonged to a message accepted before blackout and is retained separately from the guarded window. Recovery timings, attempts and p95 values do not establish a general adaptive advantage. Random loss draws are not identical across modes. These are packet-level impairment results, not an RF propagation or interference model; RSSI and SNR are not measured.
 
 A future campaign would use two laboratory-owned radios in an isolated conducted or shielded setup, with equipment-specific input protection, controlled attenuation and calibrated instrumentation. No jammer is deployed. Attenuation tests characterize a degraded link and cannot establish resistance to every interference mechanism.
 

@@ -2,7 +2,7 @@
 
 **Application resilience during outages — retain messages, resume delivery and verify each effect in an HTTP demonstrator.**
 
-[Français](README.md) · [Quick start](#run-locally) · [Technical guide — French](docs/GUIDE-TECHNIQUE.md) · [Measured evidence](docs/measured-2026-10-27/) · [Proposed radio validation](docs/RADIO-VALIDATION.md#english-summary)
+[Français](README.md) · [Quick start](#run-locally) · [Technical guide — French](docs/GUIDE-TECHNIQUE.md) · [Measured evidence](docs/measured-2026-10-27/) · [VM simulation and radio scope](docs/RADIO-VALIDATION.md#english-summary)
 
 SAWM Anti-Brouillage is an executable demonstration of resilient HTTP delivery: a SQLite queue retains messages, a worker resumes attempts after restarting, and an idempotent recipient prevents a message from producing a second effect. It gives product and integration teams a concrete way to evaluate continuity before adapting the mechanism to their own service.
 
@@ -71,9 +71,9 @@ python adaptive_lab.py --output-dir output/adaptive-demo --repetitions 3 --messa
 
 The [comparison method and limits — French](docs/GUIDE-TECHNIQUE.md#calibration-continue-locale) distinguish controller observations from policy assumptions prepared before the run. Better performance is not assumed: the report also retains regressions and attempt costs.
 
-### Final comparison results
+### Local comparison results
 
-The [final 27 October campaign](docs/measured-adaptive-2026-10-27/) includes 24 runs: four profiles, two modes and three repetitions. **Every run delivers and acknowledges 20/20 messages with no duplicated effects.** The values below are means of the ACK-delay p95 values calculated separately for each of the three runs per mode.
+The [27 October loopback comparison](docs/measured-adaptive-2026-10-27/) includes 24 runs: four profiles, two modes and three repetitions. **Every run delivers and acknowledges 20/20 messages with no duplicated effects.** The values below are means of the ACK-delay p95 values calculated separately for each of the three runs per mode.
 
 | HTTP profile | Fixed: mean ACK p95 | Adaptive: mean ACK p95 | Attempts per run, fixed / adaptive |
 | --- | ---: | ---: | ---: |
@@ -86,6 +86,47 @@ The [final 27 October campaign](docs/measured-adaptive-2026-10-27/) includes 24 
 
 The [individual measurements](docs/measured-adaptive-2026-10-27/aggregate.json), [delay chart](docs/measured-adaptive-2026-10-27/ack-p95.svg) and [calibration examples](docs/measured-adaptive-2026-10-27/figures/calibration-examples.svg) are retained. The first version and its lost-ACK regression remain [documented in the guide — French](docs/GUIDE-TECHNIQUE.md#correction-documentée-après-la-première-comparaison).
 
+## Emulate a degraded link in a Linux VM
+
+`vm_netem_lab.py` sends real TCP/HTTP packets between two isolated Linux network namespaces connected by a `veth` pair. `tc netem` applies this schedule **in each direction**:
+
+| Scheduled phase | Injected network parameters |
+| --- | --- |
+| 0–1 s — healthy | 1 ms delay, no injected loss |
+| 1–3 s — degraded | 60 ± 20 ms delay and 3% random loss |
+| 3–4 s — blackout | 100% loss |
+| From 4 s — recovery | Return to 1 ms delay, no injected loss |
+
+The lab compares three fixed and three adaptive runs, with 20 messages per run. It uses the internal `198.18.0.0/30` subnet without a default route or an external link; the VM's primary interfaces do not receive these rules. Each pair uses the same contents, arrivals and parameters, but random packet-loss draws are not identical.
+
+Inside a Linux VM with Python 3.10+, `iproute2` (`ip`, `tc`), network namespaces and `netem`, run from the repository root:
+
+```sh
+sudo python3 vm_netem_lab.py --output-dir output/vm-netem-demo --repetitions 3 \
+  --policy docs/measured-2026-10-27/cloud/policy.json
+```
+
+The output directory must be new. Root privileges are used to create and remove the lab's isolated network resources. The archived SAWM policy is read locally: no new Cloud call is made. The [VM guide — French](docs/GUIDE-TECHNIQUE.md#émulation-réseau-dans-une-vm-linux) explains measurements during degradation, blackout and recovery.
+
+This experiment emulates degraded IP communication. It does not model RF propagation, measure RSSI or SNR, or prove resistance to a physical jammer. The distinction is explained in the [network and radio validation document](docs/RADIO-VALIDATION.md#english-summary).
+
+### What the VM experiment observed
+
+The [real Linux campaign](docs/measured-vm-2026-10-27/) completed six runs in 46.001 s: **all 120 messages eventually produced a unique effect and received a verified ACK**. Behavior during each phase remains visible:
+
+| Observation | Fixed mode | Adaptive mode |
+| --- | --- | --- |
+| Verified ACKs during degradation, r1 / r2 / r3 | 4 / 2 / 5 | 4 / 2 / 4 |
+| Effects and ACKs in the stabilized blackout | 0 effects, 0 ACKs in every run | 0 effects, 0 ACKs in every run |
+| First ACK after recovery, r1 / r2 / r3 | 105.35 / 653.46 / 200.27 ms | 124.44 / 84.49 / 31.97 ms |
+| Unique effects and ACKs at completion | 60 / 60 | 60 / 60 |
+| Total attempts | 69 | 73 |
+| Mean of ACK-delay p95 values | 1708.60 ms | 1820.95 ms |
+
+Confirmations continue during partial degradation. No new effect or verified ACK is recorded in the stabilized blackout; the queue retains messages for recovery. One ACK in the third fixed run is recorded at the boundary, 62.83 ms after blackout application: its message had been accepted beforehand. It remains in the traces and is excluded from the stabilized window, which starts after a 200 ms guard period.
+
+The first post-recovery ACK can arrive sooner without improving the overall p95: these metrics describe different aspects of recovery. These six runs do not show a general adaptive advantage. The [detailed phase results — French](docs/GUIDE-TECHNIQUE.md#résultats-mesurés-dans-la-vm) retain events, transitions and attempt costs.
+
 ## Architecture and Cloud responsibilities
 
 ```mermaid
@@ -97,7 +138,7 @@ flowchart TB
         S --> V[Local JSON and bounds validation]
         O[ODVL: advisory option ranking] --> R[Preparation report]
     end
-    subgraph Local[Local run — HTTP on 127.0.0.1]
+    subgraph Local[Initial lab — HTTP on 127.0.0.1]
         M[Synthetic messages] --> Q[SQLite queue]
         Q --> W[Worker and bounded retries]
         W --> H[HTTP witness and idempotent ledger]
@@ -123,7 +164,7 @@ flowchart TB
 - **ODVL** ranks three delivery options before the run. The order is validated and retained for inspection; the code does not apply it to the worker or pass it into SAWM's policy prompt.
 - **SAWM** proposes an initial policy JSON object before the run and later reviews the measurements. Only the specified fields and bounds are accepted; no generated command is executed.
 
-None of these calls is part of the delivery loop. The archived campaign includes real Cloud calls; the local `cloud_access: false` field describes the `lab.py` execution alone.
+None of these calls is part of the delivery loop. The archived campaign includes real Cloud calls; the `cloud_access: false` field describes the corresponding lab execution, separate from the Cloud steps.
 
 ## Use Basira and SAWM
 
