@@ -365,4 +365,4 @@ La vérification du 27 octobre 2026 après l’ajout de la calibration continue 
 
 La reprise concerne un processus arrêté puis relancé sur le même hôte resté démarré, avec SQLite conservé. Les échéances monotones ne constituent pas un protocole de reprise après redémarrage de la machine. Le banc ne certifie ni une coupure électrique, ni une corruption du disque, ni la résistance à un administrateur malveillant. Il ne mesure aucune liaison radio, bande passante physique ou performance opérateur. Le [protocole de validation radio futur](RADIO-VALIDATION.md) distingue le Mac/VM disponible d’une future liaison isolée et instrumentée entre deux radios. Le résultat doit être reproduit et étendu au protocole du destinataire avant toute adaptation à un service réel.
 
-Pour le programme complémentaire consacré à l'ordonnancement HTTP et aux échéances : [SAWM Smart Réseau](https://github.com/ulookme/sawm-smart-reseau).
+Pour le programme complémentaire consacré à l'ordonnancement HTTP et aux échéances : [SAWM Smart Réseau](https://github.com/SAWM-io/sawm-smart-reseau).

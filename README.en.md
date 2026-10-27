@@ -40,7 +40,7 @@ All 14 report checks passed. The repeated request did not create a second effect
 Requirements: **Python 3.10+** and an environment that allows a listener on `127.0.0.1` and child processes. The local lab uses only the Python standard library.
 
 ```sh
-git clone https://github.com/ulookme/sawm-anti-brouillage.git
+git clone https://github.com/SAWM-io/sawm-anti-brouillage.git
 cd sawm-anti-brouillage
 python3 -m venv .venv
 . .venv/bin/activate
@@ -135,4 +135,4 @@ The key is read from a private file outside the repository with `600` permission
 
 This is a demonstration lab running on one host. It tests a process restart with SQLite state retained during the same host boot. It does not validate machine reboot recovery, power failure, storage corruption or third-party API idempotency. Delays include the wait experienced by retained messages; they do not establish faster networking or higher bandwidth. The Mac and VMs support software validation; no radio equipment, vehicle or physical network is tested. The [future radio protocol](docs/RADIO-VALIDATION.md#english-summary) describes an isolated two-radio link, controlled attenuation and the required measurements, with no jammer deployed.
 
-Explore the [technical guide — French](docs/GUIDE-TECHNIQUE.md), [validation checklist — French](docs/validation.md) and [27 October evidence](docs/measured-2026-10-27/). For HTTP message scheduling and deadlines, see the complementary [SAWM Smart Réseau](https://github.com/ulookme/sawm-smart-reseau) program.
+Explore the [technical guide — French](docs/GUIDE-TECHNIQUE.md), [validation checklist — French](docs/validation.md) and [27 October evidence](docs/measured-2026-10-27/). For HTTP message scheduling and deadlines, see the complementary [SAWM Smart Réseau](https://github.com/SAWM-io/sawm-smart-reseau) program.

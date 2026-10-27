@@ -4,7 +4,7 @@
   "source_path": "experiments/resilience-applicative/",
   "export": "tracked files only",
   "distribution": {
-    "repository": "ulookme/sawm-anti-brouillage",
+    "repository": "SAWM-io/sawm-anti-brouillage",
     "base_repository_commit": "3520e807be26b75cfe98a9b9528bc6e85540cc95",
     "standalone_additions": [
       "optional bounded-rto/v2 continuous local calibration",

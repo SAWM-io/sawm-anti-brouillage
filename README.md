@@ -40,7 +40,7 @@ Les 14 contrôles du rapport sont vrais. Une requête répétée n'a donc pas cr
 Prérequis : **Python 3.10+**, un environnement permettant d'ouvrir un port sur `127.0.0.1` et de lancer des processus enfants. Le banc local utilise uniquement la bibliothèque standard Python.
 
 ```sh
-git clone https://github.com/ulookme/sawm-anti-brouillage.git
+git clone https://github.com/SAWM-io/sawm-anti-brouillage.git
 cd sawm-anti-brouillage
 python3 -m venv .venv
 . .venv/bin/activate
@@ -135,4 +135,4 @@ La clé se lit depuis un fichier privé hors du dépôt, de permissions `600`. L
 
 Le programme est un banc de démonstration sur un seul hôte. Il teste un redémarrage de processus avec conservation de SQLite pendant le même démarrage de l'hôte. Il ne valide ni un redémarrage de machine, ni une panne électrique, ni la corruption de stockage, ni l'idempotence d'une API tierce. Les délais incluent l'attente des messages conservés ; ils ne mesurent pas un gain de débit ou de vitesse réseau. Le Mac et les VM permettent la validation logicielle ; aucun équipement radio, véhicule ou réseau physique n'est testé. Le [protocole radio futur](docs/RADIO-VALIDATION.md) décrit une liaison isolée entre deux radios, une atténuation contrôlée et les mesures nécessaires, sans brouilleur déployé.
 
-Pour approfondir : [guide technique](docs/GUIDE-TECHNIQUE.md), [grille de validation](docs/validation.md) et [preuves du 27 octobre](docs/measured-2026-10-27/). Pour explorer l'ordonnancement de messages HTTP et les échéances, voir le programme complémentaire [SAWM Smart Réseau](https://github.com/ulookme/sawm-smart-reseau).
+Pour approfondir : [guide technique](docs/GUIDE-TECHNIQUE.md), [grille de validation](docs/validation.md) et [preuves du 27 octobre](docs/measured-2026-10-27/). Pour explorer l'ordonnancement de messages HTTP et les échéances, voir le programme complémentaire [SAWM Smart Réseau](https://github.com/SAWM-io/sawm-smart-reseau).
