@@ -8,7 +8,7 @@
 
 **Application resilience during outages — retain messages, resume delivery and verify each effect in an HTTP demonstrator.**
 
-[Français](README.md) · [Quick start](#run-locally) · [Technical guide — French](docs/GUIDE-TECHNIQUE.md) · [Measured evidence](docs/measured-2026-10-27/) · [VM simulation and radio scope](docs/RADIO-VALIDATION.md#english-summary)
+[Français](README.md) · [Sectors and customer value](#sectors-and-customer-value) · [Positioning](#our-position-alongside-existing-solutions) · [Quick start](#run-locally) · [Technical guide — French](docs/GUIDE-TECHNIQUE.md) · [Measured evidence](docs/measured-2026-10-27/) · [VM simulation and radio scope](docs/RADIO-VALIDATION.md#english-summary)
 
 SAWM Anti-Brouillage is an executable demonstration of resilient HTTP delivery: a SQLite queue retains messages, a worker resumes attempts after restarting, and an idempotent recipient prevents a message from producing a second effect. It gives product and integration teams a concrete way to evaluate continuity before adapting the mechanism to their own service.
 
@@ -27,6 +27,48 @@ The proof separates new data received from repeated acknowledgements, verifies b
 [Run the four-path experiment](docs/MULTIPATH-BIDIRECTIONAL.en.md) · [Campaign evidence](docs/measured-multipath-2026-10-28/) · [French guide](docs/MULTIPATH-BIDIRECTIONNEL.md)
 
 This is an additional IP transport experiment within one Linux VM. It does not measure physical radio-jamming resistance or attribute the local selector's performance to a Cloud model.
+
+## Sectors and customer value
+
+**A failed connection should not force a team to start its work again.** SAWM Anti-Brouillage provides an executable foundation for retaining pending data, selecting another available path and checking what reaches the recipient.
+
+The following are **proposed applications for a customer pilot**. The mechanisms are demonstrated in the published labs; business benefits and integration with customer equipment still need measurement. The repository does not already include a connector for every sector.
+
+| Sector / buyer | Concrete integration scenario | Intended customer benefit |
+| --- | --- | --- |
+| **Industry, factories and maintenance** | A gateway sends measurements, logs and inspection photos. When an access path fails, it uses another configured path or retains pending transfers until connectivity returns. | Fewer manual retries and site visits to retrieve data; diagnostics informed by measurements actually received. |
+| **Logistics, transport and warehouses** | Parcel scans, proof of delivery and tracking events wait during coverage gaps, then reach the central system with stable identifiers. | Less re-entry, better continuity for parcel tracking and import/export exchanges; distinguish a pending event from a delivered event. |
+| **Cybersecurity, SOCs and monitoring** | A collector forwards alerts and logs to the monitoring centre despite the loss of one network path. | Reduce transport-related visibility gaps; retain receipt evidence for investigation. This function transports alerts; it does not itself detect an intrusion. |
+| **Energy, water, agriculture and remote sites** | Equipment forwards readings and history after connectivity interruptions without an operator restarting every transfer. | Fewer missing observations in the application flow, more consistent monitoring and fewer manual collection visits. |
+| **IoT integrators and gateway manufacturers** | Adapt queue, retry and validation components to a customer's service, then reproduce outages in the lab before delivery. | Reuse a documented, testable foundation; reduce prototyping effort and provide understandable evidence to the end customer. |
+| **Telecoms and private networks** | Evaluate an application with several access paths, compare fixed and adaptive selection, then inspect delays, recovery and delivery. | Identify when backup connectivity helps and design a pilot using measurements. Physical fibre, cellular or satellite access requires its own adapters and tests. |
+| **Civil robotics and mobile equipment** | Retrieve logs, maps or inspection results as equipment moves through areas with variable connectivity. | Fewer transfers to restart and better retrieval of mission data. Safety control, teleoperation and continuous video are not validated by these experiments. |
+| **Defence and critical infrastructure — R&D partnership** | Evaluate continuity of authorised telemetry and reports across multiple paths, with outage and recovery traces. | Build reproducible qualification evidence. Physical radio-jamming resistance requires an isolated radio test bench and validation on the relevant equipment. |
+
+**Recommended first pilots: industrial/IoT integration, logistics and cyber monitoring**, for flows that tolerate recovery delays of a few seconds. When every path is unavailable, no data can cross: it waits for recovery within configured storage and retry limits. Continuity also depends on genuinely available backup paths.
+
+## Our position alongside existing solutions
+
+Network failover and persistent queues already exist. Our proposal is a **verifiable application-continuity kit**, combining demonstrator code, reproducible scenarios, receipts, file integrity checks and a decision dashboard. It can complement existing infrastructure.
+
+| Solution / approach | What it already provides | Where SAWM Anti-Brouillage fits |
+| --- | --- | --- |
+| **Cisco Catalyst SD-WAN** | Failed-tunnel detection and use of alternative transports, as described in the [Cisco documentation](https://www.cisco.com/c/en/us/td/docs/solutions/CVD/SDWAN/cisco-sdwan-design-guide.html). | Verify at application level which messages produced an effect and which files arrived intact. The demonstrator does not replace a router or VPN. |
+| **Peplink SpeedFusion** | Link bonding, packet redundancy and WAN failover, as described by [Peplink](https://www.peplink.com/technology/speedfusion-bonding-technology/). | Provide an inspectable path-selection and HTTP-delivery lab. It does not transparently bond all network sessions or change radio frequencies. |
+| **MQTT and persistent messaging** | Message retention and recovery; for example, [AWS IoT persistent sessions](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt-persistent-sessions) support intermittently connected clients. | Bring together retry, path-selection and recipient-verification experiments with exportable evidence. A durable queue alone is not a SAWM-specific innovation. |
+
+**Why evaluate our approach?** To follow the sequence “observation → path choice → attempt → verified receipt”, adapt the mechanism to a specific business exchange and reproduce incidents before deployment. The optional Cloud workflow adds experiment history in Basira, TSST recall, advisory ODVL ranking and bounded SAWM proposals, under the [documented responsibilities of each component](#architecture-and-cloud-responsibilities). The local delivery loop operates without Cloud calls.
+
+The published measurements compare adaptive selection with a fixed path, **not with the products above**. They establish neither general commercial superiority nor a Cloud benefit in the four-path lab. Private engines are not distributed; the Cloud workflow requires authorised access.
+
+### From demonstration to customer pilot
+
+1. Select a useful flow: parcel scans, measurements, logs or inspection material, with its acceptable delay and privacy requirements.
+2. Connect customer senders, recipients and paths; verify transport security, storage and idempotent processing at the recipient.
+3. Compare with the current solution using the same data and outages: complete delivery, integrity, duplicated effects, recovery time, resource use and manual interventions.
+4. Agree acceptance criteria and deployment scope. Time and cost savings are measured in the pilot; no return-on-investment percentage is assumed here.
+
+[Explore Basira / SAWM APIs](https://basira.sawm.io/) · [Reproduce the four-path lab](docs/MULTIPATH-BIDIRECTIONAL.en.md) · [Read the evidence](docs/measured-multipath-2026-10-28/)
 
 ## Reproducing the reference report
 

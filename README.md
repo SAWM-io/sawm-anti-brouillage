@@ -8,7 +8,7 @@
 
 **Résilience applicative aux coupures — conserver les messages, reprendre leur envoi et vérifier chaque effet dans un démonstrateur HTTP.**
 
-[English](README.en.md) · [Démarrage](#démarrer-en-local) · [Guide technique](docs/GUIDE-TECHNIQUE.md) · [Preuves mesurées](docs/measured-2026-10-27/) · [Simulation VM et portée radio](docs/RADIO-VALIDATION.md)
+[English](README.en.md) · [Secteurs et valeur client](#secteurs-et-valeur-client) · [Positionnement](#notre-positionnement-face-aux-solutions-existantes) · [Démarrage](#démarrer-en-local) · [Guide technique](docs/GUIDE-TECHNIQUE.md) · [Preuves mesurées](docs/measured-2026-10-27/) · [Simulation VM et portée radio](docs/RADIO-VALIDATION.md)
 
 SAWM Anti-Brouillage est un démonstrateur exécutable de livraison HTTP résiliente : une file SQLite conserve les messages, un worker reprend les tentatives après son redémarrage et un destinataire idempotent évite de répéter l'effet d'un message. Il donne aux équipes produit et intégration un cas concret pour évaluer la continuité d'un échange applicatif avant d'adapter ce mécanisme à leur service.
 
@@ -27,6 +27,48 @@ Si tous les chemins sont coupés, le transfert s'arrête et la file conserve les
 **Périmètre : quatre chemins IP virtuels entre deux espaces réseau dans une VM.** Le sélecteur est local ; cet essai ne mesure pas l'apport du Cloud ou d'ODVL, ni une résistance au brouillage radio physique. Les bascules ont un délai mesuré et ne garantissent pas une connexion sans interruption.
 
 [Résultats et traces](docs/measured-multipath-2026-10-28/) · [Lancer le banc et le dashboard](docs/MULTIPATH-BIDIRECTIONNEL.md) · [English guide](docs/MULTIPATH-BIDIRECTIONAL.en.md)
+
+## Secteurs et valeur client
+
+**Une coupure de liaison ne devrait pas obliger une équipe à recommencer son travail.** SAWM Anti-Brouillage fournit une base exécutable pour conserver les données en attente, sélectionner un autre chemin disponible et vérifier ce qui arrive au destinataire.
+
+Les cas ci-dessous sont des **applications proposées pour un pilote client**. Les mécanismes sont démontrés dans les bancs publiés ; leurs bénéfices métier et leur intégration aux équipements du client restent à mesurer. Le dépôt ne contient pas déjà un connecteur pour chacun de ces métiers.
+
+| Secteur / acheteur | Cas concret à intégrer | Ce que le client cherche à gagner |
+| --- | --- | --- |
+| **Industrie, usines et maintenance** | Une passerelle transmet des mesures, journaux et photos d'inspection. Si un accès devient indisponible, elle utilise un autre chemin configuré ou conserve les envois jusqu'au retour du réseau. | Moins de reprises manuelles et de déplacements pour récupérer les données ; un diagnostic alimenté par les mesures effectivement reçues. |
+| **Logistique, transport et entrepôts** | Des scans de colis, preuves de livraison et événements de suivi attendent pendant une zone sans couverture, puis rejoignent le système central avec des identifiants stables. | Moins de ressaisies, une meilleure continuité du suivi des colis et des échanges import/export ; distinguer un événement en attente d'un événement livré. |
+| **Cybersécurité, SOC et supervision** | Un collecteur envoie les alertes et journaux vers le centre de supervision malgré la perte d'un chemin réseau. | Réduire les trous de visibilité liés au transport ; disposer des confirmations de réception pour l'enquête. Cette fonction transporte les alertes : elle ne détecte pas elle-même une intrusion. |
+| **Énergie, eau, agriculture et sites isolés** | Des équipements transmettent leurs relevés et historiques après des interruptions de liaison, sans demander à un opérateur de relancer chaque envoi. | Moins d'observations perdues dans le flux applicatif, un suivi plus régulier et moins d'interventions de collecte. |
+| **Intégrateurs IoT et fabricants de passerelles** | Adapter les composants de file, reprise et validation au service du client, puis reproduire les coupures dans le banc avant livraison. | Réutiliser une base documentée et testable ; réduire le travail de prototypage et remettre des preuves compréhensibles au client final. |
+| **Télécoms et réseaux privés** | Évaluer une application disposant de plusieurs accès, comparer un chemin fixe et une sélection adaptative, puis examiner délais, reprises et livraison. | Identifier les conditions où un accès de secours est utile et dimensionner un pilote à partir de mesures. Les accès fibre, cellulaires ou satellite réels nécessitent leurs propres raccordements et essais. |
+| **Robotique civile et équipements mobiles** | Récupérer des journaux, cartes ou résultats d'inspection lorsqu'un équipement traverse des zones de connectivité variable. | Moins de transferts à recommencer et une meilleure récupération des données de mission. La commande de sûreté, la téléopération et la vidéo continue ne sont pas validées par ces essais. |
+| **Défense et infrastructures critiques — partenariat R&D** | Évaluer la continuité de télémétrie et de comptes rendus autorisés entre plusieurs chemins, avec traces des coupures et des reprises. | Construire un dossier de qualification reproductible. Une promesse de résistance au brouillage radio demande un banc radio isolé et une validation sur les équipements concernés. |
+
+**Premiers pilotes recommandés : intégration industrielle/IoT, logistique et supervision cyber**, sur des flux qui tolèrent une reprise de quelques secondes. Si tous les chemins sont indisponibles, aucune donnée ne peut traverser : elle attend la reprise, dans les limites de stockage et de tentatives configurées. La continuité dépend aussi de chemins de secours réellement disponibles.
+
+## Notre positionnement face aux solutions existantes
+
+La bascule réseau et les files persistantes existent déjà. Notre proposition est un **kit de continuité applicative vérifiable**, avec code du démonstrateur, scénarios reproductibles, reçus, contrôle d'intégrité des fichiers et dashboard des décisions. Il peut compléter une infrastructure existante.
+
+| Solution / approche | Ce qu'elle apporte déjà | Où se place SAWM Anti-Brouillage |
+| --- | --- | --- |
+| **Cisco Catalyst SD-WAN** | Détection des tunnels défaillants et utilisation de transports alternatifs, selon la [documentation Cisco](https://www.cisco.com/c/en/us/td/docs/solutions/CVD/SDWAN/cisco-sdwan-design-guide.html). | Vérifier, au niveau de l'application, quels messages ont produit un effet et quels fichiers sont arrivés à l'identique. Le démonstrateur n'est pas un remplacement du routeur ou du VPN. |
+| **Peplink SpeedFusion** | Agrégation de liaisons, redondance de paquets et bascule entre accès WAN, décrites par [Peplink](https://www.peplink.com/technology/speedfusion-bonding-technology/). | Fournir un banc inspectable de sélection de chemins et de livraison HTTP. Il ne réalise pas l'agrégation transparente de toutes les sessions réseau ni un changement de fréquence radio. |
+| **MQTT et messageries persistantes** | Conservation et reprise de messages ; par exemple, les [sessions persistantes AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt-persistent-sessions) prennent en charge des clients intermittents. | Réunir des essais de reprise, de choix de chemin et de vérification du destinataire, avec des preuves exportables. Une file durable seule n'est pas une nouveauté propre à SAWM. |
+
+**Pourquoi évaluer notre approche ?** Pour pouvoir suivre le parcours « observation → choix du chemin → tentative → réception vérifiée », adapter le mécanisme à un échange métier précis et reproduire les incidents avant déploiement. Le parcours Cloud optionnel ajoute l'historique des essais dans Basira, le rappel TSST, le classement consultatif ODVL et les propositions bornées de SAWM, selon le [rôle exact de chaque composant](#architecture-et-rôle-du-cloud). La boucle locale de livraison reste opérationnelle sans appel Cloud.
+
+Les mesures publiées comparent notre sélection adaptative à un chemin fixe, **pas aux produits ci-dessus**. Elles n'établissent ni une supériorité commerciale générale ni un gain du Cloud dans le banc à quatre chemins. Les moteurs privés ne sont pas distribués ; le parcours Cloud nécessite des accès autorisés.
+
+### Du démonstrateur au pilote client
+
+1. Choisir un flux utile : scans de colis, mesures, journaux ou pièces d'inspection, avec son délai acceptable et ses règles de confidentialité.
+2. Raccorder les émetteurs, destinataires et chemins du client ; vérifier sécurité des échanges, stockage et traitement idempotent du destinataire.
+3. Comparer à la solution actuelle avec les mêmes données et les mêmes coupures : livraison complète, intégrité, effets doublés, temps de reprise, consommation de ressources et interventions humaines.
+4. Fixer ensemble les critères de réception et le périmètre du déploiement. Les économies de temps et de coûts se chiffrent sur ce pilote ; aucun pourcentage de retour sur investissement n'est supposé ici.
+
+[Explorer les API Basira / SAWM](https://basira.sawm.io/) · [Reproduire le banc à quatre chemins](docs/MULTIPATH-BIDIRECTIONNEL.md) · [Lire les preuves](docs/measured-multipath-2026-10-28/)
 
 ## Reproduire les résultats du rapport
 
@@ -208,6 +250,6 @@ La clé se lit depuis un fichier privé hors du dépôt, de permissions `600`. L
 
 ## Périmètre et suite du parcours
 
-Le programme est un banc de démonstration sur un seul hôte. Il teste un redémarrage de processus avec conservation de SQLite pendant le même démarrage de l'hôte. Il ne valide ni un redémarrage de machine, ni une panne électrique, ni la corruption de stockage, ni l'idempotence d'une API tierce. Les délais incluent l'attente des messages conservés ; ils ne mesurent pas un gain de débit ou de vitesse réseau. Le Mac et les VM permettent la validation logicielle ; aucun équipement radio, véhicule ou réseau physique n'est testé. Le [protocole radio futur](docs/RADIO-VALIDATION.md) décrit une liaison isolée entre deux radios, une atténuation contrôlée et les mesures nécessaires, sans brouilleur déployé.
+Le dépôt contient plusieurs bancs distincts. Le banc initial sur boucle locale teste un redémarrage de processus avec conservation de SQLite pendant le même démarrage de l'hôte. Le banc à quatre chemins utilise deux espaces réseau isolés dans une VM Linux ; l'essai antérieur VM → Mac relie deux machines via un tunnel SSH partagé. Ces essais ne valident ni un redémarrage de machine, ni une panne électrique, ni la corruption de stockage, ni l'idempotence d'une API tierce. Les délais incluent l'attente des messages conservés ; ils ne mesurent pas un gain de débit ou de vitesse réseau. Le Mac et les VM permettent la validation logicielle ; aucun équipement radio, véhicule ou réseau physique n'est testé. Le [protocole radio futur](docs/RADIO-VALIDATION.md) décrit une liaison isolée entre deux radios, une atténuation contrôlée et les mesures nécessaires, sans brouilleur déployé.
 
 Pour approfondir : [guide technique](docs/GUIDE-TECHNIQUE.md), [grille de validation](docs/validation.md) et [preuves du 27 octobre](docs/measured-2026-10-27/). Pour explorer l'ordonnancement de messages HTTP et les échéances, voir le programme complémentaire [SAWM Smart Réseau](https://github.com/SAWM-io/sawm-smart-reseau).
