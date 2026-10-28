@@ -1,0 +1,245 @@
+[
+  {
+    "applied_ms": 15.149917,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      }
+    },
+    "profile": "nominal",
+    "started_ms": 0.009875
+  },
+  {
+    "applied_ms": 6021.73267,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      }
+    },
+    "profile": "only_c",
+    "started_ms": 6012.59342
+  },
+  {
+    "applied_ms": 12017.126589,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      }
+    },
+    "profile": "only_b",
+    "started_ms": 12010.083548
+  },
+  {
+    "applied_ms": 18049.028467,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      }
+    },
+    "profile": "only_d",
+    "started_ms": 18019.718217
+  },
+  {
+    "applied_ms": 24023.575512,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      }
+    },
+    "profile": "cut_ab",
+    "started_ms": 24015.570178
+  },
+  {
+    "applied_ms": 30023.486056,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      }
+    },
+    "profile": "only_c",
+    "started_ms": 30010.855931
+  },
+  {
+    "applied_ms": 36034.061767,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 35,
+        "jitter_ms": 5,
+        "loss_pct": 2
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      }
+    },
+    "profile": "degraded_c",
+    "started_ms": 36009.994851
+  },
+  {
+    "applied_ms": 42008.468104,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 100
+      }
+    },
+    "profile": "all_blocked",
+    "started_ms": 42000.566104
+  },
+  {
+    "applied_ms": 47030.382148,
+    "paths": {
+      "a": {
+        "delay_ms": 3,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "b": {
+        "delay_ms": 6,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "c": {
+        "delay_ms": 9,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      },
+      "d": {
+        "delay_ms": 12,
+        "jitter_ms": 0,
+        "loss_pct": 0
+      }
+    },
+    "profile": "recovery",
+    "started_ms": 47017.457898
+  }
+]

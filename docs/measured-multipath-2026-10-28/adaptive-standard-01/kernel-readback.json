@@ -1,0 +1,2322 @@
+[
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 0,
+        "packets": 0,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 7912,
+        "packets": 24,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 496,
+        "packets": 6,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 42,
+        "qlen": 1
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 496,
+        "packets": 6,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 7827,
+        "packets": 23,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 612,
+        "packets": 8,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 406,
+        "packets": 5,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 2,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 58060,
+        "packets": 216,
+        "drops": 1,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 112537,
+        "packets": 174,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 7912,
+        "packets": 24,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 1,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 148492,
+        "packets": 249,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 27834,
+        "packets": 144,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 7823,
+        "packets": 23,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 4,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 58060,
+        "packets": 216,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 287806,
+        "packets": 553,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 15314,
+        "packets": 41,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 3,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 148492,
+        "packets": 249,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197553,
+        "packets": 522,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 15226,
+        "packets": 40,
+        "drops": 0,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 58060,
+        "packets": 216,
+        "drops": 7,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 287806,
+        "packets": 553,
+        "drops": 13,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 191364,
+        "packets": 426,
+        "drops": 9,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 4,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 148492,
+        "packets": 249,
+        "drops": 1,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197553,
+        "packets": 522,
+        "drops": 2,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197651,
+        "packets": 432,
+        "drops": 1,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 6,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 234191,
+        "packets": 602,
+        "drops": 8,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 287806,
+        "packets": 553,
+        "drops": 17,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 191364,
+        "packets": 426,
+        "drops": 23,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 324702,
+        "packets": 636,
+        "drops": 1,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197553,
+        "packets": 522,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197651,
+        "packets": 432,
+        "drops": 10,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 8,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 234191,
+        "packets": 602,
+        "drops": 11,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.035,
+            "jitter": 0.005,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 0.02,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 446582,
+        "packets": 884,
+        "drops": 17,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 191364,
+        "packets": 426,
+        "drops": 26,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 8,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 324702,
+        "packets": 636,
+        "drops": 4,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.035,
+            "jitter": 0.005,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 0.02,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 339474,
+        "packets": 848,
+        "drops": 5,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197651,
+        "packets": 432,
+        "drops": 13,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 9,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 234191,
+        "packets": 602,
+        "drops": 14,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 599618,
+        "packets": 1266,
+        "drops": 25,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 191364,
+        "packets": 426,
+        "drops": 28,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 9,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 324702,
+        "packets": 636,
+        "drops": 4,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 502144,
+        "packets": 1225,
+        "drops": 11,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "loss-random": {
+            "loss": 1,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197651,
+        "packets": 432,
+        "drops": 16,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169116,
+        "packets": 375,
+        "drops": 9,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 234191,
+        "packets": 602,
+        "drops": 17,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 599618,
+        "packets": 1266,
+        "drops": 28,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "left",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 191364,
+        "packets": 426,
+        "drops": 30,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "a",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.003,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 169139,
+        "packets": 375,
+        "drops": 10,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "b",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.006,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 324702,
+        "packets": 636,
+        "drops": 6,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "c",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.009,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 502144,
+        "packets": 1225,
+        "drops": 14,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  },
+  {
+    "node": "right",
+    "path": "d",
+    "returncode": 0,
+    "qdiscs": [
+      {
+        "kind": "netem",
+        "handle": "10:",
+        "root": true,
+        "refcnt": 3,
+        "options": {
+          "limit": 256,
+          "delay": {
+            "delay": 0.012,
+            "jitter": 0,
+            "correlation": 0
+          },
+          "ecn": false,
+          "gap": 0
+        },
+        "bytes": 197651,
+        "packets": 432,
+        "drops": 18,
+        "overlimits": 0,
+        "requeues": 0,
+        "backlog": 0,
+        "qlen": 0
+      }
+    ]
+  }
+]

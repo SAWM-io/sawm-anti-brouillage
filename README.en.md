@@ -14,6 +14,20 @@ SAWM Anti-Brouillage is an executable demonstration of resilient HTTP delivery: 
 
 The Cloud workflow adds experiment memory through **Basira**, verified recall through **TSST**, advisory ranking through **ODVL**, and a bounded policy proposal from **SAWM**. During the experiment, optional **continuous local calibration** adjusts the HTTP timeout and retry delay using only completed attempts. Delivery remains local and independent; SAWM prepares the initial policy before execution.
 
+## Four-path, bidirectional continuity
+
+The new Linux experiment tests automatic path selection when A, then A+B, then A+B+C are blocked, followed by a rotating surviving path, degradation, a complete outage and recovery. Two isolated nodes each send a distinct synthetic file through four virtual links. They select paths from completed observations without receiving the fault schedule.
+
+The proof separates new data received from repeated acknowledgements, verifies both reconstructed files, and compares the adaptive selector with a sender fixed on A. A localhost dashboard shows paths, pending data and attempt reasons.
+
+![Measured bidirectional transfer comparison](docs/measured-multipath-2026-10-28/comparison.svg)
+
+**Measured on 28 October 2026:** three adaptive runs confirmed **1,320/1,320 chunks**, reconstructed six exact files, and continued receiving new data in both directions in **18/18 partially impaired phases**. Two fixed-A reference runs received no new data during those phases, but also completed delivery after recovery. All-path outages stopped transfers until a path returned. First new ACK after full recovery: **0.23–0.80 seconds** in the adaptive runs; the longest observed partial-phase delay was **3.57 seconds**. These are bounded experimental observations, not uninterrupted connectivity guarantees.
+
+[Run the four-path experiment](docs/MULTIPATH-BIDIRECTIONAL.en.md) · [Campaign evidence](docs/measured-multipath-2026-10-28/) · [French guide](docs/MULTIPATH-BIDIRECTIONNEL.md)
+
+This is an additional IP transport experiment within one Linux VM. It does not measure physical radio-jamming resistance or attribute the local selector's performance to a Cloud model.
+
 ## Reproducing the reference report
 
 ![Reference report results — original numerical model](docs/reference-report-2026-10-27/summary.svg)
@@ -194,6 +208,6 @@ The key is read from a private file outside the repository with `600` permission
 
 ## Scope and next steps
 
-This is a demonstration lab running on one host. It tests a process restart with SQLite state retained during the same host boot. It does not validate machine reboot recovery, power failure, storage corruption or third-party API idempotency. Delays include the wait experienced by retained messages; they do not establish faster networking or higher bandwidth. The Mac and VMs support software validation; no radio equipment, vehicle or physical network is tested. The [future radio protocol](docs/RADIO-VALIDATION.md#english-summary) describes an isolated two-radio link, controlled attenuation and the required measurements, with no jammer deployed.
+The repository contains separate demonstration labs. The original loopback lab tests a process restart with SQLite state retained during the same host boot. The four-path experiment runs two isolated network nodes within one Linux VM; the earlier VM → Mac experiment crosses machines through a shared SSH tunnel. It does not validate machine reboot recovery, power failure, storage corruption or third-party API idempotency. Delays include the wait experienced by retained messages; they do not establish faster networking or higher bandwidth. The Mac and VMs support software validation; no radio equipment, vehicle or physical network is tested. The [future radio protocol](docs/RADIO-VALIDATION.md#english-summary) describes an isolated two-radio link, controlled attenuation and the required measurements, with no jammer deployed.
 
 Explore the [technical guide — French](docs/GUIDE-TECHNIQUE.md), [validation checklist — French](docs/validation.md) and [27 October evidence](docs/measured-2026-10-27/). For HTTP message scheduling and deadlines, see the complementary [SAWM Smart Réseau](https://github.com/SAWM-io/sawm-smart-reseau) program.

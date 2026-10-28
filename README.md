@@ -14,6 +14,20 @@ SAWM Anti-Brouillage est un démonstrateur exécutable de livraison HTTP résili
 
 Le parcours Cloud ajoute une mémoire des essais avec **Basira**, un rappel vérifié avec **TSST**, un classement consultatif avec **ODVL** et une proposition de politique bornée par **SAWM**. Pendant l'essai, un mode optionnel de **calibration continue locale** ajuste le timeout HTTP et le délai entre reprises à partir des seules tentatives terminées. La livraison reste locale et autonome ; SAWM prépare la politique initiale avant l'exécution.
 
+## Nouveau : poursuivre le transfert en changeant de chemin
+
+![Transferts bidirectionnels : sélection adaptative contre chemin fixe](docs/measured-multipath-2026-10-28/comparison.svg)
+
+Le banc du **28 octobre 2026** bloque A, puis A+B, puis A+B+C, change le chemin encore disponible, puis coupe tous les chemins avant de les rétablir. **Le programme choisit ses alternatives à partir des retours réseau, sans recevoir le calendrier des coupures.** Deux nœuds Linux s'envoient chacun un fichier distinct : le retour transporte des données, pas seulement des ACK.
+
+**Trois passages adaptatifs : 1 320 blocs sur 1 320 confirmés, six fichiers reçus à l'identique, aucun effet doublé.** De nouvelles données arrivent dans les deux sens à chacune des 18 phases de perturbation partielle. Les deux passages témoins restés sur A ne reçoivent aucune nouvelle donnée pendant ces phases ; ils récupèrent néanmoins leurs fichiers après le rétablissement. La différence démontrée est donc la continuité sur les chemins disponibles.
+
+Si tous les chemins sont coupés, le transfert s'arrête et la file conserve les données jusqu'à la reprise. Le dashboard montre les choix, les confirmations, l'attente et les empreintes des fichiers. Les relevés du noyau et un vérificateur indépendant complètent les traces.
+
+**Périmètre : quatre chemins IP virtuels entre deux espaces réseau dans une VM.** Le sélecteur est local ; cet essai ne mesure pas l'apport du Cloud ou d'ODVL, ni une résistance au brouillage radio physique. Les bascules ont un délai mesuré et ne garantissent pas une connexion sans interruption.
+
+[Résultats et traces](docs/measured-multipath-2026-10-28/) · [Lancer le banc et le dashboard](docs/MULTIPATH-BIDIRECTIONNEL.md) · [English guide](docs/MULTIPATH-BIDIRECTIONAL.en.md)
+
 ## Reproduire les résultats du rapport
 
 ![Reference report results — original numerical model](docs/reference-report-2026-10-27/summary.svg)

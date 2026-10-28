@@ -1,0 +1,3958 @@
+{
+  "left": [
+    {
+      "ended_ms": 85.220417,
+      "message_id": "left-0000",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 61.565542
+    },
+    {
+      "ended_ms": 283.6085,
+      "message_id": "left-0001",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 263.375208
+    },
+    {
+      "ended_ms": 540.253375,
+      "message_id": "left-0002",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 522.939959
+    },
+    {
+      "ended_ms": 793.70575,
+      "message_id": "left-0003",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 765.855
+    },
+    {
+      "ended_ms": 1036.014542,
+      "message_id": "left-0004",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1019.486584
+    },
+    {
+      "ended_ms": 1288.635542,
+      "message_id": "left-0005",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1272.602751
+    },
+    {
+      "ended_ms": 1544.935751,
+      "message_id": "left-0006",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1520.791251
+    },
+    {
+      "ended_ms": 1790.368459,
+      "message_id": "left-0007",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1772.790584
+    },
+    {
+      "ended_ms": 2043.713168,
+      "message_id": "left-0008",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2025.429584
+    },
+    {
+      "ended_ms": 2289.622793,
+      "message_id": "left-0009",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2271.267876
+    },
+    {
+      "ended_ms": 2535.757459,
+      "message_id": "left-0010",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2517.949626
+    },
+    {
+      "ended_ms": 2795.044251,
+      "message_id": "left-0011",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2775.993418
+    },
+    {
+      "ended_ms": 3065.414626,
+      "message_id": "left-0012",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 3021.979585
+    },
+    {
+      "ended_ms": 3290.387335,
+      "message_id": "left-0013",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3268.740793
+    },
+    {
+      "ended_ms": 3528.391252,
+      "message_id": "left-0014",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3510.074293
+    },
+    {
+      "ended_ms": 3785.37896,
+      "message_id": "left-0015",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3763.717168
+    },
+    {
+      "ended_ms": 4065.828669,
+      "message_id": "left-0016",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 4035.408294
+    },
+    {
+      "ended_ms": 4329.379169,
+      "message_id": "left-0017",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 4288.77746
+    },
+    {
+      "ended_ms": 5572.350711,
+      "message_id": "left-0018",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5534.085086
+    },
+    {
+      "ended_ms": 5621.586044,
+      "message_id": "left-0019",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5602.648378
+    },
+    {
+      "ended_ms": 5658.848878,
+      "message_id": "left-0020",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5634.567503
+    },
+    {
+      "ended_ms": 5705.246003,
+      "message_id": "left-0021",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5683.893253
+    },
+    {
+      "ended_ms": 5741.347669,
+      "message_id": "left-0022",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5712.907878
+    },
+    {
+      "ended_ms": 5779.061461,
+      "message_id": "left-0023",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5761.459628
+    },
+    {
+      "ended_ms": 6075.776628,
+      "message_id": "left-0024",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 6032.848253
+    },
+    {
+      "ended_ms": 6424.317378,
+      "message_id": "left-0025",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6273.604336
+    },
+    {
+      "ended_ms": 6472.456086,
+      "message_id": "left-0025",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 6430.261711
+    },
+    {
+      "ended_ms": 6576.074336,
+      "message_id": "left-0026",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6532.03392
+    },
+    {
+      "ended_ms": 6798.711337,
+      "message_id": "left-0027",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6755.678753
+    },
+    {
+      "ended_ms": 7059.423712,
+      "message_id": "left-0028",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7017.925962
+    },
+    {
+      "ended_ms": 7305.039337,
+      "message_id": "left-0029",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7260.932587
+    },
+    {
+      "ended_ms": 7557.638462,
+      "message_id": "left-0030",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7509.911587
+    },
+    {
+      "ended_ms": 7807.524712,
+      "message_id": "left-0031",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7762.898962
+    },
+    {
+      "ended_ms": 8061.726837,
+      "message_id": "left-0032",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8020.254837
+    },
+    {
+      "ended_ms": 8312.340629,
+      "message_id": "left-0033",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8272.174171
+    },
+    {
+      "ended_ms": 8574.068712,
+      "message_id": "left-0034",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8525.826712
+    },
+    {
+      "ended_ms": 8839.536379,
+      "message_id": "left-0035",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 8763.746796
+    },
+    {
+      "ended_ms": 9095.141963,
+      "message_id": "left-0036",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9033.006463
+    },
+    {
+      "ended_ms": 9303.249588,
+      "message_id": "left-0037",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9255.821379
+    },
+    {
+      "ended_ms": 9607.89338,
+      "message_id": "left-0038",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9548.482838
+    },
+    {
+      "ended_ms": 9845.652171,
+      "message_id": "left-0039",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9782.79588
+    },
+    {
+      "ended_ms": 10163.296296,
+      "message_id": "left-0040",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10111.552713
+    },
+    {
+      "ended_ms": 10392.297338,
+      "message_id": "left-0041",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10303.247755
+    },
+    {
+      "ended_ms": 10639.020422,
+      "message_id": "left-0042",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "lowest_observed_cost",
+      "started_ms": 10555.587713
+    },
+    {
+      "ended_ms": 10820.72963,
+      "message_id": "left-0043",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10780.091922
+    },
+    {
+      "ended_ms": 11084.46413,
+      "message_id": "left-0044",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11032.744297
+    },
+    {
+      "ended_ms": 11661.556422,
+      "message_id": "left-0045",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11620.38938
+    },
+    {
+      "ended_ms": 11771.912964,
+      "message_id": "left-0046",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11723.708422
+    },
+    {
+      "ended_ms": 12139.894297,
+      "message_id": "left-0047",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 11788.841506
+    },
+    {
+      "ended_ms": 12309.511506,
+      "message_id": "left-0048",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12158.122922
+    },
+    {
+      "ended_ms": 12396.681673,
+      "message_id": "left-0049",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 12346.933381
+    },
+    {
+      "ended_ms": 12480.586923,
+      "message_id": "left-0047",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12413.175714
+    },
+    {
+      "ended_ms": 12553.731673,
+      "message_id": "left-0048",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12487.686923
+    },
+    {
+      "ended_ms": 12608.884006,
+      "message_id": "left-0050",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12566.053048
+    },
+    {
+      "ended_ms": 12826.224798,
+      "message_id": "left-0051",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12774.534756
+    },
+    {
+      "ended_ms": 13067.271006,
+      "message_id": "left-0052",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13022.068506
+    },
+    {
+      "ended_ms": 13321.94534,
+      "message_id": "left-0053",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13272.577965
+    },
+    {
+      "ended_ms": 13568.40234,
+      "message_id": "left-0054",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13522.764215
+    },
+    {
+      "ended_ms": 13813.027673,
+      "message_id": "left-0055",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13762.404965
+    },
+    {
+      "ended_ms": 14055.040007,
+      "message_id": "left-0056",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14008.651132
+    },
+    {
+      "ended_ms": 14319.763882,
+      "message_id": "left-0057",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 14266.733173
+    },
+    {
+      "ended_ms": 14565.91634,
+      "message_id": "left-0058",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14522.598049
+    },
+    {
+      "ended_ms": 14815.381007,
+      "message_id": "left-0059",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14767.873299
+    },
+    {
+      "ended_ms": 15076.169382,
+      "message_id": "left-0060",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15027.883215
+    },
+    {
+      "ended_ms": 15382.729007,
+      "message_id": "left-0061",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15290.344091
+    },
+    {
+      "ended_ms": 15576.553007,
+      "message_id": "left-0062",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15527.876924
+    },
+    {
+      "ended_ms": 15827.609508,
+      "message_id": "left-0063",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15779.381841
+    },
+    {
+      "ended_ms": 16060.935258,
+      "message_id": "left-0064",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16015.795424
+    },
+    {
+      "ended_ms": 16329.077758,
+      "message_id": "left-0065",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16275.681091
+    },
+    {
+      "ended_ms": 16561.70605,
+      "message_id": "left-0066",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16512.492883
+    },
+    {
+      "ended_ms": 16827.978633,
+      "message_id": "left-0067",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16774.929216
+    },
+    {
+      "ended_ms": 17068.957716,
+      "message_id": "left-0068",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17027.845133
+    },
+    {
+      "ended_ms": 17795.2388,
+      "message_id": "left-0069",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 17269.679592
+    },
+    {
+      "ended_ms": 17847.237508,
+      "message_id": "left-0070",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17804.83905
+    },
+    {
+      "ended_ms": 17898.184175,
+      "message_id": "left-0071",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17851.357383
+    },
+    {
+      "ended_ms": 17945.704384,
+      "message_id": "left-0069",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17901.362633
+    },
+    {
+      "ended_ms": 18189.840592,
+      "message_id": "left-0072",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18020.338009
+    },
+    {
+      "ended_ms": 18247.419384,
+      "message_id": "left-0072",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 18193.590842
+    },
+    {
+      "ended_ms": 18311.938759,
+      "message_id": "left-0073",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18256.7438
+    },
+    {
+      "ended_ms": 18621.610884,
+      "message_id": "left-0074",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18558.950467
+    },
+    {
+      "ended_ms": 18826.155967,
+      "message_id": "left-0075",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18767.516717
+    },
+    {
+      "ended_ms": 19071.587592,
+      "message_id": "left-0076",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19010.978509
+    },
+    {
+      "ended_ms": 19322.667884,
+      "message_id": "left-0077",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19261.686634
+    },
+    {
+      "ended_ms": 19572.250926,
+      "message_id": "left-0078",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19513.910593
+    },
+    {
+      "ended_ms": 20129.029718,
+      "message_id": "left-0079",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 19777.941093
+    },
+    {
+      "ended_ms": 20209.24101,
+      "message_id": "left-0080",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20153.644551
+    },
+    {
+      "ended_ms": 20275.122635,
+      "message_id": "left-0079",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20214.919926
+    },
+    {
+      "ended_ms": 20354.494426,
+      "message_id": "left-0081",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20287.762968
+    },
+    {
+      "ended_ms": 20587.999885,
+      "message_id": "left-0082",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20529.157051
+    },
+    {
+      "ended_ms": 20839.960885,
+      "message_id": "left-0083",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20780.048343
+    },
+    {
+      "ended_ms": 21096.751718,
+      "message_id": "left-0084",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21037.266385
+    },
+    {
+      "ended_ms": 21313.659802,
+      "message_id": "left-0085",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21256.67926
+    },
+    {
+      "ended_ms": 21588.517135,
+      "message_id": "left-0086",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21524.914635
+    },
+    {
+      "ended_ms": 21820.423052,
+      "message_id": "left-0087",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21762.08226
+    },
+    {
+      "ended_ms": 22063.648802,
+      "message_id": "left-0088",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 22009.010927
+    },
+    {
+      "ended_ms": 22325.186136,
+      "message_id": "left-0089",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 22266.507386
+    },
+    {
+      "ended_ms": 23302.957511,
+      "message_id": "left-0090",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 22510.917344
+    },
+    {
+      "ended_ms": 23470.050844,
+      "message_id": "left-0091",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23338.219344
+    },
+    {
+      "ended_ms": 23585.896095,
+      "message_id": "left-0092",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23517.943178
+    },
+    {
+      "ended_ms": 23664.297803,
+      "message_id": "left-0093",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23606.744761
+    },
+    {
+      "ended_ms": 23741.907678,
+      "message_id": "left-0094",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23680.449011
+    },
+    {
+      "ended_ms": 23839.775636,
+      "message_id": "left-0095",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23762.968886
+    },
+    {
+      "ended_ms": 23903.765761,
+      "message_id": "left-0090",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23847.32297
+    },
+    {
+      "ended_ms": 24216.829262,
+      "message_id": "left-0096",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 24036.984553
+    },
+    {
+      "ended_ms": 24580.713762,
+      "message_id": "left-0096",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 24228.040387
+    },
+    {
+      "ended_ms": 24976.560887,
+      "message_id": "left-0097",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 24619.074678
+    },
+    {
+      "ended_ms": 25070.034304,
+      "message_id": "left-0098",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 25018.99672
+    },
+    {
+      "ended_ms": 25129.91797,
+      "message_id": "left-0099",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 25092.072012
+    },
+    {
+      "ended_ms": 26149.368471,
+      "message_id": "left-0100",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 25148.544387
+    },
+    {
+      "ended_ms": 26195.617512,
+      "message_id": "left-0101",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26157.048596
+    },
+    {
+      "ended_ms": 26233.610346,
+      "message_id": "left-0102",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26201.436596
+    },
+    {
+      "ended_ms": 26280.631804,
+      "message_id": "left-0103",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26242.443012
+    },
+    {
+      "ended_ms": 26319.179054,
+      "message_id": "left-0104",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26292.010387
+    },
+    {
+      "ended_ms": 26362.621054,
+      "message_id": "left-0105",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26326.687763
+    },
+    {
+      "ended_ms": 26408.420596,
+      "message_id": "left-0097",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26366.394763
+    },
+    {
+      "ended_ms": 26449.230763,
+      "message_id": "left-0100",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26412.862721
+    },
+    {
+      "ended_ms": 26487.633388,
+      "message_id": "left-0096",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26454.772596
+    },
+    {
+      "ended_ms": 26578.508763,
+      "message_id": "left-0106",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26528.581929
+    },
+    {
+      "ended_ms": 26817.981596,
+      "message_id": "left-0107",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26784.219929
+    },
+    {
+      "ended_ms": 27053.452305,
+      "message_id": "left-0108",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27015.574138
+    },
+    {
+      "ended_ms": 27798.30668,
+      "message_id": "left-0109",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 27272.05593
+    },
+    {
+      "ended_ms": 27846.078513,
+      "message_id": "left-0110",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27812.215138
+    },
+    {
+      "ended_ms": 27893.985597,
+      "message_id": "left-0111",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27858.074097
+    },
+    {
+      "ended_ms": 27931.079638,
+      "message_id": "left-0109",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27899.525222
+    },
+    {
+      "ended_ms": 28041.74243,
+      "message_id": "left-0112",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28009.425388
+    },
+    {
+      "ended_ms": 28288.507263,
+      "message_id": "left-0113",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28257.789722
+    },
+    {
+      "ended_ms": 28563.208347,
+      "message_id": "left-0114",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28523.046472
+    },
+    {
+      "ended_ms": 28820.546264,
+      "message_id": "left-0115",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28777.755639
+    },
+    {
+      "ended_ms": 29069.309764,
+      "message_id": "left-0116",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29033.252514
+    },
+    {
+      "ended_ms": 29314.256722,
+      "message_id": "left-0117",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29266.461556
+    },
+    {
+      "ended_ms": 29590.152139,
+      "message_id": "left-0118",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29550.866472
+    },
+    {
+      "ended_ms": 29810.193473,
+      "message_id": "left-0119",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29776.415597
+    },
+    {
+      "ended_ms": 30538.623306,
+      "message_id": "left-0120",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 30011.970056
+    },
+    {
+      "ended_ms": 30703.881056,
+      "message_id": "left-0121",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 30552.599681
+    },
+    {
+      "ended_ms": 30785.721598,
+      "message_id": "left-0122",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 30735.974723
+    },
+    {
+      "ended_ms": 30856.658973,
+      "message_id": "left-0123",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 30803.354056
+    },
+    {
+      "ended_ms": 30923.577556,
+      "message_id": "left-0120",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 30871.879223
+    },
+    {
+      "ended_ms": 30982.639098,
+      "message_id": "left-0121",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 30929.541265
+    },
+    {
+      "ended_ms": 31093.70314,
+      "message_id": "left-0124",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 31026.892223
+    },
+    {
+      "ended_ms": 31335.85864,
+      "message_id": "left-0125",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 31275.704182
+    },
+    {
+      "ended_ms": 32529.18339,
+      "message_id": "left-0126",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 32478.889349
+    },
+    {
+      "ended_ms": 32587.704057,
+      "message_id": "left-0127",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 32547.463015
+    },
+    {
+      "ended_ms": 32637.781474,
+      "message_id": "left-0128",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 32594.260515
+    },
+    {
+      "ended_ms": 32693.289682,
+      "message_id": "left-0129",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 32644.011641
+    },
+    {
+      "ended_ms": 33723.232349,
+      "message_id": "left-0130",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 32721.415766
+    },
+    {
+      "ended_ms": 33790.767808,
+      "message_id": "left-0131",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33735.272599
+    },
+    {
+      "ended_ms": 33842.983141,
+      "message_id": "left-0132",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33799.515433
+    },
+    {
+      "ended_ms": 33890.362141,
+      "message_id": "left-0133",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33850.631224
+    },
+    {
+      "ended_ms": 33941.722224,
+      "message_id": "left-0134",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33896.906349
+    },
+    {
+      "ended_ms": 33999.017725,
+      "message_id": "left-0135",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33955.470599
+    },
+    {
+      "ended_ms": 34054.296141,
+      "message_id": "left-0136",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 34011.406141
+    },
+    {
+      "ended_ms": 34102.221433,
+      "message_id": "left-0130",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 34059.464975
+    },
+    {
+      "ended_ms": 34299.60385,
+      "message_id": "left-0137",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 34254.5546
+    },
+    {
+      "ended_ms": 34578.961516,
+      "message_id": "left-0138",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 34534.314308
+    },
+    {
+      "ended_ms": 34841.808933,
+      "message_id": "left-0139",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 34788.823267
+    },
+    {
+      "ended_ms": 35077.72035,
+      "message_id": "left-0140",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35034.2976
+    },
+    {
+      "ended_ms": 36070.356975,
+      "message_id": "left-0141",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 35281.541308
+    },
+    {
+      "ended_ms": 36242.334892,
+      "message_id": "left-0142",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36089.479559
+    },
+    {
+      "ended_ms": 36396.360351,
+      "message_id": "left-0143",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36248.811309
+    },
+    {
+      "ended_ms": 36566.520059,
+      "message_id": "left-0144",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36406.741976
+    },
+    {
+      "ended_ms": 36749.389976,
+      "message_id": "left-0145",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36580.914976
+    },
+    {
+      "ended_ms": 37196.618684,
+      "message_id": "left-0146",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36756.138101
+    },
+    {
+      "ended_ms": 37363.184018,
+      "message_id": "left-0147",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37208.321518
+    },
+    {
+      "ended_ms": 37526.532893,
+      "message_id": "left-0148",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37371.316018
+    },
+    {
+      "ended_ms": 37690.842185,
+      "message_id": "left-0149",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37537.140601
+    },
+    {
+      "ended_ms": 37857.021226,
+      "message_id": "left-0150",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37700.592893
+    },
+    {
+      "ended_ms": 38127.436685,
+      "message_id": "left-0151",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37900.407685
+    },
+    {
+      "ended_ms": 38322.360727,
+      "message_id": "left-0152",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 38161.239143
+    },
+    {
+      "ended_ms": 38712.194602,
+      "message_id": "left-0153",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 38361.734268
+    },
+    {
+      "ended_ms": 38901.057185,
+      "message_id": "left-0154",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 38744.737518
+    },
+    {
+      "ended_ms": 39053.339519,
+      "message_id": "left-0155",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 38913.692352
+    },
+    {
+      "ended_ms": 39205.52306,
+      "message_id": "left-0156",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39060.70706
+    },
+    {
+      "ended_ms": 39362.870019,
+      "message_id": "left-0141",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39212.58606
+    },
+    {
+      "ended_ms": 39624.002977,
+      "message_id": "left-0157",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39368.41031
+    },
+    {
+      "ended_ms": 40164.259394,
+      "message_id": "left-0158",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 39638.686936
+    },
+    {
+      "ended_ms": 40344.626103,
+      "message_id": "left-0159",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 40177.781227
+    },
+    {
+      "ended_ms": 40517.305269,
+      "message_id": "left-0160",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40357.688103
+    },
+    {
+      "ended_ms": 40694.373061,
+      "message_id": "left-0161",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40533.479811
+    },
+    {
+      "ended_ms": 40930.445811,
+      "message_id": "left-0162",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40698.885019
+    },
+    {
+      "ended_ms": 41093.650186,
+      "message_id": "left-0163",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40938.220644
+    },
+    {
+      "ended_ms": 42106.409062,
+      "message_id": "left-0164",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 41104.579811
+    },
+    {
+      "ended_ms": 42403.542729,
+      "message_id": "left-0165",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 42117.834353
+    },
+    {
+      "ended_ms": 43206.241187,
+      "message_id": "left-0166",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 42416.916479
+    },
+    {
+      "ended_ms": 43654.170229,
+      "message_id": "left-0167",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 43220.618729
+    },
+    {
+      "ended_ms": 44664.207188,
+      "message_id": "left-0168",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 43661.249646
+    },
+    {
+      "ended_ms": 45362.333855,
+      "message_id": "left-0169",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 44716.532771
+    },
+    {
+      "ended_ms": 46390.775605,
+      "message_id": "left-0170",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 45383.645522
+    },
+    {
+      "ended_ms": 47477.259106,
+      "message_id": "left-0171",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 46460.88873
+    },
+    {
+      "ended_ms": 47620.805106,
+      "message_id": "left-0172",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 47562.242814
+    },
+    {
+      "ended_ms": 47744.513314,
+      "message_id": "left-0173",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47668.895856
+    },
+    {
+      "ended_ms": 47851.721606,
+      "message_id": "left-0174",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47766.646814
+    },
+    {
+      "ended_ms": 47946.456439,
+      "message_id": "left-0175",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47883.848648
+    },
+    {
+      "ended_ms": 48057.029856,
+      "message_id": "left-0176",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 48010.322523
+    },
+    {
+      "ended_ms": 48178.387398,
+      "message_id": "left-0177",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48103.760273
+    },
+    {
+      "ended_ms": 48278.99044,
+      "message_id": "left-0178",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48220.592065
+    },
+    {
+      "ended_ms": 48388.523398,
+      "message_id": "left-0179",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48322.076648
+    },
+    {
+      "ended_ms": 48490.364606,
+      "message_id": "left-0180",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48439.881106
+    },
+    {
+      "ended_ms": 48559.422065,
+      "message_id": "left-0181",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48513.640898
+    },
+    {
+      "ended_ms": 48617.58369,
+      "message_id": "left-0182",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48570.120315
+    },
+    {
+      "ended_ms": 48668.503398,
+      "message_id": "left-0183",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48624.864856
+    },
+    {
+      "ended_ms": 48749.72269,
+      "message_id": "left-0184",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48685.825482
+    },
+    {
+      "ended_ms": 48824.121065,
+      "message_id": "left-0185",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48766.661732
+    },
+    {
+      "ended_ms": 48895.670065,
+      "message_id": "left-0186",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48848.170398
+    },
+    {
+      "ended_ms": 48964.74844,
+      "message_id": "left-0187",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48915.69794
+    },
+    {
+      "ended_ms": 49024.96094,
+      "message_id": "left-0188",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 48981.264773
+    },
+    {
+      "ended_ms": 49115.983815,
+      "message_id": "left-0189",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49059.460773
+    },
+    {
+      "ended_ms": 49173.612523,
+      "message_id": "left-0190",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49128.990982
+    },
+    {
+      "ended_ms": 49247.063232,
+      "message_id": "left-0191",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49191.369815
+    },
+    {
+      "ended_ms": 49360.061232,
+      "message_id": "left-0192",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49305.039773
+    },
+    {
+      "ended_ms": 49455.65269,
+      "message_id": "left-0193",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49387.41494
+    },
+    {
+      "ended_ms": 49521.367732,
+      "message_id": "left-0194",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49472.907399
+    },
+    {
+      "ended_ms": 49623.325482,
+      "message_id": "left-0195",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49565.379899
+    },
+    {
+      "ended_ms": 49767.142149,
+      "message_id": "left-0196",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49655.484399
+    },
+    {
+      "ended_ms": 49840.84719,
+      "message_id": "left-0197",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49795.741232
+    },
+    {
+      "ended_ms": 49921.347399,
+      "message_id": "left-0198",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49859.405399
+    },
+    {
+      "ended_ms": 50010.725774,
+      "message_id": "left-0199",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49951.76094
+    },
+    {
+      "ended_ms": 50117.892899,
+      "message_id": "left-0200",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 50031.78394
+    },
+    {
+      "ended_ms": 50187.242607,
+      "message_id": "left-0153",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50139.019232
+    },
+    {
+      "ended_ms": 50252.054441,
+      "message_id": "left-0157",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50198.394316
+    },
+    {
+      "ended_ms": 50360.445524,
+      "message_id": "left-0201",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50269.641649
+    },
+    {
+      "ended_ms": 50432.028066,
+      "message_id": "left-0158",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50372.325107
+    },
+    {
+      "ended_ms": 50493.958232,
+      "message_id": "left-0164",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50442.995316
+    },
+    {
+      "ended_ms": 50585.430482,
+      "message_id": "left-0202",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50518.432357
+    },
+    {
+      "ended_ms": 50657.698482,
+      "message_id": "left-0165",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50602.609732
+    },
+    {
+      "ended_ms": 50726.622357,
+      "message_id": "left-0166",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50674.551649
+    },
+    {
+      "ended_ms": 50792.952441,
+      "message_id": "left-0167",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50737.304816
+    },
+    {
+      "ended_ms": 50893.921483,
+      "message_id": "left-0203",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50832.864858
+    },
+    {
+      "ended_ms": 50955.668441,
+      "message_id": "left-0168",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50910.729483
+    },
+    {
+      "ended_ms": 50985.981399,
+      "message_id": "left-0169",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 50966.813608
+    },
+    {
+      "ended_ms": 51036.785233,
+      "message_id": "left-0170",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50994.291691
+    },
+    {
+      "ended_ms": 51093.326191,
+      "message_id": "left-0204",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51049.408066
+    },
+    {
+      "ended_ms": 51138.948024,
+      "message_id": "left-0171",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51098.774483
+    },
+    {
+      "ended_ms": 51304.182816,
+      "message_id": "left-0205",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51263.511608
+    },
+    {
+      "ended_ms": 51566.1259,
+      "message_id": "left-0206",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51522.380441
+    },
+    {
+      "ended_ms": 51810.997025,
+      "message_id": "left-0207",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51767.274108
+    },
+    {
+      "ended_ms": 52060.704733,
+      "message_id": "left-0208",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52017.650566
+    },
+    {
+      "ended_ms": 52311.93165,
+      "message_id": "left-0209",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52267.717775
+    },
+    {
+      "ended_ms": 52572.073275,
+      "message_id": "left-0210",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52532.293608
+    },
+    {
+      "ended_ms": 52810.9354,
+      "message_id": "left-0211",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52768.515233
+    },
+    {
+      "ended_ms": 53061.614192,
+      "message_id": "left-0212",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53020.537192
+    },
+    {
+      "ended_ms": 53298.418067,
+      "message_id": "left-0213",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 53264.951692
+    },
+    {
+      "ended_ms": 53570.895609,
+      "message_id": "left-0214",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53527.782859
+    },
+    {
+      "ended_ms": 53806.406109,
+      "message_id": "left-0215",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53766.923734
+    },
+    {
+      "ended_ms": 54057.120359,
+      "message_id": "left-0216",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54012.111609
+    },
+    {
+      "ended_ms": 54297.523859,
+      "message_id": "left-0217",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54255.969442
+    },
+    {
+      "ended_ms": 54550.114776,
+      "message_id": "left-0218",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54506.228818
+    },
+    {
+      "ended_ms": 54812.895818,
+      "message_id": "left-0219",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54772.076943
+    }
+  ],
+  "right": [
+    {
+      "ended_ms": 84.615292,
+      "message_id": "right-0000",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 59.741458
+    },
+    {
+      "ended_ms": 281.031625,
+      "message_id": "right-0001",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 262.795542
+    },
+    {
+      "ended_ms": 540.863125,
+      "message_id": "right-0002",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 524.310292
+    },
+    {
+      "ended_ms": 795.404084,
+      "message_id": "right-0003",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 762.857125
+    },
+    {
+      "ended_ms": 1036.88125,
+      "message_id": "right-0004",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1018.799875
+    },
+    {
+      "ended_ms": 1289.417084,
+      "message_id": "right-0005",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1272.921001
+    },
+    {
+      "ended_ms": 1542.147167,
+      "message_id": "right-0006",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1522.713751
+    },
+    {
+      "ended_ms": 1789.526792,
+      "message_id": "right-0007",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 1770.948917
+    },
+    {
+      "ended_ms": 2044.853876,
+      "message_id": "right-0008",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2022.796334
+    },
+    {
+      "ended_ms": 2291.048168,
+      "message_id": "right-0009",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2270.593626
+    },
+    {
+      "ended_ms": 2534.906251,
+      "message_id": "right-0010",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2516.819334
+    },
+    {
+      "ended_ms": 2794.478293,
+      "message_id": "right-0011",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 2775.553376
+    },
+    {
+      "ended_ms": 3066.378251,
+      "message_id": "right-0012",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 3019.510626
+    },
+    {
+      "ended_ms": 3287.67671,
+      "message_id": "right-0013",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3268.201002
+    },
+    {
+      "ended_ms": 3529.32396,
+      "message_id": "right-0014",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3509.195793
+    },
+    {
+      "ended_ms": 3783.336377,
+      "message_id": "right-0015",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 3762.428377
+    },
+    {
+      "ended_ms": 4064.780127,
+      "message_id": "right-0016",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 4031.381669
+    },
+    {
+      "ended_ms": 4327.665752,
+      "message_id": "right-0017",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 4288.498585
+    },
+    {
+      "ended_ms": 5569.139586,
+      "message_id": "right-0018",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5529.766503
+    },
+    {
+      "ended_ms": 5613.140628,
+      "message_id": "right-0019",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5591.524919
+    },
+    {
+      "ended_ms": 5661.934169,
+      "message_id": "right-0020",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5633.868378
+    },
+    {
+      "ended_ms": 5707.974544,
+      "message_id": "right-0021",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5686.411544
+    },
+    {
+      "ended_ms": 5745.321669,
+      "message_id": "right-0022",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5717.642836
+    },
+    {
+      "ended_ms": 5792.588878,
+      "message_id": "right-0023",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 5768.814044
+    },
+    {
+      "ended_ms": 6065.171545,
+      "message_id": "right-0024",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 6006.640294
+    },
+    {
+      "ended_ms": 6412.312253,
+      "message_id": "right-0025",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6261.541461
+    },
+    {
+      "ended_ms": 6451.089336,
+      "message_id": "right-0025",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 6418.665503
+    },
+    {
+      "ended_ms": 6567.318045,
+      "message_id": "right-0026",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6534.016378
+    },
+    {
+      "ended_ms": 6792.168003,
+      "message_id": "right-0027",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 6762.835378
+    },
+    {
+      "ended_ms": 7039.692587,
+      "message_id": "right-0028",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7010.237378
+    },
+    {
+      "ended_ms": 7296.01942,
+      "message_id": "right-0029",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7263.308628
+    },
+    {
+      "ended_ms": 7562.568629,
+      "message_id": "right-0030",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7528.529462
+    },
+    {
+      "ended_ms": 7798.47967,
+      "message_id": "right-0031",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 7767.064545
+    },
+    {
+      "ended_ms": 8055.796212,
+      "message_id": "right-0032",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8026.33792
+    },
+    {
+      "ended_ms": 8301.874546,
+      "message_id": "right-0033",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8269.712087
+    },
+    {
+      "ended_ms": 8563.949296,
+      "message_id": "right-0034",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 8528.462171
+    },
+    {
+      "ended_ms": 8834.510588,
+      "message_id": "right-0035",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 8767.570004
+    },
+    {
+      "ended_ms": 9090.316171,
+      "message_id": "right-0036",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9029.351213
+    },
+    {
+      "ended_ms": 9301.465629,
+      "message_id": "right-0037",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9265.322421
+    },
+    {
+      "ended_ms": 9604.71238,
+      "message_id": "right-0038",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9549.20588
+    },
+    {
+      "ended_ms": 9837.55838,
+      "message_id": "right-0039",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 9784.898921
+    },
+    {
+      "ended_ms": 10146.535421,
+      "message_id": "right-0040",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10076.930921
+    },
+    {
+      "ended_ms": 10411.418255,
+      "message_id": "right-0041",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10312.864422
+    },
+    {
+      "ended_ms": 10631.82263,
+      "message_id": "right-0042",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10549.764213
+    },
+    {
+      "ended_ms": 10818.28488,
+      "message_id": "right-0043",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 10779.22763
+    },
+    {
+      "ended_ms": 11085.690547,
+      "message_id": "right-0044",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11036.710422
+    },
+    {
+      "ended_ms": 11669.753672,
+      "message_id": "right-0045",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11636.059131
+    },
+    {
+      "ended_ms": 11773.450631,
+      "message_id": "right-0046",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 11718.538422
+    },
+    {
+      "ended_ms": 11834.580339,
+      "message_id": "right-0047",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 11790.682714
+    },
+    {
+      "ended_ms": 12166.659172,
+      "message_id": "right-0048",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12015.666381
+    },
+    {
+      "ended_ms": 12217.358756,
+      "message_id": "right-0048",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 12175.660089
+    },
+    {
+      "ended_ms": 12319.828214,
+      "message_id": "right-0049",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12270.291131
+    },
+    {
+      "ended_ms": 12581.313923,
+      "message_id": "right-0050",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12530.993964
+    },
+    {
+      "ended_ms": 12832.968048,
+      "message_id": "right-0051",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 12780.663548
+    },
+    {
+      "ended_ms": 13057.841881,
+      "message_id": "right-0052",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13013.116464
+    },
+    {
+      "ended_ms": 13314.227215,
+      "message_id": "right-0053",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13265.314756
+    },
+    {
+      "ended_ms": 13574.337423,
+      "message_id": "right-0054",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13527.149006
+    },
+    {
+      "ended_ms": 13813.99059,
+      "message_id": "right-0055",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 13764.560632
+    },
+    {
+      "ended_ms": 14082.599257,
+      "message_id": "right-0056",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14027.539965
+    },
+    {
+      "ended_ms": 14307.687798,
+      "message_id": "right-0057",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14265.272132
+    },
+    {
+      "ended_ms": 14861.206424,
+      "message_id": "right-0058",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 14510.385174
+    },
+    {
+      "ended_ms": 14918.510299,
+      "message_id": "right-0059",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14873.563174
+    },
+    {
+      "ended_ms": 14975.60434,
+      "message_id": "right-0058",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 14929.235049
+    },
+    {
+      "ended_ms": 15066.243257,
+      "message_id": "right-0060",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15017.053215
+    },
+    {
+      "ended_ms": 15375.467716,
+      "message_id": "right-0061",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15293.436174
+    },
+    {
+      "ended_ms": 15577.893591,
+      "message_id": "right-0062",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15527.584132
+    },
+    {
+      "ended_ms": 15826.629008,
+      "message_id": "right-0063",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 15777.588507
+    },
+    {
+      "ended_ms": 16062.090424,
+      "message_id": "right-0064",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16014.436799
+    },
+    {
+      "ended_ms": 16331.637299,
+      "message_id": "right-0065",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16276.994258
+    },
+    {
+      "ended_ms": 16563.295258,
+      "message_id": "right-0066",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16514.703216
+    },
+    {
+      "ended_ms": 16831.938966,
+      "message_id": "right-0067",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 16773.5068
+    },
+    {
+      "ended_ms": 17058.017675,
+      "message_id": "right-0068",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17012.524091
+    },
+    {
+      "ended_ms": 17314.832883,
+      "message_id": "right-0069",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 17258.722008
+    },
+    {
+      "ended_ms": 17564.747342,
+      "message_id": "right-0070",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17517.771592
+    },
+    {
+      "ended_ms": 17817.376883,
+      "message_id": "right-0071",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 17768.5293
+    },
+    {
+      "ended_ms": 18171.206509,
+      "message_id": "right-0072",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18020.841925
+    },
+    {
+      "ended_ms": 18236.161009,
+      "message_id": "right-0072",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 18178.084425
+    },
+    {
+      "ended_ms": 18316.180675,
+      "message_id": "right-0073",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18263.552175
+    },
+    {
+      "ended_ms": 18628.723301,
+      "message_id": "right-0074",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18564.966842
+    },
+    {
+      "ended_ms": 18818.828509,
+      "message_id": "right-0075",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 18759.564134
+    },
+    {
+      "ended_ms": 19085.565926,
+      "message_id": "right-0076",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19027.844176
+    },
+    {
+      "ended_ms": 19328.902968,
+      "message_id": "right-0077",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19269.522676
+    },
+    {
+      "ended_ms": 19586.322634,
+      "message_id": "right-0078",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19531.571134
+    },
+    {
+      "ended_ms": 19833.348301,
+      "message_id": "right-0079",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 19775.177968
+    },
+    {
+      "ended_ms": 20389.23301,
+      "message_id": "right-0080",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 20038.02676
+    },
+    {
+      "ended_ms": 20467.649218,
+      "message_id": "right-0081",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20405.362176
+    },
+    {
+      "ended_ms": 20550.161968,
+      "message_id": "right-0080",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20486.421926
+    },
+    {
+      "ended_ms": 20617.779843,
+      "message_id": "right-0082",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20561.719093
+    },
+    {
+      "ended_ms": 20816.430843,
+      "message_id": "right-0083",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 20758.608968
+    },
+    {
+      "ended_ms": 21093.449635,
+      "message_id": "right-0084",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21034.534718
+    },
+    {
+      "ended_ms": 21335.272385,
+      "message_id": "right-0085",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21276.138927
+    },
+    {
+      "ended_ms": 21589.499052,
+      "message_id": "right-0086",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21525.96401
+    },
+    {
+      "ended_ms": 21829.458427,
+      "message_id": "right-0087",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 21769.88801
+    },
+    {
+      "ended_ms": 22074.782344,
+      "message_id": "right-0088",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 22015.389885
+    },
+    {
+      "ended_ms": 22314.884594,
+      "message_id": "right-0089",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 22257.486677
+    },
+    {
+      "ended_ms": 22581.578927,
+      "message_id": "right-0090",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 22521.005969
+    },
+    {
+      "ended_ms": 23296.027053,
+      "message_id": "right-0091",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 22769.777052
+    },
+    {
+      "ended_ms": 23479.080969,
+      "message_id": "right-0092",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23334.197594
+    },
+    {
+      "ended_ms": 23628.490053,
+      "message_id": "right-0093",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23562.429511
+    },
+    {
+      "ended_ms": 23702.060553,
+      "message_id": "right-0094",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23640.20847
+    },
+    {
+      "ended_ms": 23782.910345,
+      "message_id": "right-0091",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23714.351261
+    },
+    {
+      "ended_ms": 23868.962928,
+      "message_id": "right-0095",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 23813.870595
+    },
+    {
+      "ended_ms": 24218.366262,
+      "message_id": "right-0096",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 24042.722928
+    },
+    {
+      "ended_ms": 24579.780887,
+      "message_id": "right-0096",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 24228.920595
+    },
+    {
+      "ended_ms": 24970.01372,
+      "message_id": "right-0097",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 24617.440428
+    },
+    {
+      "ended_ms": 25075.814845,
+      "message_id": "right-0098",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 25025.698387
+    },
+    {
+      "ended_ms": 25138.257637,
+      "message_id": "right-0099",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 25100.231262
+    },
+    {
+      "ended_ms": 25189.751137,
+      "message_id": "right-0100",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 25150.834887
+    },
+    {
+      "ended_ms": 26004.801512,
+      "message_id": "right-0097",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 25208.337429
+    },
+    {
+      "ended_ms": 26132.871971,
+      "message_id": "right-0101",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26068.040304
+    },
+    {
+      "ended_ms": 26174.536346,
+      "message_id": "right-0102",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26143.341804
+    },
+    {
+      "ended_ms": 26211.476971,
+      "message_id": "right-0103",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26181.040429
+    },
+    {
+      "ended_ms": 26256.317429,
+      "message_id": "right-0104",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26218.373679
+    },
+    {
+      "ended_ms": 26302.087804,
+      "message_id": "right-0105",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26270.003596
+    },
+    {
+      "ended_ms": 26343.243679,
+      "message_id": "right-0096",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26306.043846
+    },
+    {
+      "ended_ms": 26384.300138,
+      "message_id": "right-0097",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26351.220138
+    },
+    {
+      "ended_ms": 26550.554221,
+      "message_id": "right-0106",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26515.332971
+    },
+    {
+      "ended_ms": 26823.860596,
+      "message_id": "right-0107",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 26789.759763
+    },
+    {
+      "ended_ms": 27062.56318,
+      "message_id": "right-0108",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27025.444471
+    },
+    {
+      "ended_ms": 27298.717388,
+      "message_id": "right-0109",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 27264.226763
+    },
+    {
+      "ended_ms": 28039.249138,
+      "message_id": "right-0110",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 27513.289805
+    },
+    {
+      "ended_ms": 28099.97843,
+      "message_id": "right-0111",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28051.19168
+    },
+    {
+      "ended_ms": 28155.047847,
+      "message_id": "right-0112",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28120.60768
+    },
+    {
+      "ended_ms": 28211.595222,
+      "message_id": "right-0110",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28175.21918
+    },
+    {
+      "ended_ms": 28302.417222,
+      "message_id": "right-0113",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28268.68168
+    },
+    {
+      "ended_ms": 28561.779139,
+      "message_id": "right-0114",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28520.680347
+    },
+    {
+      "ended_ms": 28819.076347,
+      "message_id": "right-0115",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 28773.730014
+    },
+    {
+      "ended_ms": 29068.04268,
+      "message_id": "right-0116",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29031.656055
+    },
+    {
+      "ended_ms": 29306.374222,
+      "message_id": "right-0117",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29261.784597
+    },
+    {
+      "ended_ms": 29587.980472,
+      "message_id": "right-0118",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29548.540014
+    },
+    {
+      "ended_ms": 29809.556431,
+      "message_id": "right-0119",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 29775.525097
+    },
+    {
+      "ended_ms": 30189.538723,
+      "message_id": "right-0120",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 30038.044806
+    },
+    {
+      "ended_ms": 31201.964848,
+      "message_id": "right-0120",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 30197.012056
+    },
+    {
+      "ended_ms": 31602.37889,
+      "message_id": "right-0121",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 31248.75189
+    },
+    {
+      "ended_ms": 33027.953766,
+      "message_id": "right-0122",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 32499.243474
+    },
+    {
+      "ended_ms": 33567.239099,
+      "message_id": "right-0123",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 33040.742182
+    },
+    {
+      "ended_ms": 33632.508349,
+      "message_id": "right-0124",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 33585.169433
+    },
+    {
+      "ended_ms": 33685.263016,
+      "message_id": "right-0125",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33640.204266
+    },
+    {
+      "ended_ms": 33736.568099,
+      "message_id": "right-0126",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33694.773641
+    },
+    {
+      "ended_ms": 33799.871683,
+      "message_id": "right-0127",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33741.844474
+    },
+    {
+      "ended_ms": 33851.350891,
+      "message_id": "right-0128",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33806.891391
+    },
+    {
+      "ended_ms": 33898.004808,
+      "message_id": "right-0129",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33856.434308
+    },
+    {
+      "ended_ms": 33950.498183,
+      "message_id": "right-0130",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33905.400058
+    },
+    {
+      "ended_ms": 34007.736433,
+      "message_id": "right-0131",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 33965.371141
+    },
+    {
+      "ended_ms": 35023.365558,
+      "message_id": "right-0132",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 34022.016433
+    },
+    {
+      "ended_ms": 35085.243267,
+      "message_id": "right-0133",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35039.958767
+    },
+    {
+      "ended_ms": 35132.070225,
+      "message_id": "right-0134",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35089.851183
+    },
+    {
+      "ended_ms": 35184.643183,
+      "message_id": "right-0135",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35137.853808
+    },
+    {
+      "ended_ms": 35272.763975,
+      "message_id": "right-0136",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35216.650683
+    },
+    {
+      "ended_ms": 35327.174642,
+      "message_id": "right-0137",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35285.8111
+    },
+    {
+      "ended_ms": 35372.3106,
+      "message_id": "right-0138",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35331.148933
+    },
+    {
+      "ended_ms": 35415.871017,
+      "message_id": "right-0139",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35375.984225
+    },
+    {
+      "ended_ms": 35474.930725,
+      "message_id": "right-0140",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35431.369017
+    },
+    {
+      "ended_ms": 35523.4336,
+      "message_id": "right-0141",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35480.919392
+    },
+    {
+      "ended_ms": 35578.189475,
+      "message_id": "right-0142",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35530.249475
+    },
+    {
+      "ended_ms": 35624.342767,
+      "message_id": "right-0121",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 35581.640725
+    },
+    {
+      "ended_ms": 36417.247726,
+      "message_id": "right-0122",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 35628.224684
+    },
+    {
+      "ended_ms": 36591.390184,
+      "message_id": "right-0143",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36444.321059
+    },
+    {
+      "ended_ms": 36765.884809,
+      "message_id": "right-0144",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36601.493059
+    },
+    {
+      "ended_ms": 37096.539476,
+      "message_id": "right-0145",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 36773.763476
+    },
+    {
+      "ended_ms": 37262.300643,
+      "message_id": "right-0146",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37105.301976
+    },
+    {
+      "ended_ms": 37414.377851,
+      "message_id": "right-0147",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37272.057934
+    },
+    {
+      "ended_ms": 37567.611143,
+      "message_id": "right-0148",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37418.278893
+    },
+    {
+      "ended_ms": 37732.760185,
+      "message_id": "right-0149",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37580.921601
+    },
+    {
+      "ended_ms": 37913.546976,
+      "message_id": "right-0150",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37740.87281
+    },
+    {
+      "ended_ms": 38089.705976,
+      "message_id": "right-0151",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 37934.576351
+    },
+    {
+      "ended_ms": 38275.385268,
+      "message_id": "right-0152",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 38118.996018
+    },
+    {
+      "ended_ms": 38451.886935,
+      "message_id": "right-0153",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 38299.69731
+    },
+    {
+      "ended_ms": 39249.461852,
+      "message_id": "right-0123",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 38460.056977
+    },
+    {
+      "ended_ms": 39416.006727,
+      "message_id": "right-0154",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39264.415352
+    },
+    {
+      "ended_ms": 39580.91681,
+      "message_id": "right-0155",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39431.81981
+    },
+    {
+      "ended_ms": 39748.747186,
+      "message_id": "right-0156",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39593.714894
+    },
+    {
+      "ended_ms": 39913.878352,
+      "message_id": "right-0157",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39768.959186
+    },
+    {
+      "ended_ms": 40071.805894,
+      "message_id": "right-0158",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 39921.546602
+    },
+    {
+      "ended_ms": 40264.909769,
+      "message_id": "right-0159",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40105.876061
+    },
+    {
+      "ended_ms": 40508.786644,
+      "message_id": "right-0160",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40273.896186
+    },
+    {
+      "ended_ms": 40679.540186,
+      "message_id": "right-0161",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40528.742186
+    },
+    {
+      "ended_ms": 40843.418728,
+      "message_id": "right-0162",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40686.368603
+    },
+    {
+      "ended_ms": 41002.504811,
+      "message_id": "right-0163",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 40854.601728
+    },
+    {
+      "ended_ms": 41170.562478,
+      "message_id": "right-0164",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 41019.198186
+    },
+    {
+      "ended_ms": 42177.30527,
+      "message_id": "right-0132",
+      "outcome": "timeout",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 41176.379311
+    },
+    {
+      "ended_ms": 42423.01052,
+      "message_id": "right-0165",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 42186.506187
+    },
+    {
+      "ended_ms": 43434.728771,
+      "message_id": "right-0166",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 42433.924937
+    },
+    {
+      "ended_ms": 43809.427396,
+      "message_id": "right-0167",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 43453.930646
+    },
+    {
+      "ended_ms": 44832.72198,
+      "message_id": "right-0168",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 43828.804104
+    },
+    {
+      "ended_ms": 45388.989313,
+      "message_id": "right-0169",
+      "outcome": "timeout",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 44856.256021
+    },
+    {
+      "ended_ms": 46406.527689,
+      "message_id": "right-0170",
+      "outcome": "timeout",
+      "path": "b",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 45402.809522
+    },
+    {
+      "ended_ms": 47471.169606,
+      "message_id": "right-0171",
+      "outcome": "timeout",
+      "path": "d",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 46462.385272
+    },
+    {
+      "ended_ms": 47632.812689,
+      "message_id": "right-0172",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "failed_path_bypass",
+      "started_ms": 47562.042773
+    },
+    {
+      "ended_ms": 47794.035356,
+      "message_id": "right-0173",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47704.586981
+    },
+    {
+      "ended_ms": 47935.917689,
+      "message_id": "right-0174",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47869.190398
+    },
+    {
+      "ended_ms": 48041.849065,
+      "message_id": "right-0175",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 47967.266856
+    },
+    {
+      "ended_ms": 48170.264023,
+      "message_id": "right-0176",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 48108.18169
+    },
+    {
+      "ended_ms": 48275.514315,
+      "message_id": "right-0177",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48216.080398
+    },
+    {
+      "ended_ms": 48380.696231,
+      "message_id": "right-0178",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48318.568648
+    },
+    {
+      "ended_ms": 48480.515273,
+      "message_id": "right-0179",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48429.644523
+    },
+    {
+      "ended_ms": 48539.621898,
+      "message_id": "right-0180",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48498.188106
+    },
+    {
+      "ended_ms": 48587.320898,
+      "message_id": "right-0181",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48545.622481
+    },
+    {
+      "ended_ms": 48642.350315,
+      "message_id": "right-0182",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48592.997565
+    },
+    {
+      "ended_ms": 48712.604565,
+      "message_id": "right-0183",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48649.891023
+    },
+    {
+      "ended_ms": 48789.885107,
+      "message_id": "right-0184",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48730.536732
+    },
+    {
+      "ended_ms": 48888.011482,
+      "message_id": "right-0185",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48836.369023
+    },
+    {
+      "ended_ms": 48955.816857,
+      "message_id": "right-0186",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48905.84394
+    },
+    {
+      "ended_ms": 49026.594565,
+      "message_id": "right-0187",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 48969.89944
+    },
+    {
+      "ended_ms": 49102.998065,
+      "message_id": "right-0188",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 49062.692815
+    },
+    {
+      "ended_ms": 49164.921065,
+      "message_id": "right-0189",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49116.465273
+    },
+    {
+      "ended_ms": 49232.76844,
+      "message_id": "right-0190",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49181.265607
+    },
+    {
+      "ended_ms": 49358.72219,
+      "message_id": "right-0191",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49304.652148
+    },
+    {
+      "ended_ms": 49457.595649,
+      "message_id": "right-0192",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49400.258899
+    },
+    {
+      "ended_ms": 49531.575024,
+      "message_id": "right-0193",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49477.833899
+    },
+    {
+      "ended_ms": 49630.687815,
+      "message_id": "right-0194",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49578.04794
+    },
+    {
+      "ended_ms": 49757.935107,
+      "message_id": "right-0195",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49667.903399
+    },
+    {
+      "ended_ms": 49831.178732,
+      "message_id": "right-0196",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49784.560024
+    },
+    {
+      "ended_ms": 49907.421482,
+      "message_id": "right-0197",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49848.575274
+    },
+    {
+      "ended_ms": 49981.13819,
+      "message_id": "right-0198",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49934.268065
+    },
+    {
+      "ended_ms": 50048.155315,
+      "message_id": "right-0199",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 49990.662524
+    },
+    {
+      "ended_ms": 50160.777149,
+      "message_id": "right-0200",
+      "outcome": "acked",
+      "path": "d",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 50077.821566
+    },
+    {
+      "ended_ms": 50217.944357,
+      "message_id": "right-0165",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50171.045774
+    },
+    {
+      "ended_ms": 50292.393399,
+      "message_id": "right-0166",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50233.902357
+    },
+    {
+      "ended_ms": 50390.022191,
+      "message_id": "right-0201",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50330.763316
+    },
+    {
+      "ended_ms": 50465.446857,
+      "message_id": "right-0167",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50406.706107
+    },
+    {
+      "ended_ms": 50547.344316,
+      "message_id": "right-0168",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50476.618191
+    },
+    {
+      "ended_ms": 50617.056524,
+      "message_id": "right-0202",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50564.641857
+    },
+    {
+      "ended_ms": 50693.258857,
+      "message_id": "right-0169",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50637.957107
+    },
+    {
+      "ended_ms": 50758.658024,
+      "message_id": "right-0170",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50711.235316
+    },
+    {
+      "ended_ms": 50823.602899,
+      "message_id": "right-0203",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50773.656524
+    },
+    {
+      "ended_ms": 50898.597816,
+      "message_id": "right-0171",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50835.919691
+    },
+    {
+      "ended_ms": 50958.188524,
+      "message_id": "right-0120",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50913.241024
+    },
+    {
+      "ended_ms": 50989.454649,
+      "message_id": "right-0122",
+      "outcome": "acked",
+      "path": "a",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 50970.520149
+    },
+    {
+      "ended_ms": 51045.629483,
+      "message_id": "right-0123",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 50999.374608
+    },
+    {
+      "ended_ms": 51100.070358,
+      "message_id": "right-0204",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51058.781191
+    },
+    {
+      "ended_ms": 51152.045816,
+      "message_id": "right-0132",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51110.256358
+    },
+    {
+      "ended_ms": 51308.387524,
+      "message_id": "right-0205",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51265.980566
+    },
+    {
+      "ended_ms": 51566.658233,
+      "message_id": "right-0206",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51523.020816
+    },
+    {
+      "ended_ms": 51810.564608,
+      "message_id": "right-0207",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 51766.830775
+    },
+    {
+      "ended_ms": 52058.850191,
+      "message_id": "right-0208",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52015.577358
+    },
+    {
+      "ended_ms": 52311.16715,
+      "message_id": "right-0209",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52265.685358
+    },
+    {
+      "ended_ms": 52566.794692,
+      "message_id": "right-0210",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52527.304817
+    },
+    {
+      "ended_ms": 52810.519525,
+      "message_id": "right-0211",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 52767.954983
+    },
+    {
+      "ended_ms": 53062.163692,
+      "message_id": "right-0212",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53021.147609
+    },
+    {
+      "ended_ms": 53297.696817,
+      "message_id": "right-0213",
+      "outcome": "acked",
+      "path": "b",
+      "selection_reason": "bounded_recovery_probe",
+      "started_ms": 53264.328609
+    },
+    {
+      "ended_ms": 53549.345859,
+      "message_id": "right-0214",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53503.8674
+    },
+    {
+      "ended_ms": 53812.690484,
+      "message_id": "right-0215",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 53772.507359
+    },
+    {
+      "ended_ms": 54056.962817,
+      "message_id": "right-0216",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54011.853651
+    },
+    {
+      "ended_ms": 54301.930359,
+      "message_id": "right-0217",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54261.188526
+    },
+    {
+      "ended_ms": 54559.169401,
+      "message_id": "right-0218",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54511.122859
+    },
+    {
+      "ended_ms": 54798.612109,
+      "message_id": "right-0219",
+      "outcome": "acked",
+      "path": "c",
+      "selection_reason": "keep_path_with_hysteresis",
+      "started_ms": 54758.983568
+    }
+  ]
+}
